@@ -34,7 +34,7 @@ var Geo = (function () {
             this.output.innerHTML = 'Generating results, please be patient...';
             // wait to update dom before starting the search
             window.setTimeout(function () {
-                me.output.innerHTML = me.generate(data, parseInt(me.range.value, 10), parseInt(me.minimum.value, 10));
+                me.output.innerHTML = me.generate(data, Number(me.range.value), Number(me.minimum.value));
             }, 500);
             
         },
@@ -43,7 +43,7 @@ var Geo = (function () {
                 this.output.innerHTML = 'Error parsing xml, please check there is no extra space around the source';
             }
             
-            console.log('generate start');
+            console.log('generate start', data, range, min);
             
             var i = 0,
                 j = 0,
@@ -55,7 +55,6 @@ var Geo = (function () {
             html += '<h1>' + items.length + ' lines <br/>';
             html += 'each with at least ' + min + ' points <br/>';
             html += 'within ' + range + 'km of the line</h1>';
-
 
             for (i = 0; i < items.length; i += 1) {
                 html += '<h2>' + items[i].points.length + ' points</h1><ul>';
@@ -82,7 +81,7 @@ var Geo = (function () {
                 line = {},
                 lines = [];
             
-            if (!maxDistance) { maxDistance = 1; } // 1km
+            if (!maxDistance) { maxDistance = 0.2; } // 1km
             if (!minPoints) { minPoints = 3; } // 3 = start point, end point and at least one other point in line
             
             // loop through points to start line segment
@@ -107,7 +106,7 @@ var Geo = (function () {
                             distance = Math.abs(Math.asin(Math.sin(p1.distanceTo(p3) / R) * Math.sin(p1.bearingTo(p3).toRad() - p1.bearingTo(p2).toRad())) * R);
                             
                             // if point is close enough to line segment then shortlist
-                            if (distance < maxDistance) {
+                            if (distance <= maxDistance) {
                                 point = this.cloneObject(items[k]);
                                 point.distance = distance;
                                 line.points.push(point);
