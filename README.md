@@ -1,6 +1,7 @@
 # Geo
 
-Calculates all possible combinations of line segments and shows the distances of points from each.
+Calculates all possible combinations of line segments and shows the distances of points from each. You can view a demo of this working here:
+http://kmturley.github.io/geo/
 
 Instructions for use:
 
