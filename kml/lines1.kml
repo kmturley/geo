@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-	<name>The Great Circle.kml</name>
-	<Style id="sn_ylw-pushpin1">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl00">
+	<name>lines1.kml</name>
+	<Style id="s_ylw-pushpin_hl001">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -20,26 +11,27 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin3">
+	<StyleMap id="m_ylw-pushpin0001">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin4</styleUrl>
+			<styleUrl>#s_ylw-pushpin0000</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+			<styleUrl>#s_ylw-pushpin_hl001</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin000">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin100">
+	<StyleMap id="msn_ylw-pushpin21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin300</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin000">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -48,25 +40,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin6">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin30">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin4">
+	<Style id="s_ylw-pushpin0000">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -75,16 +49,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="s_ylw-pushpin000">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin2">
+	<Style id="sh_ylw-pushpin300">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -93,100 +58,11 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin00">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin000">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin100</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin000</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin00</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin30</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin00">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin000">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin000</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Folder>
 		<name>The Great Circle</name>
 		<Placemark>
-			<name>Nazca &gt; Bering - 324° 114°</name>
-			<styleUrl>#msn_ylw-pushpin00</styleUrl>
-			<LineString>
-				<tessellate>1</tessellate>
-				<coordinates>
-					-75.17580775620471,-14.71150281556294,0 261.1625946325974,19.67179363872984,0 
-				</coordinates>
-			</LineString>
-		</Placemark>
-		<Placemark>
-			<name>Bering &gt; Ankor Wat</name>
-			<styleUrl>#msn_ylw-pushpin3</styleUrl>
-			<LineString>
-				<tessellate>1</tessellate>
-				<coordinates>
-					-256.133020344427,13.41253099959291,0 161.6028003737926,54.61080205980063,0 
-				</coordinates>
-			</LineString>
-		</Placemark>
-		<Placemark>
-			<name>Nazca &gt; Posession Island</name>
-			<styleUrl>#msn_ylw-pushpin000</styleUrl>
-			<LineString>
-				<tessellate>1</tessellate>
-				<coordinates>
-					51.61898048631497,-46.51562297807058,0 -75.17581156822448,-14.7115241856093,0 
-				</coordinates>
-			</LineString>
-		</Placemark>
-		<Placemark>
-			<name>Posession Island &gt; Ankor Wat</name>
-			<styleUrl>#msn_ylw-pushpin000</styleUrl>
-			<LineString>
-				<tessellate>1</tessellate>
-				<coordinates>
-					51.54616751554534,-46.54210978874231,0 103.8669615445963,13.41245710590856,0 
-				</coordinates>
-			</LineString>
-		</Placemark>
-		<Placemark>
 			<name>Nazca &gt; Easter Island</name>
-			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<styleUrl>#m_ylw-pushpin0001</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -196,7 +72,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Giza &gt; Persepolis</name>
-			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<styleUrl>#m_ylw-pushpin0001</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -206,7 +82,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Persepolis &gt; Ankor Wat</name>
-			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<styleUrl>#m_ylw-pushpin0001</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -216,7 +92,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Tanna &gt; Angkor Wat</name>
-			<styleUrl>#msn_ylw-pushpin2</styleUrl>
+			<styleUrl>#msn_ylw-pushpin21</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -226,7 +102,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Easter Island &gt; Tanna</name>
-			<styleUrl>#msn_ylw-pushpin2</styleUrl>
+			<styleUrl>#msn_ylw-pushpin21</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -236,7 +112,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Nazca &gt; Cape Verde</name>
-			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<styleUrl>#m_ylw-pushpin0001</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -246,7 +122,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Cape Verde &gt; Giza</name>
-			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<styleUrl>#m_ylw-pushpin0001</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
