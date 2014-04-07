@@ -43,12 +43,14 @@ var Geo = (function () {
                 this.output.innerHTML = 'Error parsing xml, please check there is no extra space around the source';
             }
             
+            var places = data.Document.Folder ? data.Document.Folder.Placemark : data.Document.Placemark;
+            
             console.log('generate start', data, range, min);
             
             var i = 0,
                 j = 0,
                 html = '',
-                items = this.calculate(data.Document.Folder.Placemark, range, min); // distance allowed points to be from the line, min number of matches for line to be outputted
+                items = this.calculate(places, range, min); // distance allowed points to be from the line, min number of matches for line to be outputted
             
             console.log('generate end', items);
             
