@@ -5,7 +5,7 @@
 
 /*global window, document, LatLon*/
 
-var Geo = (function () {
+var Geo = function () {
     'use strict';
     
     var module = {
@@ -14,38 +14,66 @@ var Geo = (function () {
             this.el = document.getElementById('submit');
             this.input = document.getElementById('input');
             this.output = document.getElementById('output');
+            this.files = document.getElementById('files').getElementsByTagName('input');
             this.range = document.getElementById('range');
             this.minimum = document.getElementById('minimum');
-            
+
             me.el.addEventListener('click', function () {
-                me.submit();
+                me.output.innerHTML = 'Generating results, please be patient...';
+                var i = 0,
+                    files = [];
+                for (i = 0; i < me.files.length; i += 1) {
+                    if (me.files[i].checked === true) {
+                        files.push(me.files[i].value);
+                    }
+                }
+                if (files.length > 0) {
+                    me.loadList(files, me.addList(me.input.value, []), 0, function (items) {
+                        me.output.innerHTML = me.generate(items, Number(me.range.value), Number(me.minimum.value));
+                    });
+                }
             });
         },
-        submit: function () {
-            var me = this,
-                string = '',
-                data = [];
-            try {
-                data = JSON.parse(this.input.value);
-            } catch (e) {
-                string = this.stringToXml(this.input.value);
-                data = this.xmlToJson(string);
+        addList: function (data, list) {
+            var i = 0;
+            data = this.xmlToJson(this.stringToXml(data));
+            data = data.Document.Folder ? data.Document.Folder.Placemark : data.Document.Placemark;
+            for (i = 0; i < data.length; i += 1) {
+                list.push(data[i]);
             }
-            this.output.innerHTML = 'Generating results, please be patient...';
-            // wait to update dom before starting the search
-            window.setTimeout(function () {
-                me.output.innerHTML = me.generate(data, Number(me.range.value), Number(me.minimum.value));
-            }, 500);
-            
+            return list;
         },
-        generate: function (data, range, min) {
-            if (!data.Document) {
-                this.output.innerHTML = 'Error parsing xml, please check there is no extra space around the source';
-            }
-            
-            var places = data.Document.Folder ? data.Document.Folder.Placemark : data.Document.Placemark;
-            
-            console.log('generate start', data, range, min);
+        loadList: function (items, list, index, callback) {
+            var me = this,
+                i = 0,
+                places = [];
+
+            this.load(items[index], function (data) {
+                list = me.addList(data, list);
+                if (index < items.length - 1) {
+                    me.loadList(items, list, index + 1, callback);
+                } else {
+                    callback(list);
+                }
+            });
+        },
+        load: function (url, callback) {
+            var me = this,
+                xhr = new window.XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        callback(xhr.responseText);
+                    } else {
+                        callback('');
+                    }
+                }
+            };
+            xhr.send();
+        },
+        generate: function (places, range, min) {
+            console.log('generate start', places, range, min);
             
             var i = 0,
                 j = 0,
@@ -83,8 +111,8 @@ var Geo = (function () {
                 line = {},
                 lines = [];
             
-            if (!maxDistance) { maxDistance = 0.2; } // 1km
-            if (!minPoints) { minPoints = 3; } // 3 = start point, end point and at least one other point in line
+            if (typeof maxDistance === undefined) { maxDistance = 0.2; } // 1km
+            if (typeof minPoints === undefined) { minPoints = 3; } // 3 = start point, end point and at least one other point in line
             
             // loop through points to start line segment
             for (i = 0; i < items.length; i += 1) {
@@ -212,11 +240,5 @@ var Geo = (function () {
             return obj;
         }
     };
-    
-    function Klass() {
-        this.init();
-    }
-    Klass.prototype = module;
-    
-    return Klass;
-}());
+    return module;
+};

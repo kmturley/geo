@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Tallest Buildings</name>
+  <description><![CDATA[GPS Mapping using a database]]></description>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/paddle/ltblu-diamond_maps.png</href>
+      </Icon>
+      <scale>1.000000</scale>
+    </IconStyle>
+    <LabelStyle>
+      <color>FFFFFFFF</color>
+      <scale>1.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>FFFF00FF</color>
+      <width>2</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>00FF00FF</color>
+      <fill>0</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <BalloonStyle>
+      <text><![CDATA[$[description]]]></text>
+    </BalloonStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/paddle/ltblu-diamond_maps.png</href>
+      </Icon>
+      <scale>1.000000</scale>
+    </IconStyle>
+    <LabelStyle>
+      <color>FFFFFFFF</color>
+      <scale>1.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>FFFF00FF</color>
+      <width>2</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>00FF00FF</color>
+      <fill>0</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <BalloonStyle>
+      <text><![CDATA[$[description]]]></text>
+    </BalloonStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/paddle/ltblu-diamond_maps.png</href>
+      </Icon>
+      <scale>1.000000</scale>
+    </IconStyle>
+    <LabelStyle>
+      <color>FFFFFFFF</color>
+      <scale>1.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>FFFF00FF</color>
+      <width>2</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>00FF00FF</color>
+      <fill>0</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <BalloonStyle>
+      <text><![CDATA[$[description]]]></text>
+    </BalloonStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/paddle/ltblu-diamond_maps.png</href>
+      </Icon>
+      <scale>1.000000</scale>
+    </IconStyle>
+    <LabelStyle>
+      <color>FFFFFFFF</color>
+      <scale>1.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>FFFF00FF</color>
+      <width>2</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>00FF00FF</color>
+      <fill>0</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <BalloonStyle>
+      <text><![CDATA[$[description]]]></text>
+    </BalloonStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/paddle/ltblu-diamond_maps.png</href>
+      </Icon>
+      <scale>1.000000</scale>
+    </IconStyle>
+    <LabelStyle>
+      <color>FFFFFFFF</color>
+      <scale>1.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>FFFF00FF</color>
+      <width>2</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>00FF00FF</color>
+      <fill>0</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <BalloonStyle>
+      <text><![CDATA[$[description]]]></text>
+    </BalloonStyle>
+  </Style>
+  <Placemark>
+    <name>Burj Khalifa</name>
+    <Snippet></Snippet>
+    <description><![CDATA[Burj Khalifa is a skyscraper in Dubai, United Arab Emirates, and the tallest man-made structure ever built, at 828 m (2,717 ft). The building is part of the 2 km2 (490-acre) flagship development called Downtown Burj Khalifa at the "First Interchange" along Sheikh Zayed Road, near Dubai's main business district.<div><br><div><a href="http://en.wikipedia.org/wiki/Burj_Khalifa" target="_blank"><img alt="Burj Khalifa building.jpg" src="http://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Burj_Khalifa_building.jpg/250px-Burj_Khalifa_building.jpg" width="250" height="375"></a></div></div>]]></description>
+    <LookAt>
+      <longitude>55.274113</longitude>
+      <latitude>25.197140</latitude>
+      <heading>0.000000</heading>
+      <tilt>0.000000</tilt>
+      <range>1000.000000</range>
+    </LookAt>
+    <styleUrl>#style3</styleUrl>
+    <ExtendedData>
+    </ExtendedData>
+    <Point>
+      <coordinates>55.274113,25.197140,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Taipei 101</name>
+    <Snippet></Snippet>
+    <description><![CDATA[<div dir="ltr">Taipei 101 comprises 101 floors above ground and 5 floors underground. Its postmodernist approach to style incorporates traditional design elements and gives them modern treatments. The tower is designed to withstand typhoons and earthquakes. A multi-level shopping mall adjoining the tower houses hundreds of fashionable stores, restaurants and clubs.<br><br>&nbsp;</div><div dir="ltr"><a href="http://en.wikipedia.org/wiki/Taipei_101" target="_blank"><img alt="File:Taipei101.portrait.altonthompson.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Taipei101.portrait.altonthompson.jpg/299px-Taipei101.portrait.altonthompson.jpg" width="299" height="600"></a></div>]]></description>
+    <LookAt>
+      <longitude>121.565002</longitude>
+      <latitude>25.033611</latitude>
+      <heading>0.000000</heading>
+      <tilt>0.000000</tilt>
+      <range>1000.000000</range>
+    </LookAt>
+    <styleUrl>#style2</styleUrl>
+    <ExtendedData>
+    </ExtendedData>
+    <Point>
+      <coordinates>121.565002,25.033611,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Shanghai World Financial Center</name>
+    <Snippet></Snippet>
+    <description><![CDATA[It is a mixed use skyscraper which consists of offices, hotels, conference rooms, observation decks, and shopping malls on the ground floors. Park Hyatt Shanghai is the hotel component containing 174 rooms and suites. Occupying the 79th to the 93rd floors, it is the highest hotel in the world, surpassing the Grand Hyatt Shanghai on the 53rd to 87th floors of the neighboring Jin Mao Tower.[6]<div><br>&nbsp;</div><div><a href="http://en.wikipedia.org/wiki/Shanghai_World_Financial_Center" target="_blank"><img alt="File:SWFC Jul08.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/SWFC_Jul08.jpg/234px-SWFC_Jul08.jpg" width="234" height="598"></a></div>]]></description>
+    <LookAt>
+      <longitude>121.502777</longitude>
+      <latitude>31.236668</latitude>
+      <heading>0.000000</heading>
+      <tilt>0.000000</tilt>
+      <range>1000.000000</range>
+    </LookAt>
+    <styleUrl>#style4</styleUrl>
+    <ExtendedData>
+    </ExtendedData>
+    <Point>
+      <coordinates>121.502777,31.236668,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Petronas Towers</name>
+    <Snippet></Snippet>
+    <description><![CDATA[The Petronas Twin Towers were the tallest buildings in the world until Taipei 101 was completed in 2004, as measured to the top of their structural components (spires, but not antennas). The Petronas Twin Towers remain the tallest twin buildings in the world.<div><br>&nbsp;</div><div><a href="http://en.wikipedia.org/wiki/Petronas_Towers" target="_blank"><img alt="Petronas Panorama II.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Petronas_Panorama_II.jpg/250px-Petronas_Panorama_II.jpg" width="250" height="412"></a></div>]]></description>
+    <LookAt>
+      <longitude>101.711647</longitude>
+      <latitude>3.157850</latitude>
+      <heading>0.000000</heading>
+      <tilt>0.000000</tilt>
+      <range>1000.000000</range>
+    </LookAt>
+    <styleUrl>#style5</styleUrl>
+    <ExtendedData>
+    </ExtendedData>
+    <Point>
+      <coordinates>101.711647,3.157850,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Willis Tower</name>
+    <Snippet></Snippet>
+    <description><![CDATA[At the time of its completion in 1973, it was the tallest building in the world, surpassing the World Trade Center towers in New York. Currently, Willis Tower is the tallest building in the United States and the fifth-tallest freestanding structure in the world as well as the fifth tallest building in the world to the roof.<div><br><div><a href="http://en.wikipedia.org/wiki/Willis_Tower" target="_blank"><img alt="Sears Tower ss.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sears_Tower_ss.jpg/256px-Sears_Tower_ss.jpg" width="256" height="329"></a></div><div><br>&nbsp;</div></div>]]></description>
+    <LookAt>
+      <longitude>-87.635803</longitude>
+      <latitude>41.878899</latitude>
+      <heading>0.000000</heading>
+      <tilt>0.000000</tilt>
+      <range>1000.000000</range>
+    </LookAt>
+    <styleUrl>#style1</styleUrl>
+    <ExtendedData>
+    </ExtendedData>
+    <Point>
+      <coordinates>-87.635803,41.878899,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
