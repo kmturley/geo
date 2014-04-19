@@ -36,10 +36,12 @@ var Geo = function () {
         },
         addList: function (data, list) {
             var i = 0;
-            data = this.xmlToJson(this.stringToXml(data));
-            data = data.Document.Folder ? data.Document.Folder.Placemark : data.Document.Placemark;
-            for (i = 0; i < data.length; i += 1) {
-                list.push(data[i]);
+            if (data.length) {
+                data = this.xmlToJson(this.stringToXml(data));
+                data = data.Document.Folder ? data.Document.Folder.Placemark : data.Document.Placemark;
+                for (i = 0; i < data.length; i += 1) {
+                    list.push(data[i]);
+                }
             }
             return list;
         },
