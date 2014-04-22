@@ -12,7 +12,41 @@
             <h1>Geo - Calculating line segments from points</h1>
             <p>Calculates all possible combinations of line segments and shows the distances of points from each.</p>
             <p>In Google Earth right-click a folder and choose 'Save As kml'. Then paste the source below without any extra space.</p>
-            <p><textarea id="input"><?xml version="1.0" encoding="UTF-8"?>
+            <div id="files">
+                <hr />
+                <p>
+                    <input type="checkbox" value="kml/us-state-capitals.kml" /> 
+                    <a href="kml/us-state-capitals.kml" target="_blank">US State Capitals (50)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/canadian-state-capitals.kml" /> 
+                    <a href="kml/canadian-state-capitals.kml" target="_blank">Canadian State Capitals (10)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/world-pyramids.kml" /> 
+                    <a href="kml/world-pyramids.kml" target="_blank">World Pyramids (121)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/world-haarp.kml" /> 
+                    <a href="kml/world-haarp.kml" target="_blank">World Haarp &amp; Other (57)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/world-tallest-buildings.kml" /> 
+                    <a href="kml/world-tallest-buildings.kml" target="_blank">World Tallest Buildings (5)</a>
+                </p>
+                <hr />
+                <p>
+                    <input type="checkbox" value="kml/places1.kml" /> 
+                    <a href="kml/places1.kml" target="_blank">Main Places (74)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/places2.kml" /> 
+                    <a href="kml/places2.kml" target="_blank">Other Places (167)</a>
+                </p>
+                <hr />
+                <p>
+                    <input type="checkbox" value="textarea" /> Use kml below
+                    <textarea><?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>Example.kml</name>
@@ -83,49 +117,30 @@
 		</Placemark>
 	</Folder>
 </Document>
-</kml></textarea></p>
-            <div id="files">
-                <hr />
-                <p>
-                    <input type="checkbox" value="kml/us-state-capitals.kml" checked /> 
-                    <a href="kml/us-state-capitals.kml" target="_blank">US State Capitals (50)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/world-pyramids.kml" /> 
-                    <a href="kml/world-pyramids.kml" target="_blank">World Pyramids (121)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/world-haarp.kml" /> 
-                    <a href="kml/world-haarp.kml" target="_blank">World Haarp &amp; Other (57)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/world-tallest-buildings.kml" /> 
-                    <a href="kml/world-tallest-buildings.kml" target="_blank">World Tallest Buildings (5)</a>
+</kml></textarea>
                 </p>
                 <hr />
                 <p>
-                    <input type="checkbox" value="kml/places1.kml" /> 
-                    <a href="kml/places1.kml" target="_blank">Main Places (74)</a>
+                    <input type="checkbox" value="segments" /> Calculate line segments (CPU intensive!)
                 </p>
-                <p>
-                    <input type="checkbox" value="kml/places2.kml" /> 
-                    <a href="kml/places2.kml" target="_blank">Other Places (167)</a>
-                </p>
-                <hr />
+                <p><input type="text" value="0.5" size="1" id="range" /> Max distance from line (km)</p>
+                <p><input type="text" value="3" size="1" id="minimum" /> Minimum points lines must have</p>
             </div>
-            <p><input type="text" value="0.5" size="1" id="range" /> Max distance from line (km)</p>
-            <p><input type="text" value="3" size="1" id="minimum" /> Minimum points lines must have</p>
-            <p><input type="submit" value="Load Results" id="submit" /></p>
         </div>
         <div class="col w2of3">
+            <div id="map3d"></div>
             <pre id="output" class="output">Click 'Load Results' to start calculating line segments</pre>
         </div>
     </div>
+    <script src="//www.google.com/jsapi?key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw"></script>
+    <script src="js/Earth.js"></script>
     <script src="js/LatLon.js"></script>
     <script src="js/Geo.js"></script>
     <script>
         var geo = new Geo();
-        geo.init();
+        geo.init({
+            id: 'files'
+        });
     </script>
 </body>
 </html>
