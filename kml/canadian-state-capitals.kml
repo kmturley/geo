@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>canadian-state-capitals.kml</name>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Canadian State Capitals</name>
+		<open>1</open>
+		<Placemark>
+			<name>Toronto, Ontario</name>
+			<LookAt>
+				<longitude>-79.3917411244425</longitude>
+				<latitude>43.66184315913728</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002679625338871653</heading>
+				<tilt>0</tilt>
+				<range>388.2524715782557</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-79.39183328183353,43.66278671823725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Quebec City, Quebec</name>
+			<LookAt>
+				<longitude>-71.21318890330949</longitude>
+				<latitude>46.80909619797148</latitude>
+				<altitude>0</altitude>
+				<heading>0.0005089653016794913</heading>
+				<tilt>0</tilt>
+				<range>360.5927847895427</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-71.2141695262752,46.80865717645667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Winnipeg, Manitoba</name>
+			<LookAt>
+				<longitude>-97.14617941986381</longitude>
+				<latitude>49.88379719314528</latitude>
+				<altitude>0</altitude>
+				<heading>-0.02182247548168018</heading>
+				<tilt>0</tilt>
+				<range>1006.863217487833</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.14683536181073,49.88442841457955,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Regina, Saskatchewan</name>
+			<LookAt>
+				<longitude>-104.6147440605911</longitude>
+				<latitude>50.43293592759309</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01106732110035254</heading>
+				<tilt>0</tilt>
+				<range>359.7149968372755</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-104.6151900630128,50.43247863380584,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Halifax, Nova Scotia</name>
+			<LookAt>
+				<longitude>-63.57307276473825</longitude>
+				<latitude>44.6476990142664</latitude>
+				<altitude>0</altitude>
+				<heading>0.01781779668730953</heading>
+				<tilt>0</tilt>
+				<range>143.6659737110689</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-63.57345339796385,44.64791196449274,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fredericton, New Brunswick</name>
+			<LookAt>
+				<longitude>-66.6362532801661</longitude>
+				<latitude>45.95919254552636</latitude>
+				<altitude>0</altitude>
+				<heading>4.676504958681615e-05</heading>
+				<tilt>0</tilt>
+				<range>200.9146392723862</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-66.63627241554209,45.95932202272595,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Victoria, British Columbia</name>
+			<LookAt>
+				<longitude>-123.3698884150142</longitude>
+				<latitude>48.41863717999951</latitude>
+				<altitude>0</altitude>
+				<heading>0.02887447369588993</heading>
+				<tilt>0</tilt>
+				<range>445.0839638837566</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-123.3700920002233,48.41951738455489,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Charlottetown, Prince Edward Island</name>
+			<LookAt>
+				<longitude>-63.12586020636465</longitude>
+				<latitude>46.23490208019513</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0003127426808003599</heading>
+				<tilt>0</tilt>
+				<range>163.899726728935</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-63.12606616266785,46.23499608821463,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Edmonton, Alberta</name>
+			<LookAt>
+				<longitude>-113.5064364053075</longitude>
+				<latitude>53.53375380823229</latitude>
+				<altitude>0</altitude>
+				<heading>0.007946793537884857</heading>
+				<tilt>0</tilt>
+				<range>337.3876395014513</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-113.5066299861336,53.53344911309271,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>St. John&apos;s, Newfoundland</name>
+			<LookAt>
+				<longitude>-52.72349929784323</longitude>
+				<latitude>47.58307246618117</latitude>
+				<altitude>0</altitude>
+				<heading>0.02075666492617502</heading>
+				<tilt>0</tilt>
+				<range>269.1515239926204</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-52.72402677019131,47.58329486484951,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
