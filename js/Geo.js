@@ -31,32 +31,34 @@ var Geo = function () {
             }
         },
         onClick: function (e) {
-            var me = this,
-                i = 0,
-                segments = false,
-                urls = [],
-                list = [];
-            
             if (!e) { e = window.event; }
-            me.earth.reset();
-            for (i = 0; i < this.inputs.length; i += 1) {
-                if (this.inputs[i].checked === true) {
-                    if (this.inputs[i].value === 'textarea') {
-                        list = me.add(this.textarea.value, list);
-                    } else if (this.inputs[i].value === 'segments') {
-                        segments = true;
-                    } else {
-                        urls.push(this.inputs[i].value);
+            if (e.target.nodeName === 'INPUT') {
+                var me = this,
+                    i = 0,
+                    segments = false,
+                    urls = [],
+                    list = [];
+
+                me.earth.reset();
+                for (i = 0; i < this.inputs.length; i += 1) {
+                    if (this.inputs[i].checked === true) {
+                        if (this.inputs[i].value === 'textarea') {
+                            list = me.add(this.textarea.value, list);
+                        } else if (this.inputs[i].value === 'segments') {
+                            segments = true;
+                        } else {
+                            urls.push(this.inputs[i].value);
+                        }
                     }
                 }
-            }
-            if (urls.length > 0) {
-                this.earth.reset();
-                this.loadAll(0, urls, list, function (items) {
-                    if (segments === true) {
-                        me.output.innerHTML = me.generate(items, Number(me.range.value), Number(me.minimum.value));
-                    }
-                });
+                if (urls.length > 0) {
+                    this.earth.reset();
+                    this.loadAll(0, urls, list, function (items) {
+                        if (segments === true) {
+                            me.output.innerHTML = me.generate(items, Number(me.range.value), Number(me.minimum.value));
+                        }
+                    });
+                }
             }
         },
         loadAll: function (index, urls, list, callback) {
@@ -89,7 +91,7 @@ var Geo = function () {
             var i = 0;
             data = this.stringToXml(data);
             data = this.xmlToJson(data);
-            data = data.Document.Folder ? data.Document.Folder.Placemark : data.Document.Placemark;
+            data = data.Document.Placemark || data.Document.Folder.Placemark || data.Document.Folder;
             for (i = 0; i < data.length; i += 1) {
                 list.push(data[i]);
                 this.earth.addPlace(data[i]);
@@ -97,15 +99,11 @@ var Geo = function () {
             return list;
         },
         generate: function (places, range, min) {
-            console.log('generate start', places, range, min);
-
             var i = 0,
                 j = 0,
                 html = '',
                 items = this.calculate(places, range, min); // distance allowed points to be from the line, min number of matches for line to be outputted
-            
-            console.log('generate end', items);
-            
+
             html += '<h1>' + items.length + ' lines <br/>';
             html += 'each with at least ' + min + ' points <br/>';
             html += 'within ' + range + 'km of the line</h1>';
@@ -115,7 +113,7 @@ var Geo = function () {
                 this.earth.addLine(items[i].bearing + '° - ' + items[i].distance + 'km', this.generateColor(items[i].distance / this.longest), items[i].points[0], items[i].points[1]);
                 
                 for (j = 0; j < items[i].points.length; j += 1) {
-                    html += '<li>' + Math.round(items[i].points[j].deviation || 0) + 'km - ' + items[i].points[j].name['#text'] + ' ' + Math.round(items[i].points[j].bearing || 0) + '</li>';
+                    html += '<li>' + Math.round(items[i].points[j].deviation || 0) + 'km - ' + items[i].points[j].name['#text'] + '</li>';
                 }
                 html += '</ul>';
             }
@@ -143,6 +141,9 @@ var Geo = function () {
             var i = 0,
                 j = 0,
                 k = 0,
+                m1 = [],
+                m2 = [],
+                m3 = [],
                 c1 = [],
                 c2 = [],
                 c3 = [],
@@ -150,7 +151,7 @@ var Geo = function () {
                 p2 = {},
                 p3 = {},
                 R = 6371,
-                distance = 0,
+                deviation = 0,
                 point = {},
                 line = {},
                 lines = [];
@@ -162,12 +163,14 @@ var Geo = function () {
             
             // loop through points to start line segment
             for (i = 0; i < items.length; i += 1) {
-                c1 = items[i].Point.coordinates['#text'].split(',');
+                m1 = items[i].Point || items[i].Placemark.Point || items[i].Placemark[0].Point;
+                c1 = m1.coordinates['#text'].split(',');
                 p1 = new LatLon(c1[1], c1[0]);
                 
                 // loop through points to end the line segment
                 for (j = (i + 1); j < items.length; j += 1) {
-                    c2 = items[j].Point.coordinates['#text'].split(',');
+                    m2 = items[j].Point || items[j].Placemark.Point || items[j].Placemark[0].Point;
+                    c2 = m2.coordinates['#text'].split(',');
                     p2 = new LatLon(c2[1], c2[0]);
                     line = {
                         name: 'Line ' + (lines.length + 1),
@@ -176,27 +179,30 @@ var Geo = function () {
                         distance: Math.round(p1.distanceTo(p2))
                     };
 
-                    // loop through all other points and check minimum distance to line segment
-                    for (k = 0; k < items.length; k += 1) {
-                        if (k !== i && k !== j) {
-                            c3 = items[k].Point.coordinates['#text'].split(',');
-                            p3 = new LatLon(c3[1], c3[0]);
-                            distance = Math.abs(Math.asin(Math.sin(p1.distanceTo(p3) / R) * Math.sin(p1.bearingTo(p3).toRad() - p1.bearingTo(p2).toRad())) * R);
-
-                            // if point is close enough to line segment then shortlist
-                            if (distance <= maxDistance) {
+                    // loop through all other points and check their distance to line segment (deviation)
+                    for (k = (j + 1); k < items.length; k += 1) {
+                        m3 = items[k].Point || items[k].Placemark.Point || items[k].Placemark[0].Point;
+                        c3 = m3.coordinates['#text'].split(',');
+                        p3 = new LatLon(c3[1], c3[0]);
+                        
+                        // make sure all points are far enough away to prevent craziness
+                        if (p1.distanceTo(p2) > 5 || p1.distanceTo(p3) > 5 || p2.distanceTo(p3) > 5) {
+                            deviation = Math.abs(Math.asin(Math.sin(p1.distanceTo(p3) / R) * Math.sin(p1.bearingTo(p3).toRad() - p1.bearingTo(p2).toRad())) * R);
+                            // if third point is close enough to line segment then shortlist
+                            if (deviation <= maxDistance) {
                                 point = this.cloneObject(items[k]);
                                 point.lat = c3[1];
                                 point.long = c3[0];
-                                point.deviation = distance;
+                                point.deviation = deviation;
                                 line.points.push(point);
                             }
                         }
                     }
+
                     // if the number of matches is enough then save the line
                     if (line.points.length >= minPoints) {
                         lines.push(line);
-                        
+
                         // update the longest line matched with points
                         if (line.distance > this.longest) {
                             this.longest = line.distance;
