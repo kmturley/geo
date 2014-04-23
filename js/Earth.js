@@ -21,6 +21,14 @@ var Earth = function () {
             google.setOnLoadCallback(function () {
                 google.earth.createInstance(me.defaults.id, function (e) {
                     me.ge = e;
+                    me.ge.getWindow().setVisibility(true);
+                    
+                    var lookAt = me.ge.createLookAt('');
+                    lookAt.setLatitude(41.26);
+                    lookAt.setLongitude(-100.00);
+                    lookAt.setRange(8000000.0);
+                    me.ge.getView().setAbstractView(lookAt);
+                    //me.ge.getNavigationControl().setVisibility(this.ge.VISIBILITY_AUTO);
                 }, function (e) {
                     console.log('error', e);
                 });
@@ -32,9 +40,6 @@ var Earth = function () {
                 index = false;
 
             this.lines = items;
-            this.ge.getWindow().setVisibility(true);
-            this.ge.getNavigationControl().setVisibility(this.ge.VISIBILITY_AUTO);
-
             for (i = 0; i < this.lines.length; i += 1) {
                 index = this.lines[i].center;
                 for (j = 0; j < this.lines[i].places.length; j += 1) {
@@ -55,7 +60,7 @@ var Earth = function () {
         },
         addKml: function (url) {
             var me = this;
-            google.earth.fetchKml(this.ge, url, function(data) {
+            google.earth.fetchKml(this.ge, url, function (data) {
                 console.log('addKml', url, data);
                 me.ge.getFeatures().appendChild(data);
             });
@@ -63,11 +68,12 @@ var Earth = function () {
         addPlace: function (item) {
             var placemark = this.ge.createPlacemark(''),
                 point = this.ge.createPoint(''),
-                longlat = item.Point.coordinates['#text'].split(',');
+                itempoint = item.Point || item.Placemark.Point || item.Placemark[0].Point,
+                longlat = itempoint.coordinates['#text'].split(',');
    
             placemark.setName(item.name['#text']);
-            point.setLatitude(parseInt(longlat[1], 10));
-            point.setLongitude(parseInt(longlat[0], 10));
+            point.setLatitude(Number(longlat[1]));
+            point.setLongitude(Number(longlat[0]));
             placemark.setGeometry(point);
             this.ge.getFeatures().appendChild(placemark);
         },
@@ -75,8 +81,10 @@ var Earth = function () {
             var i = 0,
                 mark = this.ge.createPlacemark(''),
                 line = this.ge.createLineString(''),
-                longlat = item.Point.coordinates['#text'].split(','),
-                longlat2 = item2.Point.coordinates['#text'].split(','),
+                itempoint = item.Point || item.Placemark.Point || item.Placemark[0].Point,
+                itempoint2 = item2.Point || item2.Placemark.Point || item2.Placemark[0].Point,
+                longlat = itempoint.coordinates['#text'].split(','),
+                longlat2 = itempoint2.coordinates['#text'].split(','),
                 lineStyle;
 
             line.setTessellate(true);
@@ -84,8 +92,8 @@ var Earth = function () {
             mark.setName(name || item.name['#text']);
             //mark.setDescription(item.desc);
             mark.setGeometry(line);
-            line.getCoordinates().pushLatLngAlt(parseInt(longlat[1], 10), parseInt(longlat[0], 10), 0);
-            line.getCoordinates().pushLatLngAlt(parseInt(longlat2[1], 10), parseInt(longlat2[0], 10), 0);
+            line.getCoordinates().pushLatLngAlt(Number(longlat[1]), Number(longlat[0]), 0);
+            line.getCoordinates().pushLatLngAlt(Number(longlat2[1]), Number(longlat2[0]), 0);
 
             // styling
             mark.setStyleSelector(this.ge.createStyle(''));
