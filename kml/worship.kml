@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>worship.kml</name>
+	<Style id="s_ylw-pushpin_hl200">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin01">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin1000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl2101">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin41</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl21000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin121">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl71</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin04">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl011</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin42">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin60">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin700</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl21000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin3000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin42</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2101</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin700">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin91</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl71">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl011">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl8">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin41">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin91">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Worship</name>
+		<open>1</open>
+		<Placemark>
+			<name>Mecca, Saudi Arabia</name>
+			<LookAt>
+				<longitude>39.82478999974701</longitude>
+				<latitude>21.4216179996797</latitude>
+				<altitude>0</altitude>
+				<heading>-9.240147460587804e-11</heading>
+				<tilt>0</tilt>
+				<range>1064.349776642044</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>39.82617558758143,21.42248780163009,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Temple of Jupiter, Damascus, Syria</name>
+			<LookAt>
+				<longitude>36.30520631258315</longitude>
+				<latitude>33.51152411787594</latitude>
+				<altitude>0</altitude>
+				<heading>0.0005683112157681777</heading>
+				<tilt>0</tilt>
+				<range>230.8465536536921</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>36.30530264860921,33.51122518244708,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Phayagyi Pagoda, Myanmar</name>
+			<LookAt>
+				<longitude>95.25853145199184</longitude>
+				<latitude>18.82541007513676</latitude>
+				<altitude>0</altitude>
+				<heading>-5.004801575950436e-12</heading>
+				<tilt>0</tilt>
+				<range>377.1090997938499</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin3000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>95.2582442500987,18.8251875256121,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ellora Cave Temple, India</name>
+			<LookAt>
+				<longitude>75.17943202180977</longitude>
+				<latitude>20.02373974835255</latitude>
+				<altitude>0</altitude>
+				<heading>8.632780787228828e-10</heading>
+				<tilt>0</tilt>
+				<range>214.9863073303783</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.179412,20.023787,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Machu Picchu, Peru</name>
+			<LookAt>
+				<longitude>-72.54373807150694</longitude>
+				<latitude>-13.16370653191655</latitude>
+				<altitude>0</altitude>
+				<heading>-25.39759189046776</heading>
+				<tilt>0</tilt>
+				<range>2023.653927596902</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0001</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-72.545608,-13.164562,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sanchi Temple, India</name>
+			<LookAt>
+				<longitude>77.73938186643745</longitude>
+				<latitude>23.47945017239648</latitude>
+				<altitude>0</altitude>
+				<heading>0.08614905965391917</heading>
+				<tilt>0</tilt>
+				<range>416.3433198671207</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.738519,23.479584,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>The Temple of Jupiter, Pompeii, Italy</name>
+			<LookAt>
+				<longitude>14.48469852727916</longitude>
+				<latitude>40.75005817321137</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001346539509589198</heading>
+				<tilt>0</tilt>
+				<range>140.9725323639852</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>14.48446641462077,40.75001219316101,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Konarak Sun Temple, India</name>
+			<LookAt>
+				<longitude>86.09498967005936</longitude>
+				<latitude>19.88753716473143</latitude>
+				<altitude>0</altitude>
+				<heading>0.0278107124217771</heading>
+				<tilt>0</tilt>
+				<range>373.7577773518448</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>86.094587,19.887461,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Baalbek, Lebanon</name>
+			<LookAt>
+				<longitude>36.20546790161221</longitude>
+				<latitude>34.00719511907794</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001784709993175095</heading>
+				<tilt>0</tilt>
+				<range>258.5053730042233</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin04</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>36.20525044151228,34.00723710713539,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Grand Mosque, Kuwait City</name>
+			<LookAt>
+				<longitude>47.97488624274203</longitude>
+				<latitude>29.37863540682922</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001696236342060572</heading>
+				<tilt>0</tilt>
+				<range>407.1718239864035</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>47.97509074699015,29.37932662562394,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mount Zion, Israel</name>
+			<LookAt>
+				<longitude>35.23567922621441</longitude>
+				<latitude>31.77806022791648</latitude>
+				<altitude>0</altitude>
+				<heading>0.007109213853969299</heading>
+				<tilt>0</tilt>
+				<range>237.7415534975862</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin3000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>35.23538724796635,31.77799726792711,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Borobudur Temple, Indonesia</name>
+			<LookAt>
+				<longitude>110.2035268038091</longitude>
+				<latitude>-7.607756521191936</latitude>
+				<altitude>0</altitude>
+				<heading>-89.9999890306828</heading>
+				<tilt>44.99214775188633</tilt>
+				<range>346.8863239227695</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin121</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>110.203745,-7.607874000000001,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>pyramids.kml</name>
+	<Style id="s_ylw-pushpin001">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin2000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl60">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl220">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin8">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin61</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin3000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin42</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2101</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0101">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin70</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin011">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin101</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl03</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin402">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0111">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin61">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl03">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin310">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin400</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl211</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin50</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin410">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl31</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0300">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl50</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin011">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl211">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin600">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl230</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl200">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl50">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin60">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin700</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl31">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin70">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin80">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin400">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin300">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin50">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0101</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl60</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl301">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0101">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin200">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl131</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin7">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl2101">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl230">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin42">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl131">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin700">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin101">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin031">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin80</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0101</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin33">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin402</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl220</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin42">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin300</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl301</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl61">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin033">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0111</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin011</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl61</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Pyramids</name>
+		<Placemark>
+			<name>Castillo de Teayo Pyramid, Mexico</name>
+			<LookAt>
+				<longitude>-97.63312669949129</longitude>
+				<latitude>20.75008694017935</latitude>
+				<altitude>0</altitude>
+				<heading>-14.81147604469335</heading>
+				<tilt>0</tilt>
+				<range>101.3079228425383</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.633244,20.750108,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Xochitecatl Pyramid, Mexico</name>
+			<LookAt>
+				<longitude>-98.35046859422758</longitude>
+				<latitude>19.24483830479207</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001566968518150728</heading>
+				<tilt>0</tilt>
+				<range>543.1200611656054</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin100</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.34945640211991,19.24498250450769,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Huapalcalco Pyramid, Mexico</name>
+			<LookAt>
+				<longitude>-98.36227906989689</longitude>
+				<latitude>20.11700238415302</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001978025542923316</heading>
+				<tilt>0</tilt>
+				<range>323.9552952253213</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.362495,20.117035,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Transamerica Pyramid, USA</name>
+			<LookAt>
+				<longitude>-122.3992601404893</longitude>
+				<latitude>37.79509938636312</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001213557253022104</heading>
+				<tilt>0</tilt>
+				<range>1039.486753345677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0010</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-122.4029772848055,37.79502110221879,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Karnak, Egypt</name>
+			<LookAt>
+				<longitude>32.65600073804082</longitude>
+				<latitude>25.71939544438923</latitude>
+				<altitude>0</altitude>
+				<heading>0.006385666144518566</heading>
+				<tilt>0</tilt>
+				<range>1081.166175916469</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0010</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>32.65712410457849,25.71895359390526,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Las Higeras, Mexico</name>
+			<LookAt>
+				<longitude>-96.6233113459917</longitude>
+				<latitude>20.03454808537863</latitude>
+				<altitude>0</altitude>
+				<heading>1.02222389025289</heading>
+				<tilt>0</tilt>
+				<range>109.1151096362121</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin6</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-96.6233861111111,20.03454444444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ukrainian Pyramid</name>
+			<Point>
+				<coordinates>33.55,44.60388888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pi&apos;ilanihale Temple, Hawaii</name>
+			<LookAt>
+				<longitude>-156.0396177166136</longitude>
+				<latitude>20.80378081250995</latitude>
+				<altitude>0</altitude>
+				<heading>7.72258693959931</heading>
+				<tilt>0</tilt>
+				<range>298.8921645139128</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin031</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-156.040057,20.803673,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Edzna, Mexico</name>
+			<LookAt>
+				<longitude>-90.23050227207077</longitude>
+				<latitude>19.5962065655957</latitude>
+				<altitude>0</altitude>
+				<heading>116.3285568389448</heading>
+				<tilt>0</tilt>
+				<range>591.2547612794455</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin010</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-90.229095,19.59676,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Temple Of Ramses, Egypt</name>
+			<LookAt>
+				<longitude>31.62596379425931</longitude>
+				<latitude>22.33680256375138</latitude>
+				<altitude>0</altitude>
+				<heading>9.61150331724418</heading>
+				<tilt>0</tilt>
+				<range>247.7618966433493</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin42</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>31.625587,22.336892,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Temple of Amun, Egypt</name>
+			<LookAt>
+				<longitude>25.54434550650207</longitude>
+				<latitude>29.20527332533196</latitude>
+				<altitude>0</altitude>
+				<heading>-6.533181429581585</heading>
+				<tilt>0</tilt>
+				<range>661.8328691266154</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin42</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>25.543512,29.205161,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ankor Wat, Cambodia</name>
+			<LookAt>
+				<longitude>103.8669859999493</longitude>
+				<latitude>13.41246900010576</latitude>
+				<altitude>0</altitude>
+				<heading>-1.175135440933733e-11</heading>
+				<tilt>0</tilt>
+				<range>1000.000185811018</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin3000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>103.8669778438234,13.41254436988245,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Uxmal, Mexico</name>
+			<LookAt>
+				<longitude>-89.76884418833016</longitude>
+				<latitude>20.35964834529855</latitude>
+				<altitude>0</altitude>
+				<heading>20.01538841213737</heading>
+				<tilt>0</tilt>
+				<range>801.3049470702371</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin010</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-89.76957400000001,20.360783,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mochican Pyramid, Peru</name>
+			<LookAt>
+				<longitude>-79.60162907558365</longitude>
+				<latitude>-6.801619207746305</latitude>
+				<altitude>0</altitude>
+				<heading>5.714666915570267</heading>
+				<tilt>0</tilt>
+				<range>607.2977059045571</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-79.602897,-6.801308,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tikal, Guatemala</name>
+			<LookAt>
+				<longitude>-89.62314310467902</longitude>
+				<latitude>17.22254324423804</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001749089060000231</heading>
+				<tilt>0</tilt>
+				<range>241.4896030056885</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-89.623349,17.223063,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Great Pyramids, Giza, Egypt</name>
+			<LookAt>
+				<longitude>31.13510352118806</longitude>
+				<latitude>29.97957358346909</latitude>
+				<altitude>0</altitude>
+				<heading>0.0003515540065807795</heading>
+				<tilt>0</tilt>
+				<range>1000.474456987805</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0300</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>31.134179,29.979189,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chichen-itza, Mexico</name>
+			<LookAt>
+				<longitude>-88.56667139167708</longitude>
+				<latitude>20.68312272507477</latitude>
+				<altitude>0</altitude>
+				<heading>20.91514894189914</heading>
+				<tilt>0</tilt>
+				<range>1028.38004025796</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin5</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-88.568609,20.683133,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bosnian Pyramids, Bosnia</name>
+			<LookAt>
+				<longitude>18.17861866086216</longitude>
+				<latitude>43.97728277015256</latitude>
+				<altitude>0</altitude>
+				<heading>0.001399001446307678</heading>
+				<tilt>0</tilt>
+				<range>1239.194998608472</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>18.17636,43.97694,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tiwanaku, Bolivia</name>
+			<LookAt>
+				<longitude>-68.67249463990959</longitude>
+				<latitude>-16.55487204329974</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001770565045549034</heading>
+				<tilt>0</tilt>
+				<range>243.8409778836966</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-68.673316,-16.554804,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pyramid of the Sun, Mexico</name>
+			<LookAt>
+				<longitude>-98.84337441234467</longitude>
+				<latitude>19.69291763153936</latitude>
+				<altitude>0</altitude>
+				<heading>6.318740852146667e-05</heading>
+				<tilt>0</tilt>
+				<range>825.2111503709141</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin310</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.84370505287788,19.69244094948496,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Yang Ling Pyramid, China</name>
+			<LookAt>
+				<longitude>108.6982242781937</longitude>
+				<latitude>34.37493555396095</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01713344434498304</heading>
+				<tilt>0</tilt>
+				<range>566.0814010705316</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>108.698056,34.374871,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tingambato, Mexico</name>
+			<LookAt>
+				<longitude>-101.8584289829181</longitude>
+				<latitude>19.49425133340959</latitude>
+				<altitude>0</altitude>
+				<heading>14.32257845457149</heading>
+				<tilt>0</tilt>
+				<range>288.6283586615659</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-101.858492,19.494019,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>El Rey, Mexico</name>
+			<LookAt>
+				<longitude>-86.78112676383428</longitude>
+				<latitude>21.06170734704691</latitude>
+				<altitude>0</altitude>
+				<heading>21.27521355587604</heading>
+				<tilt>0</tilt>
+				<range>215.1430329181412</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin010</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-86.78125,21.061817,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Campana, Mexico</name>
+			<LookAt>
+				<longitude>-103.7259407419271</longitude>
+				<latitude>19.26766625971244</latitude>
+				<altitude>0</altitude>
+				<heading>14.32383800025408</heading>
+				<tilt>0</tilt>
+				<range>399.0600823125479</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-103.726335,19.267251,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tula Pyramid, Mexico</name>
+			<LookAt>
+				<longitude>-99.34065318531795</longitude>
+				<latitude>20.06354873496759</latitude>
+				<altitude>0</altitude>
+				<heading>-33.29250551411925</heading>
+				<tilt>0</tilt>
+				<range>452.4467883154492</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin10</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-99.34032751600367,20.06320087488306,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Caral-Supe, Peru</name>
+			<LookAt>
+				<longitude>-77.52021144130921</longitude>
+				<latitude>-10.89244745849773</latitude>
+				<altitude>0</altitude>
+				<heading>-23.70929866746793</heading>
+				<tilt>0</tilt>
+				<range>877.0567313894521</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin200</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-77.51934300000001,-10.893512,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rock Lake, Pyramids</name>
+			<LookAt>
+				<longitude>-88.91605504962163</longitude>
+				<latitude>43.08308844444596</latitude>
+				<altitude>0</altitude>
+				<heading>0.02044901085109179</heading>
+				<tilt>0</tilt>
+				<range>5531.131366464934</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-88.930378,43.077971,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Vega de la Pena, Mexico</name>
+			<LookAt>
+				<longitude>-97.14825767143142</longitude>
+				<latitude>19.96337884564121</latitude>
+				<altitude>0</altitude>
+				<heading>0.8069205143424891</heading>
+				<tilt>0</tilt>
+				<range>469.468038581139</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin01</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-97.14882099999998,19.963209,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pyramid, Rome</name>
+			<LookAt>
+				<longitude>12.48093844667202</longitude>
+				<latitude>41.87645805316499</latitude>
+				<altitude>0</altitude>
+				<heading>-2.270332073642106e-06</heading>
+				<tilt>0</tilt>
+				<range>93.46300894390424</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin600</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>12.480892,41.876429,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Calakmul, Mexico</name>
+			<LookAt>
+				<longitude>-89.84059663985404</longitude>
+				<latitude>18.12123921334322</latitude>
+				<altitude>0</altitude>
+				<heading>-132.95040862473</heading>
+				<tilt>0</tilt>
+				<range>57364.39390980111</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin410</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-89.78284499999999,18.122001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Great Pyramid of Cholula</name>
+			<LookAt>
+				<longitude>-98.3019022826649</longitude>
+				<latitude>19.05834229916283</latitude>
+				<altitude>0</altitude>
+				<heading>6.623878432054295e-05</heading>
+				<tilt>0</tilt>
+				<range>636.8155112760147</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin600</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.302047,19.058122,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gebel Barkal Pyramids, Egypt</name>
+			<LookAt>
+				<longitude>31.82258205953371</longitude>
+				<latitude>18.53820444018424</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0008047230595497487</heading>
+				<tilt>0</tilt>
+				<range>168.5702509585828</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin600</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>31.822355,18.538096,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chinese Pyramid</name>
+			<LookAt>
+				<longitude>109.2556494825869</longitude>
+				<latitude>34.38149981948343</latitude>
+				<altitude>0</altitude>
+				<heading>0.001039303887221634</heading>
+				<tilt>0</tilt>
+				<range>1453.908211650719</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin33</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>109.2539074667138,34.38136861698244,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Guimar Pyramids, Canary Islands</name>
+			<LookAt>
+				<longitude>-16.41234723721574</longitude>
+				<latitude>28.32221508170614</latitude>
+				<altitude>0</altitude>
+				<heading>0.0004522226224284248</heading>
+				<tilt>0</tilt>
+				<range>249.0758864958645</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-16.412718,28.322097,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ahuehuetla, Mexico</name>
+			<LookAt>
+				<longitude>-99.98931953756725</longitude>
+				<latitude>18.3529045394895</latitude>
+				<altitude>0</altitude>
+				<heading>-0.2245966462494554</heading>
+				<tilt>0</tilt>
+				<range>375.5393543002692</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-99.98934199999999,18.352992,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Monte Alban, Mexico</name>
+			<LookAt>
+				<longitude>-96.76808516079893</longitude>
+				<latitude>17.04464586515459</latitude>
+				<altitude>0</altitude>
+				<heading>-24.47951713305968</heading>
+				<tilt>0</tilt>
+				<range>118.2065170716326</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-96.76822799999999,17.044732,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pyramid Cuicuilco, Mexico</name>
+			<LookAt>
+				<longitude>-99.18170290354998</longitude>
+				<latitude>19.30172224671698</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002012154781794014</heading>
+				<tilt>0</tilt>
+				<range>102.2050801871401</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin033</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-99.181606,19.301643,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Malinaico, Mexico</name>
+			<LookAt>
+				<longitude>-99.50285933149014</longitude>
+				<latitude>18.95327917393365</latitude>
+				<altitude>0</altitude>
+				<heading>-0.3709868045905738</heading>
+				<tilt>0</tilt>
+				<range>183.7217286629383</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-99.503047,18.953221,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tzintzuntzan, Mexico</name>
+			<LookAt>
+				<longitude>-101.5731590821066</longitude>
+				<latitude>19.62369146693689</latitude>
+				<altitude>0</altitude>
+				<heading>14.32229093780594</heading>
+				<tilt>0</tilt>
+				<range>735.2022540793112</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-101.573839,19.624034,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ihuatzio, Mexico</name>
+			<LookAt>
+				<longitude>-101.6202463265688</longitude>
+				<latitude>19.57741814972535</latitude>
+				<altitude>0</altitude>
+				<heading>14.32257399678123</heading>
+				<tilt>0</tilt>
+				<range>1163.917387788991</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin011</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-101.621133,19.578017,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Yonaguni Pyramids</name>
+			<LookAt>
+				<longitude>123.0082944172492</longitude>
+				<latitude>24.43714993050675</latitude>
+				<altitude>0</altitude>
+				<heading>0.009971967758116455</heading>
+				<tilt>0</tilt>
+				<range>16588.46454094633</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin60</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>123.01075,24.42537,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Las Vegas Pyramid, USA</name>
+			<LookAt>
+				<longitude>-115.1760670823844</longitude>
+				<latitude>36.09549823408999</latitude>
+				<altitude>0</altitude>
+				<heading>-8.098124289410899e-05</heading>
+				<tilt>0</tilt>
+				<range>250.1613036315378</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin033</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-115.1760989928958,36.09550319271722,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
