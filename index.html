@@ -11,41 +11,46 @@
         <div class="col w1of3">
             <h1>Geo - Calculating line segments from points</h1>
             <p>Calculates all possible combinations of line segments and shows the distances of points from each.</p>
-            <p>In Google Earth right-click a folder and choose 'Save As kml'. Then paste the source below without any extra space.</p>
+            <p>Do not select more than 120 points at once, otherwise the calculations will take a long time!</p>
             <div id="files">
                 <hr />
                 <p>
+                    <input type="checkbox" value="segments" /> Calculate line segments (CPU intensive!)
+                </p>
+                <p><input type="text" value="0.5" size="1" id="range" /> Max distance from line (km)</p>
+                <p><input type="text" value="3" size="1" id="minimum" /> Minimum points lines must have</p>
+                <hr />
+                <p>
+                    <input type="checkbox" value="kml/earthquakes.kml" /> 
+                    <a href="kml/earthquakes.kml" target="_blank">Earthquakes (85)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/landmarks.kml" /> 
+                    <a href="kml/landmarks.kml" target="_blank">Landmarks (74)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/obelisks.kml" /> 
+                    <a href="kml/obelisks.kml" target="_blank">Obelisks (14)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/worship.kml" /> 
+                    <a href="kml/worship.kml" target="_blank">Places of Worship (14)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/pyramids.kml" /> 
+                    <a href="kml/pyramids.kml" target="_blank">Pyramids (42)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/haarp.kml" /> 
+                    <a href="kml/haarp.kml" target="_blank">Haarp &amp; Military (42)</a>
+                </p>
+                <p>
                     <input type="checkbox" value="kml/us-state-capitals.kml" /> 
-                    <a href="kml/us-state-capitals.kml" target="_blank">US &amp; Canadian State Capitals (60)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/world-earthquakes.kml" /> 
-                    <a href="kml/world-earthquakes.kml" target="_blank">World Earthquakes 8+ (84)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/world-pyramids.kml" /> 
-                    <a href="kml/world-pyramids.kml" target="_blank">World Pyramids (121)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/world-haarp.kml" /> 
-                    <a href="kml/world-haarp.kml" target="_blank">World Haarp &amp; Other (57)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/world-tallest-buildings.kml" /> 
-                    <a href="kml/world-tallest-buildings.kml" target="_blank">World Tallest Buildings (5)</a>
+                    <a href="kml/us-state-capitals.kml" target="_blank">US &amp; Canadian State Capitals (61)</a>
                 </p>
                 <hr />
                 <p>
-                    <input type="checkbox" value="kml/places1.kml" /> 
-                    <a href="kml/places1.kml" target="_blank">Main Places (74)</a>
-                </p>
-                <p>
-                    <input type="checkbox" value="kml/places2.kml" /> 
-                    <a href="kml/places2.kml" target="_blank">Other Places (167)</a>
-                </p>
-                <hr />
-                <p>
-                    <input type="checkbox" value="textarea" /> Use kml below
+                    <input type="checkbox" value="textarea" /> Add pasted kml below
                     <textarea><?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
@@ -119,12 +124,6 @@
 </Document>
 </kml></textarea>
                 </p>
-                <hr />
-                <p>
-                    <input type="checkbox" value="segments" /> Calculate line segments (CPU intensive!)
-                </p>
-                <p><input type="text" value="0.5" size="1" id="range" /> Max distance from line (km)</p>
-                <p><input type="text" value="3" size="1" id="minimum" /> Minimum points lines must have</p>
                 <hr />
             </div>
         </div>

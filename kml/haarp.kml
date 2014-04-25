@@ -535,22 +535,6 @@ Price per D.U.M.B is 17-19 billion. Can build 1-2 a year.
     </Point>
   </Placemark>
   <Placemark>
-    <name>Pave Paws (Thule AFB)</name>
-    <description><![CDATA[<div dir="ltr">Phased Array Warning System(Greenland)</div>]]></description>
-    <styleUrl>#style6</styleUrl>
-    <Point>
-      <coordinates>-68.325691,76.561333,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Thule Tracking Station</name>
-    <description><![CDATA[<div dir="ltr">(TTS) Remote Tracking Station(AFSCN)Greenland</div>]]></description>
-    <styleUrl>#style27</styleUrl>
-    <Point>
-      <coordinates>-67.851562,76.516815,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
     <name>The Pentagon</name>
     <description><![CDATA[]]></description>
     <styleUrl>#style25</styleUrl>

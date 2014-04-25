@@ -65,6 +65,7 @@ var Geo = function () {
             var me = this;
             this.load(urls[index], function (data) {
                 list = me.add(data, list);
+                console.log(urls[index], list.length);
                 if (index < urls.length - 1) {
                     me.loadAll(index + 1, urls, list, callback);
                 } else {
