@@ -1,744 +1,523 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.2">
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-  <name>HAARP and Military Bases in World.</name>
-  <description><![CDATA[Some off the secretest Military bases in the world.
+	<name>HAARP and Military Bases in World.</name>
+	<open>1</open>
+	<description>Some off the secretest Military bases in the world.
 131 active D.U.M.B in the US and 1477 worldwide.
-Price per D.U.M.B is 17-19 billion. Can build 1-2 a year.
-
-]]></description>
-  <Style id="style28">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style49">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style40">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style7">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style1">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style5">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style50">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style57">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style55">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style3">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style39">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style19">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style21">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style20">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style34">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style10">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style18">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style6">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style27">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style25">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style14">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style31">
-    <IconStyle>
-      <Icon>
-        <href></href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style26">
-    <IconStyle>
-      <Icon>
-        <href></href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style56">
-    <IconStyle>
-      <Icon>
-        <href></href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style33">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style43">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style47">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style22">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style54">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style15">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style36">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style8">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style23">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style46">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style35">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style37">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style9">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style42">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style13">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style48">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style12">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style44">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style16">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style41">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style38">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style32">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style51">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style11">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style24">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style17">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style29">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style30">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style53">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style52">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style4">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style45">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Style id="style2">
-    <IconStyle>
-      <Icon>
-        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
-      </Icon>
-    </IconStyle>
-  </Style>
-  <Placemark>
-    <name>US air force Atom Test Ranges</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style28</styleUrl>
-    <Point>
-      <coordinates>-14.392090,-7.972198,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>The Australian Security Intelligence Organisation</name>
-    <description><![CDATA[<div dir="ltr">The Australian Security Intelligence Organisation, which is similar to the UK's M15 Security Service, will be housed in this new Canberra headquarters.</div>]]></description>
-    <styleUrl>#style49</styleUrl>
-    <Point>
-      <coordinates>149.149399,-35.295830,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>RAAF Scherger Air Base</name>
-    <description><![CDATA[<div dir="ltr">RAAF Scherger in Far North Queensland "is set up to house 1400 personnel and 40 aircraft if Australia ever gets into a shooting war with one of our northern neighbours</div>]]></description>
-    <styleUrl>#style40</styleUrl>
-    <Point>
-      <coordinates>142.086609,-12.623336,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name> British nuclear tests</name>
-    <description><![CDATA[<div dir="ltr">This site in Maralinga, Southern Australia, hosted seven secret British nuclear tests — four fission bomb tests followed by three tests of triggering mechanisms — in the 1950s.</div>]]></description>
-    <styleUrl>#style7</styleUrl>
-    <Point>
-      <coordinates>131.608017,-30.159117,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Woomera Test Range</name>
-    <description><![CDATA[<div dir="ltr">Operated by Royal Australian Air Force (RAAF), is the largest weapons testing range in the world and is currently leased to foreign militaries.</div>]]></description>
-    <styleUrl>#style1</styleUrl>
-    <Point>
-      <coordinates>136.806931,-31.183508,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>RAAF Tindal</name>
-    <description><![CDATA[<div dir="ltr">Houses some of the RAAF's fastest jets and is rumored to host U.S. spy planes.<br><br></div>]]></description>
-    <styleUrl>#style50</styleUrl>
-    <Point>
-      <coordinates>132.378387,-14.521691,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Nurrungar</name>
-    <description><![CDATA[<div dir="ltr">A ballistic missile control site near Woomera, Southern Australia, was run by the Australian Defence Force (ADF) and the U.S. Air Force from 1969 to 1999 to provide early detection of missile launches and nuclear detonations via US satellites.</div>]]></description>
-    <styleUrl>#style57</styleUrl>
-    <Point>
-      <coordinates>136.776306,-31.322592,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name> Naval Communication Station</name>
-    <description><![CDATA[<div dir="ltr">HAARP BASE NO. 4</div><div dir="ltr">This Naval Communication Station in North West Cape is the most powerful transmission station in the Southern Hemisphere and provides very low frequency (VLF) radio transmission to U.S. and Royal Australian Navy ships and submarines<br>&nbsp;</div>]]></description>
-    <styleUrl>#style55</styleUrl>
-    <Point>
-      <coordinates>114.161163,-21.815210,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Defence Satellite Communications Ground Station</name>
-    <description><![CDATA[<div dir="ltr">The Australian Defence Satellite Communications Ground Station near Kojarena, Western Australia, is linked to a worldwide satellite communication signals interception system operated by the U.S. and UK.</div>]]></description>
-    <styleUrl>#style3</styleUrl>
-    <Point>
-      <coordinates>115.664062,-28.921631,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Pine Gap Facility</name>
-    <description><![CDATA[<div dir="ltr">One of the biggest ECHELON signals intelligence facilities in the world, controls American spy satellites as they fly over China, North Korea, Afghanistan and the Middle East.</div>]]></description>
-    <styleUrl>#style39</styleUrl>
-    <Point>
-      <coordinates>133.734970,-23.798656,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name> British nuclear defence base</name>
-    <description><![CDATA[<div dir="ltr">The facility, located in Faslane on the River Clyde in Scotland, is the home of Britain's nuclear defence force.<br><br>But the locations - along with other military sites such as MI6's London offices, Britain's nuclear crisis HQ and the SAS training facility.</div>]]></description>
-    <styleUrl>#style19</styleUrl>
-    <Point>
-      <coordinates>-4.815745,56.067123,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name> A Secret US Drone Base</name>
-    <description><![CDATA[<div dir="ltr">The airfield is technically located on land owned by the Department of Energy, though it's still not clear which government agency controls the base. Despite reports from the DOE that UAV as well as manned flights take off from the field daily, speculation says the site may be a secret drone testing ground for the CIA.</div>]]></description>
-    <styleUrl>#style21</styleUrl>
-    <Point>
-      <coordinates>-116.009789,36.928078,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>RAF Mewith Hill - US</name>
-    <description><![CDATA[<div dir="ltr">US biggest ECHELON Signals intelligence facilities in the world.</div>]]></description>
-    <styleUrl>#style20</styleUrl>
-    <Point>
-      <coordinates>-1.684299,54.008728,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>SATELLITE SURVEILLANCE</name>
-    <description><![CDATA[<div dir="ltr">Government Communications Security Bureau Waihopai station.<br><br>The Waihopai spy base.</div>]]></description>
-    <styleUrl>#style34</styleUrl>
-    <Point>
-      <coordinates>173.739670,-41.576344,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Thule Air Base</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style10</styleUrl>
-    <Point>
-      <coordinates>-68.694420,76.532982,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Area 51 is a military base</name>
-    <description><![CDATA[<div dir="ltr">The base’s primary purpose is to support development and testing of experimental aircraft and weapons systems.<br>Though the name Area 51 is used in official CIA documentation, other names used for the facility include Dreamland, Paradise Ranch, Home Base, Watertown Strip, Groom Lake and most recently Homey Airport.  The Area is part of the Nellis Military Operations Area, and the restricted airspace around the field is referred to  as (R-4808N) known by the military pilots  in the area “The Box” or “the Container”</div>]]></description>
-    <styleUrl>#style18</styleUrl>
-    <Point>
-      <coordinates>-115.817184,37.251102,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>The Pentagon</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style25</styleUrl>
-    <Point>
-      <coordinates>-77.056107,38.871941,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Hitler`s Secretest base in WW2</name>
-    <description><![CDATA[<div dir="ltr">Peenemünde Army Research Center.<br><br>Operation Crossbow tells for the first time how the secret unit used 3D aerial photographs, now archived in Edinburgh, to hunt for - and help to destroy - the Nazi’s ‘Vengeance’ or V-weapons, before they could be launched against Britain. Author Allan Williams is curator of this archive which holds over 25 million once top secret aerial photographs, taken throughout the Second World War and Cold War. Along with his team, Allan’s ongoing research into the archive represents the legacy of the now-disbanded photographic intelligence unit that was based at RAF Medmenham in Buckinghamshire.</div>]]></description>
-    <styleUrl>#style14</styleUrl>
-    <Point>
-      <coordinates>13.766631,54.137878,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Unnamed Rd</name>
-    <description><![CDATA[Fairfield, PA 17320, USA<br>]]></description>
-    <styleUrl>#style31</styleUrl>
-    <Point>
-      <coordinates>-77.420158,39.733826,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Camp David</name>
-    <styleUrl>#style26</styleUrl>
-    <Point>
-      <coordinates>-77.465897,39.647537,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Navy SEAL Bootcamp</name>
-    <styleUrl>#style56</styleUrl>
-    <Point>
-      <coordinates>-95.432739,29.764378,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>No Name Island</name>
-    <description><![CDATA[<div dir="ltr">'HAARP' MASSIVE TTA's DISCOVERED on SECRET ISLAND</div>]]></description>
-    <styleUrl>#style33</styleUrl>
-    <Point>
-      <coordinates>-29.339161,-20.497295,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>US Haarp Base</name>
-    <description><![CDATA[<div dir="ltr">Massive TTA`s discovered.<br>Base no.1</div>]]></description>
-    <styleUrl>#style43</styleUrl>
-    <Point>
-      <coordinates>-145.149612,62.394009,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>HAARP Base</name>
-    <description><![CDATA[<div dir="ltr">Diego Garcia Military Base<br>HAARP Base no. 3</div>]]></description>
-    <styleUrl>#style47</styleUrl>
-    <Point>
-      <coordinates>72.404198,-7.299556,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Nuclear Generating HAARP Station</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style22</styleUrl>
-    <Point>
-      <coordinates>-117.554665,33.369308,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>HAARP BASE NO.5</name>
-    <description><![CDATA[Jicamarca HAARP Observatory]]></description>
-    <styleUrl>#style54</styleUrl>
-    <Point>
-      <coordinates>-76.874352,-11.951408,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>HAARP BASE NO.6</name>
-    <description><![CDATA[Jabal HAARP Station]]></description>
-    <styleUrl>#style15</styleUrl>
-    <Point>
-      <coordinates>35.855484,33.413334,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Japan HAARP (MU)</name>
-    <description><![CDATA[Middle and Upper Atmosphere Radar Base No.7]]></description>
-    <styleUrl>#style36</styleUrl>
-    <Point>
-      <coordinates>136.104813,34.854382,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>EISCAT BASE</name>
-    <description><![CDATA[EISCAT. European Compendium Consisting of Norway, Sweden, Finland, France, UK and Germany. HAARY Base no.8]]></description>
-    <styleUrl>#style8</styleUrl>
-    <Point>
-      <coordinates>19.224476,69.586639,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>HIPAS Rader Base</name>
-    <description><![CDATA[<h3 style="font-size:medium;font-weight:normal;margin:0px;padding:0px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:rgb(34, 34, 34);font-family:arial, sans-serif;background-color:rgb(255, 255, 255)"><span style="font-family:arial;font-size:10pt">High Power Auroral Stimulation&nbsp;</span><span style="font-family:arial;font-size:10pt">Observatory.</span></h3><div><span style="font-family:arial;font-size:10pt">HAARP Base No.9</span></div>]]></description>
-    <styleUrl>#style23</styleUrl>
-    <Point>
-      <coordinates>-146.838715,64.873405,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Alaska Rader base</name>
-    <description><![CDATA[Rader Base]]></description>
-    <styleUrl>#style46</styleUrl>
-    <Point>
-      <coordinates>-147.516266,64.976608,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Pedro Dome Radar</name>
-    <description><![CDATA[<span style="color:rgb(68, 68, 68);font-family:arial, sans-serif;font-size:small;line-height:16px;background-color:rgb(255, 255, 255)">Alaska Based Nexrad Doppler&nbsp;</span><span style="font-weight:bold;color:rgb(68, 68, 68);font-family:arial, sans-serif;font-size:small;line-height:16px;background-color:rgb(255, 255, 255)">Radar</span><span style="color:rgb(68, 68, 68);font-family:arial, sans-serif;font-size:small;line-height:16px;background-color:rgb(255, 255, 255)">&nbsp;Station with Enhanced Nexrad Doppler&nbsp;</span><span style="font-weight:bold;color:rgb(68, 68, 68);font-family:arial, sans-serif;font-size:small;line-height:16px;background-color:rgb(255, 255, 255)">Radar.</span>]]></description>
-    <styleUrl>#style35</styleUrl>
-    <Point>
-      <coordinates>-147.500229,65.034782,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Fort Yokon</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style37</styleUrl>
-    <Point>
-      <coordinates>-145.210220,66.560753,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>HAARP Base No.10</name>
-    <description><![CDATA[Bosnia HAARP Base]]></description>
-    <styleUrl>#style9</styleUrl>
-    <Point>
-      <coordinates>18.316303,43.883183,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>HAARP Homer</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style42</styleUrl>
-    <Point>
-      <coordinates>-151.547974,59.642536,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>HAARP Base No.11</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style12</styleUrl>
-    <Point>
-      <coordinates>-158.009125,21.685631,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Yantai Air Base</name>
-    <description><![CDATA[<div dir="ltr">D.U.M.B.S.</div>]]></description>
-    <styleUrl>#style51</styleUrl>
-    <Point>
-      <coordinates>121.329742,37.395767,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Guiyang Air Base</name>
-    <description><![CDATA[<div dir="ltr">D.U.M.B.S</div>]]></description>
-    <styleUrl>#style17</styleUrl>
-    <Point>
-      <coordinates>106.520447,26.369089,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>China HAARP</name>
-    <description><![CDATA[<div dir="ltr"> This is the Chinese "Area 51" where "captured" (alien?) technology is kept and tested. It is also near by where the nuclear bombs were detonated many years ago.</div>]]></description>
-    <styleUrl>#style29</styleUrl>
-    <Point>
-      <coordinates>93.638039,40.406258,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Radar Station</name>
-    <description><![CDATA[]]></description>
-    <styleUrl>#style4</styleUrl>
-    <Point>
-      <coordinates>130.877151,37.507042,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Qom Uranium Enrichment Facility</name>
-    <description><![CDATA[<div dir="ltr">Qom Uranium Enrichment Facility<br>D.U.B</div>]]></description>
-    <styleUrl>#style45</styleUrl>
-    <Point>
-      <coordinates>50.996819,34.883671,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Pensmore Mansion</name>
-    <description><![CDATA[<div dir="ltr">The Owner of Pensmore Mansion is Steven T. Huff. He comes from US Army Intelligence and was a Off. in the CIA with ( security clear. level 5)<br>The mansion have very big underground facilities.<br>The house is the largest in the U.S.( 72.000 square meter ) It's going to be the new White House</div>]]></description>
-    <styleUrl>#style2</styleUrl>
-    <Point>
-      <coordinates>-93.213501,36.881817,0.000000</coordinates>
-    </Point>
-  </Placemark>
+Price per D.U.M.B is 17-19 billion. Can build 1-2 a year.</description>
+	<Style id="style49">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style10">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style29">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style12">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style43">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style47">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style51">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style3">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style18">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style17">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style42">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style45">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style20">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style26">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style36">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style55">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style7">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style22">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style14">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style50">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style39">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style19">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style25">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style28">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style46">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style4">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style8">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style34">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style2">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style40">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style31">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style33">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style57">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style9">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style56">
+		<IconStyle>
+			<Icon>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style54">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>US air force Atom Test Ranges</name>
+		<styleUrl>#style28</styleUrl>
+		<Point>
+			<coordinates>-14.39209,-7.972198,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>The Australian Security Intelligence Organisation</name>
+		<description><![CDATA[<div dir="ltr">The Australian Security Intelligence Organisation, which is similar to the UK's M15 Security Service, will be housed in this new Canberra headquarters.</div>]]></description>
+		<styleUrl>#style49</styleUrl>
+		<Point>
+			<coordinates>149.149399,-35.29583,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>RAAF Scherger Air Base</name>
+		<description><![CDATA[<div dir="ltr">RAAF Scherger in Far North Queensland "is set up to house 1400 personnel and 40 aircraft if Australia ever gets into a shooting war with one of our northern neighbours</div>]]></description>
+		<styleUrl>#style40</styleUrl>
+		<Point>
+			<coordinates>142.086609,-12.623336,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>British nuclear tests</name>
+		<description><![CDATA[<div dir="ltr">This site in Maralinga, Southern Australia, hosted seven secret British nuclear tests — four fission bomb tests followed by three tests of triggering mechanisms — in the 1950s.</div>]]></description>
+		<styleUrl>#style7</styleUrl>
+		<Point>
+			<coordinates>131.608017,-30.159117,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>RAAF Tindal</name>
+		<description><![CDATA[<div dir="ltr">Houses some of the RAAF's fastest jets and is rumored to host U.S. spy planes.<br><br></div>]]></description>
+		<styleUrl>#style50</styleUrl>
+		<Point>
+			<coordinates>132.378387,-14.521691,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nurrungar</name>
+		<description><![CDATA[<div dir="ltr">A ballistic missile control site near Woomera, Southern Australia, was run by the Australian Defence Force (ADF) and the U.S. Air Force from 1969 to 1999 to provide early detection of missile launches and nuclear detonations via US satellites.</div>]]></description>
+		<styleUrl>#style57</styleUrl>
+		<Point>
+			<coordinates>136.776306,-31.322592,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Naval Communication Station</name>
+		<description><![CDATA[<div dir="ltr">HAARP BASE NO. 4</div><div dir="ltr">This Naval Communication Station in North West Cape is the most powerful transmission station in the Southern Hemisphere and provides very low frequency (VLF) radio transmission to U.S. and Royal Australian Navy ships and submarines<br>&nbsp;</div>]]></description>
+		<styleUrl>#style55</styleUrl>
+		<Point>
+			<coordinates>114.161163,-21.81521,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Defence Satellite Communications Ground Station</name>
+		<description><![CDATA[<div dir="ltr">The Australian Defence Satellite Communications Ground Station near Kojarena, Western Australia, is linked to a worldwide satellite communication signals interception system operated by the U.S. and UK.</div>]]></description>
+		<styleUrl>#style3</styleUrl>
+		<Point>
+			<coordinates>115.664062,-28.921631,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Pine Gap Facility</name>
+		<description><![CDATA[<div dir="ltr">One of the biggest ECHELON signals intelligence facilities in the world, controls American spy satellites as they fly over China, North Korea, Afghanistan and the Middle East.</div>]]></description>
+		<styleUrl>#style39</styleUrl>
+		<Point>
+			<coordinates>133.73497,-23.798656,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>British nuclear defence base</name>
+		<description><![CDATA[<div dir="ltr">The facility, located in Faslane on the River Clyde in Scotland, is the home of Britain's nuclear defence force.<br><br>But the locations - along with other military sites such as MI6's London offices, Britain's nuclear crisis HQ and the SAS training facility.</div>]]></description>
+		<styleUrl>#style19</styleUrl>
+		<Point>
+			<coordinates>-4.815745,56.067123,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>RAF Mewith Hill - US</name>
+		<description><![CDATA[<div dir="ltr">US biggest ECHELON Signals intelligence facilities in the world.</div>]]></description>
+		<styleUrl>#style20</styleUrl>
+		<Point>
+			<coordinates>-1.684299,54.00872799999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>SATELLITE SURVEILLANCE</name>
+		<description><![CDATA[<div dir="ltr">Government Communications Security Bureau Waihopai station.<br><br>The Waihopai spy base.</div>]]></description>
+		<styleUrl>#style34</styleUrl>
+		<Point>
+			<coordinates>173.73967,-41.576344,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Thule Air Base</name>
+		<styleUrl>#style10</styleUrl>
+		<Point>
+			<coordinates>-68.69441999999999,76.532982,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Area 51 is a military base</name>
+		<description><![CDATA[<div dir="ltr">The base’s primary purpose is to support development and testing of experimental aircraft and weapons systems.<br>Though the name Area 51 is used in official CIA documentation, other names used for the facility include Dreamland, Paradise Ranch, Home Base, Watertown Strip, Groom Lake and most recently Homey Airport.  The Area is part of the Nellis Military Operations Area, and the restricted airspace around the field is referred to  as (R-4808N) known by the military pilots  in the area “The Box” or “the Container”</div>]]></description>
+		<styleUrl>#style18</styleUrl>
+		<Point>
+			<coordinates>-115.817184,37.251102,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Hitler`s Secretest base in WW2</name>
+		<description><![CDATA[<div dir="ltr">Peenemünde Army Research Center.<br><br>Operation Crossbow tells for the first time how the secret unit used 3D aerial photographs, now archived in Edinburgh, to hunt for - and help to destroy - the Nazi’s ‘Vengeance’ or V-weapons, before they could be launched against Britain. Author Allan Williams is curator of this archive which holds over 25 million once top secret aerial photographs, taken throughout the Second World War and Cold War. Along with his team, Allan’s ongoing research into the archive represents the legacy of the now-disbanded photographic intelligence unit that was based at RAF Medmenham in Buckinghamshire.</div>]]></description>
+		<styleUrl>#style14</styleUrl>
+		<Point>
+			<coordinates>13.766631,54.137878,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Camp David</name>
+		<styleUrl>#style26</styleUrl>
+		<Point>
+			<coordinates>-77.465897,39.647537,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Navy SEAL Bootcamp</name>
+		<styleUrl>#style56</styleUrl>
+		<Point>
+			<coordinates>-95.43273899999998,29.764378,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>No Name Island</name>
+		<description><![CDATA[<div dir="ltr">'HAARP' MASSIVE TTA's DISCOVERED on SECRET ISLAND</div>]]></description>
+		<styleUrl>#style33</styleUrl>
+		<Point>
+			<coordinates>-29.339161,-20.497295,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>US Haarp Base</name>
+		<description><![CDATA[<div dir="ltr">Massive TTA`s discovered.<br>Base no.1</div>]]></description>
+		<styleUrl>#style43</styleUrl>
+		<Point>
+			<coordinates>-145.149612,62.394009,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HAARP Base</name>
+		<description><![CDATA[<div dir="ltr">Diego Garcia Military Base<br>HAARP Base no. 3</div>]]></description>
+		<styleUrl>#style47</styleUrl>
+		<Point>
+			<coordinates>72.40419799999999,-7.299556,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Nuclear Generating HAARP Station</name>
+		<styleUrl>#style22</styleUrl>
+		<Point>
+			<coordinates>-117.554665,33.369308,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HAARP BASE NO.5</name>
+		<description>Jicamarca HAARP Observatory</description>
+		<styleUrl>#style54</styleUrl>
+		<Point>
+			<coordinates>-76.874352,-11.951408,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Japan HAARP (MU)</name>
+		<description>Middle and Upper Atmosphere Radar Base No.7</description>
+		<styleUrl>#style36</styleUrl>
+		<Point>
+			<coordinates>136.104813,34.854382,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>EISCAT BASE</name>
+		<description>EISCAT. European Compendium Consisting of Norway, Sweden, Finland, France, UK and Germany. HAARY Base no.8</description>
+		<styleUrl>#style8</styleUrl>
+		<Point>
+			<coordinates>19.224476,69.58663900000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Alaska Rader base</name>
+		<description>Rader Base</description>
+		<styleUrl>#style46</styleUrl>
+		<Point>
+			<coordinates>-147.516266,64.976608,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HAARP Base No.10</name>
+		<description>Bosnia HAARP Base</description>
+		<styleUrl>#style9</styleUrl>
+		<Point>
+			<coordinates>18.316303,43.883183,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HAARP Homer</name>
+		<styleUrl>#style42</styleUrl>
+		<Point>
+			<coordinates>-151.547974,59.64253600000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>HAARP Base No.11</name>
+		<styleUrl>#style12</styleUrl>
+		<Point>
+			<coordinates>-158.009125,21.685631,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Yantai Air Base</name>
+		<description><![CDATA[<div dir="ltr">D.U.M.B.S.</div>]]></description>
+		<styleUrl>#style51</styleUrl>
+		<Point>
+			<coordinates>121.329742,37.395767,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Guiyang Air Base</name>
+		<description><![CDATA[<div dir="ltr">D.U.M.B.S</div>]]></description>
+		<styleUrl>#style17</styleUrl>
+		<Point>
+			<coordinates>106.520447,26.369089,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>China HAARP</name>
+		<description><![CDATA[<div dir="ltr"> This is the Chinese "Area 51" where "captured" (alien?) technology is kept and tested. It is also near by where the nuclear bombs were detonated many years ago.</div>]]></description>
+		<styleUrl>#style29</styleUrl>
+		<Point>
+			<coordinates>93.63803900000001,40.406258,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Radar Station</name>
+		<styleUrl>#style4</styleUrl>
+		<Point>
+			<coordinates>130.877151,37.507042,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Qom Uranium Enrichment Facility</name>
+		<description><![CDATA[<div dir="ltr">Qom Uranium Enrichment Facility<br>D.U.B</div>]]></description>
+		<styleUrl>#style45</styleUrl>
+		<Point>
+			<coordinates>50.996819,34.883671,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Pensmore Mansion</name>
+		<description><![CDATA[<div dir="ltr">The Owner of Pensmore Mansion is Steven T. Huff. He comes from US Army Intelligence and was a Off. in the CIA with ( security clear. level 5)<br>The mansion have very big underground facilities.<br>The house is the largest in the U.S.( 72.000 square meter ) It's going to be the new White House</div>]]></description>
+		<styleUrl>#style2</styleUrl>
+		<Point>
+			<coordinates>-93.21350099999999,36.881817,0</coordinates>
+		</Point>
+	</Placemark>
 </Document>
 </kml>

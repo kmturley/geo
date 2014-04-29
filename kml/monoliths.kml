@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>monoliths.kml</name>
+	<Style id="sn_ylw-pushpin011">
+	</Style>
+	<StyleMap id="m_ylw-pushpin23">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl41</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed">
+	</Style>
+	<Style id="failed0">
+	</Style>
+	<StyleMap id="msn_ylw-pushpin1000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin011</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl40">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin201">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+	</Style>
+	<Style id="failed1">
+	</Style>
+	<Style id="failed2">
+	</Style>
+	<Style id="failed3">
+	</Style>
+	<Style id="s_ylw-pushpin00000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin60</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed5">
+	</Style>
+	<Style id="s_ylw-pushpin_hl41">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed6">
+	</Style>
+	<Style id="s_ylw-pushpin8">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0111">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin80">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin3001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl210</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin40">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="failed8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin114</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl40</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin00010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0101">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl19">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin033">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0111</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed11">
+	</Style>
+	<Style id="s_ylw-pushpin_hl210">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin60">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed12">
+	</Style>
+	<Style id="s_ylw-pushpin114">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed13">
+	</Style>
+	<StyleMap id="m_ylw-pushpin031">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin80</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0101</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Monoliths</name>
+		<Placemark>
+			<name>Mogadishu, Somalia</name>
+			<LookAt>
+				<longitude>45.34219181094357</longitude>
+				<latitude>2.03908240947862</latitude>
+				<altitude>0</altitude>
+				<heading>4.552001849201094</heading>
+				<tilt>0</tilt>
+				<range>228.4184869133184</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin23</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>45.34201053150399,2.03912507170909,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Atlanta Obelisk, USA</name>
+			<LookAt>
+				<longitude>-84.37199827105226</longitude>
+				<latitude>33.7480098455607</latitude>
+				<altitude>0</altitude>
+				<heading>0.0005685234321563437</heading>
+				<tilt>0</tilt>
+				<range>100.2182906032528</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin033</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-84.372061,33.748018,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>International Peace Garden, USA</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>-100.0588211697469</longitude>
+				<latitude>48.99957554174421</latitude>
+				<altitude>0</altitude>
+				<heading>0.006506783593435204</heading>
+				<tilt>0</tilt>
+				<range>257.1989738190513</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin11</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-100.0594786655277,48.99940818694532,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Yangon Obelisk, Myanmar</name>
+			<LookAt>
+				<longitude>96.15965588784319</longitude>
+				<latitude>16.77316551389071</latitude>
+				<altitude>0</altitude>
+				<heading>-3.76095976408349e-05</heading>
+				<tilt>0</tilt>
+				<range>250.7531545357087</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin00010</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>96.159502,16.773109,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Buenos Aires Obelisk, Argentina</name>
+			<LookAt>
+				<longitude>-58.38154218120224</longitude>
+				<latitude>-34.60391503508414</latitude>
+				<altitude>0</altitude>
+				<heading>-1.938916237098057e-06</heading>
+				<tilt>0</tilt>
+				<range>235.8381591790023</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin033</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-58.381613,-34.603714,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Caracas Obelisk, Venezuela</name>
+			<LookAt>
+				<longitude>-66.84876706109233</longitude>
+				<latitude>10.49657749255936</latitude>
+				<altitude>0</altitude>
+				<heading>2.95193760398611e-05</heading>
+				<tilt>0</tilt>
+				<range>296.427560086439</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin1000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-66.84892499999999,10.49651,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Boston Obelisk, USA</name>
+			<LookAt>
+				<longitude>-71.05952038558759</longitude>
+				<latitude>42.37575520299934</latitude>
+				<altitude>0</altitude>
+				<heading>-0.005511159018210294</heading>
+				<tilt>0</tilt>
+				<range>584.8290109800049</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin00000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-71.06073599737623,42.37631460839985,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Masuda no Iwafune, Japan</name>
+			<Point>
+				<coordinates>135.788688,34.470538,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Vatican, Italy</name>
+			<LookAt>
+				<longitude>12.45729184888163</longitude>
+				<latitude>41.90212985322155</latitude>
+				<altitude>0</altitude>
+				<heading>0.002606496560665895</heading>
+				<tilt>0</tilt>
+				<range>218.836474680549</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin3001</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>12.45725946854304,41.90223398873914,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>King Ezana&apos;s Stela, Ethiopia</name>
+			<Point>
+				<coordinates>38.7195,14.1321,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Washington Monument, USA</name>
+			<LookAt>
+				<longitude>-77.03535021823818</longitude>
+				<latitude>38.88917172457127</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001078793364895213</heading>
+				<tilt>0</tilt>
+				<range>255.4719117320042</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin031</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-77.035218,38.889476,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Thunder Stone, Russia</name>
+			<Point>
+				<coordinates>30.3022,59.9364,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gornaya Shoria Megaliths, Russia</name>
+			<LookAt>
+				<longitude>87.93824149181327</longitude>
+				<latitude>52.83508346024849</latitude>
+				<altitude>0</altitude>
+				<heading>0.0007994700314116178</heading>
+				<tilt>0</tilt>
+				<range>1583.177322644024</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed4</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>87.93721368745898,52.83798620527939,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ramesseum, Egypt</name>
+			<LookAt>
+				<longitude>32.61040579800457</longitude>
+				<latitude>25.72810900979665</latitude>
+				<altitude>0</altitude>
+				<heading>-2.414046194373204e-05</heading>
+				<tilt>0</tilt>
+				<range>435.9293081509654</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed10</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>32.6103385437146,25.72765893331609,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>New York Obelisk, USA</name>
+			<LookAt>
+				<longitude>-73.96537202224388</longitude>
+				<latitude>40.77959718219289</latitude>
+				<altitude>0</altitude>
+				<heading>1.9873687904176e-05</heading>
+				<tilt>0</tilt>
+				<range>41.97965654659772</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin033</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-73.96540299999999,40.779628,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Thomas Jefferson Obelisk, USA</name>
+			<LookAt>
+				<longitude>-78.45578716287312</longitude>
+				<latitude>38.00848355418091</latitude>
+				<altitude>0</altitude>
+				<heading>0.104656400425622</heading>
+				<tilt>0</tilt>
+				<range>23.90037357248261</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin031</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-78.45578999999999,38.008473,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gomateshwara Statue, India</name>
+			<LookAt>
+				<longitude>75.00579210743872</longitude>
+				<latitude>13.2037504847065</latitude>
+				<altitude>0</altitude>
+				<heading>3.432543242963878e-05</heading>
+				<tilt>0</tilt>
+				<range>230.3507187508536</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed8</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>75.00563790134716,13.20376868223428,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pyramid of Khafre, Egypt</name>
+			<LookAt>
+				<longitude>31.13058499811823</longitude>
+				<latitude>29.9760180011295</latitude>
+				<altitude>0</altitude>
+				<heading>-9.402387554889264e-10</heading>
+				<tilt>0</tilt>
+				<range>1000.000138766222</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed9</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>31.13057357168425,29.97595861206787,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Levitated Mass, USA</name>
+			<LookAt>
+				<longitude>-118.3594861700469</longitude>
+				<latitude>34.06440056549176</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002267552315340233</heading>
+				<tilt>0</tilt>
+				<range>275.5146695728419</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#failed7</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-118.3599353223576,34.06446527628311,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
