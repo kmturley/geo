@@ -37,7 +37,8 @@ var Geo = function () {
                     i = 0,
                     segments = false,
                     urls = [],
-                    list = [];
+                    list = [],
+                    lines = [];
 
                 me.earth.reset();
                 for (i = 0; i < this.inputs.length; i += 1) {
@@ -55,7 +56,16 @@ var Geo = function () {
                     this.earth.reset();
                     this.loadAll(0, urls, list, function (items) {
                         if (segments === true) {
-                            me.output.innerHTML = me.generate(items, Number(me.range.value), Number(me.minimum.value));
+                            if (items.length < 250) {
+                                lines = me.calculate(items, Number(me.range.value), Number(me.minimum.value));
+                                if (lines.length < 500) {
+                                    me.output.innerHTML = me.generate(lines, Number(me.range.value), Number(me.minimum.value));
+                                } else {
+                                    me.output.innerHTML = lines.length + ' lines is too many combinations to computer efficiently in the browser';
+                                }
+                            } else {
+                                me.output.innerHTML = items.length + ' points is too many combinations to computer efficiently in the browser';
+                            }
                         }
                     });
                 }
@@ -65,7 +75,6 @@ var Geo = function () {
             var me = this;
             this.load(urls[index], function (data) {
                 list = me.add(data, list);
-                console.log(urls[index], list.length);
                 if (index < urls.length - 1) {
                     me.loadAll(index + 1, urls, list, callback);
                 } else {
@@ -89,32 +98,48 @@ var Geo = function () {
             xhr.send();
         },
         add: function (data, list) {
-            var i = 0;
+            var i = 0,
+                coords = [];
             data = this.stringToXml(data);
             data = this.xmlToJson(data);
-            data = data.Document.Placemark || data.Document.Folder.Placemark || data.Document.Folder;
+            if (data.Folder) {
+                data = data.Folder.Placemark;
+            } else if (data.Document && data.Document.Folder) {
+                if (data.Document.Folder.Placemark) {
+                    data = data.Document.Folder.Placemark;
+                } else {
+                    data = data.Document.Folder;
+                }
+            } else if (data.Document) {
+                data = data.Document.Placemark;
+            }
+            console.log('length', data.length);
             for (i = 0; i < data.length; i += 1) {
+                coords = (data[i].Point || data[i].Placemark.Point || data[i].Placemark[0].Point).coordinates['#text'].split(',');
+                data[i].coords = [Number(coords[0]), Number(coords[1])];
                 list.push(data[i]);
                 this.earth.addPlace(data[i]);
             }
             return list;
         },
-        generate: function (places, range, min) {
+        generate: function (items, range, min) {
             var i = 0,
                 j = 0,
-                html = '',
-                items = this.calculate(places, range, min); // distance allowed points to be from the line, min number of matches for line to be outputted
+                html = '';
 
             html += '<h1>' + items.length + ' lines <br/>';
             html += 'each with at least ' + min + ' points <br/>';
             html += 'within ' + range + 'km of the line</h1>';
 
             for (i = 0; i < items.length; i += 1) {
-                html += '<h2>' + items[i].points.length + ' points - ' + items[i].bearing + '° - ' + items[i].distance + 'km</h1><ul>';
-                this.earth.addLine(items[i].bearing + '° - ' + items[i].distance + 'km', this.generateColor(items[i].distance / this.longest), items[i].points[0], items[i].points[1]);
-                
+                html += '<h2>' + items[i].points.length + ' points - ' + items[i].distance + 'km</h1><ul>';
+
                 for (j = 0; j < items[i].points.length; j += 1) {
-                    html += '<li>' + Math.round(items[i].points[j].deviation || 0) + 'km - ' + items[i].points[j].name['#text'] + '</li>';
+                    html += '<li>' + Math.round(items[i].points[j].distance || 0) + 'km - ' + items[i].points[j].name['#text'] + ' - ' + Math.round(items[i].points[j].deviation || 0) + 'km</li>';
+                    // don't draw a line for the first point, and limit number of lines to max of 300
+                    if (j > 0 && i < 300) {
+                        this.earth.addLine(Math.round(items[i].points[j].distance || 0) + 'km<br />' + items[i].points[0].name['#text'] + '<br />' + items[i].points[j].name['#text'], this.generateColor(items[i].points[j].distance / this.longest), items[i].points[0], items[i].points[j]);
+                    }
                 }
                 html += '</ul>';
             }
@@ -124,87 +149,66 @@ var Geo = function () {
             var r = Math.round(value * 255),
                 g = Math.round((1 - Math.abs(0.5 - value)) * 255),
                 b = Math.round((1 - value) * 255);
-            r = r.toString(16);
-            g = g.toString(16);
-            b = b.toString(16);
-            if (r === 0) {
-                r = '00';
-            }
-            if (g === 0) {
-                g = '00';
-            }
-            if (b === 0) {
-                b = '00';
-            }
-            return 'ff' + b + g + r;
+            return (0xff000000 + (0x00010000 * b) + (0x00000100 * g) + (0x00000001 * r)).toString(16);
         },
         calculate: function (items, maxDistance, minPoints) {
             var i = 0,
                 j = 0,
                 k = 0,
-                m1 = [],
-                m2 = [],
-                m3 = [],
-                c1 = [],
-                c2 = [],
-                c3 = [],
-                p1 = {},
-                p2 = {},
-                p3 = {},
                 R = 6371,
                 deviation = 0,
-                point = {},
+                lines = [],
                 line = {},
-                lines = [];
+                point1 = {},
+                point2 = {},
+                point3 = {},
+                latlon1 = {},
+                latlon2 = {},
+                latlon3 = {},
+                count = 0;
             
             this.longest = 0;
             
-            if (typeof maxDistance === undefined) { maxDistance = 0.2; } // 1km
-            if (typeof minPoints === undefined) { minPoints = 3; } // 3 = start point, end point and at least one other point in line
-            
-            // loop through points to start line segment
+            // loop through the start point
             for (i = 0; i < items.length; i += 1) {
-                m1 = items[i].Point || items[i].Placemark.Point || items[i].Placemark[0].Point;
-                c1 = m1.coordinates['#text'].split(',');
-                p1 = new LatLon(c1[1], c1[0]);
+                latlon1 = new LatLon(items[i].coords[1], items[i].coords[0]);
+                point1 = this.cloneObject(items[i]);
+                point1.distance = 0;
+                point1.deviation = 0;
                 
-                // loop through points to end the line segment
+                // loop through the end point
                 for (j = (i + 1); j < items.length; j += 1) {
-                    m2 = items[j].Point || items[j].Placemark.Point || items[j].Placemark[0].Point;
-                    c2 = m2.coordinates['#text'].split(',');
-                    p2 = new LatLon(c2[1], c2[0]);
+                    latlon2 = new LatLon(items[j].coords[1], items[j].coords[0]);
+                    point2 = this.cloneObject(items[j]);
+                    point2.distance = latlon1.distanceTo(latlon2);
+                    point2.deviation = 0;
+                    
+                    // create a line from start point to end point
                     line = {
-                        name: 'Line ' + (lines.length + 1),
-                        points: [items[i], items[j]],
-                        bearing: Math.round(p1.bearingTo(p2)),
-                        distance: Math.round(p1.distanceTo(p2))
+                        distance: latlon1.distanceTo(latlon2),
+                        points: [point1, point2]
                     };
-
-                    // loop through all other points and check their distance to line segment (deviation)
+                    
+                    // loop through the other points as point three
                     for (k = (j + 1); k < items.length; k += 1) {
-                        m3 = items[k].Point || items[k].Placemark.Point || items[k].Placemark[0].Point;
-                        c3 = m3.coordinates['#text'].split(',');
-                        p3 = new LatLon(c3[1], c3[0]);
+                        latlon3 = new LatLon(items[k].coords[1], items[k].coords[0]);
+                        point3 = this.cloneObject(items[k]);
+                        point3.distance = latlon1.distanceTo(latlon3);
+                        point3.deviation = Math.abs(Math.asin(Math.sin(point3.distance / R) * Math.sin(latlon1.bearingTo(latlon3).toRad() - latlon1.bearingTo(latlon2).toRad())) * R);
+                        count += 1;
                         
-                        // make sure all points are far enough away to prevent craziness
-                        if (p1.distanceTo(p2) > 5 || p1.distanceTo(p3) > 5 || p2.distanceTo(p3) > 5) {
-                            deviation = Math.abs(Math.asin(Math.sin(p1.distanceTo(p3) / R) * Math.sin(p1.bearingTo(p3).toRad() - p1.bearingTo(p2).toRad())) * R);
-                            // if third point is close enough to line segment then shortlist
-                            if (deviation <= maxDistance) {
-                                point = this.cloneObject(items[k]);
-                                point.lat = c3[1];
-                                point.long = c3[0];
-                                point.deviation = deviation;
-                                line.points.push(point);
+                        // if the third point is close enough to the line segment, then add it as a point on this line
+                        if (point3.distance >= maxDistance && point3.deviation <= maxDistance) {
+                            line.points.push(point3);
+                            if (point3.distance > line.distance) {
+                                line.distance = point3.distance;
                             }
                         }
                     }
-
-                    // if the number of matches is enough then save the line
+                    
+                    // if the line contains several points then shortlist the line
                     if (line.points.length >= minPoints) {
                         lines.push(line);
-
-                        // update the longest line matched with points
                         if (line.distance > this.longest) {
                             this.longest = line.distance;
                         }

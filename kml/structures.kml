@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>Tallest structure by category</name>
+	<Placemark>
+		<name>Burj Dubai</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>55.2740555555556,25.1972222222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Tokyo Skytree</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>139.810833333333,35.7101388888889,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>KVLY-TV mast</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-97.2892027777778,47.3421805555556,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Abraj Al Bait Towers</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>39.8263888888889,21.4188888888889,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>VLF transmitter Lualualei, Mast 1</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-158.148241666667,21.4199638888889,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Petronas Tower 1</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>101.711305555556,3.157624999999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>GRES-2 Power Station</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>75.47624999999999,52.02397222222219,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Dimona Radar Facility</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>35.0971222222222,30.9685916666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kiev TV Tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>30.453325,50.4712472222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Zhoushan Island Overhead Powerline Tie, 370 metres tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>122.023994444444,29.9114972222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Gerbrandy Tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>5.053575,52.0100666666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>TV Tower Vinnytsia</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>28.4236805555556,49.2416777777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Viaduc de Millau</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>3.02165,44.0861027777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Obninsk Meteorological tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>36.5982638888889,55.1115888888889,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Lakihegy Tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>19.0044444444444,47.3730555555556,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Jinping-I Dam</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>101.628333333333,28.1852777777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Hassan II Mosque</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-7.63282222222222,33.607975,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Østerild Wind Turbine Test Field, Vestas V164-8.0</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-7">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>8.883575,57.0790027777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kalisindh Power Station cooling tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>76.1018916666667,24.5328694444444,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Gateway Arch</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-90.18496388888892,38.6246166666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kuwait Towers</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>48.0032138888889,29.3896527777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>ATLAS-I</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-106.557574,35.029898,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Anaconda Smelter Stack</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-112.913555555556,46.1101472222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Montreal Olympic Stadium</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-73.5521138888889,45.55931388888891,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>San Jacinto Monument</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-95.08069999999999,29.74985,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Chicago Temple Building</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-87.63062499999999,41.8830027777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Mole Antonelliana</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>7.69322777777778,45.0690138888889,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Philadelphia City Hall</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-75.16353333333331,39.9527194444444,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Singapore Flyer</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-8">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>103.863222222222,1.28951944444444,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Dushanbe Flagpole</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>68.7801083333333,38.5790111111111,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Ulm Minster</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>9.99188333333333,48.3986111111111,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Vehicle Assembly Building</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-80.6505861111111,28.58601111111111,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Dome of Basilica of Our Lady of Peace of Yamoussoukro</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-5.29638888888889,6.81111111111111,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Santa Cruz del Valle de los Caídos</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-4.15544444444444,40.6420722222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Arecibo Telescope</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-66.75277777777779,18.3441666666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kingda Ka</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-74.4332861111111,40.1407055555556,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Great Pyramid of Giza</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>31.13419166666669,29.9791472222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Jeddah Light</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>39.1497166666667,21.46865,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Suvarnabhumi Airport control tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>100.749666666667,13.6964027777778,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Spring Temple Buddha</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>112.451016,33.77515,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Phra Pathom Chedi</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>100.060277777778,13.8197222222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Spire of Dublin</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>-6.260258333333329,53.3498,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Henninger Turm</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>8.69355833333333,50.0972722222222,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Gliwice Radio Tower</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>18.6889611111111,50.3133666666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Glacial Aerial Tramway Kaprun III Support Pillar</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>12.6880444444444,47.1996166666667,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Ericsson Globe</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>18.0829972222222,59.29358888888889,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Torre della Lanterna</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>8.90463055555556,44.4045138888889,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Murudeshwara Temple</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>74.485163,14.094197,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Church of the Holy Archangels</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-11">List of tallest buildings and structures in the world</a>]]></description>
+		<Point>
+			<coordinates>23.7645944444444,47.596975,0</coordinates>
+		</Point>
+	</Placemark>
+</Folder>
+</kml>

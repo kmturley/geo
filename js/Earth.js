@@ -22,6 +22,7 @@ var Earth = function () {
                 google.earth.createInstance(me.defaults.id, function (e) {
                     me.ge = e;
                     me.ge.getWindow().setVisibility(true);
+                    me.ge.getNavigationControl().setVisibility(me.ge.VISIBILITY_SHOW);
                     
                     var lookAt = me.ge.createLookAt('');
                     lookAt.setLatitude(41.26);
@@ -29,6 +30,8 @@ var Earth = function () {
                     lookAt.setRange(8000000.0);
                     me.ge.getView().setAbstractView(lookAt);
                     //me.ge.getNavigationControl().setVisibility(this.ge.VISIBILITY_AUTO);
+                    
+                    //me.addLine('test', 'ff000000', { coords: [-77.08611455269688, 38.70796969852373]}, {coords: [-83.431027, 39.026381]});
                 }, function (e) {
                     console.log('error', e);
                 });
@@ -81,19 +84,18 @@ var Earth = function () {
             var i = 0,
                 mark = this.ge.createPlacemark(''),
                 line = this.ge.createLineString(''),
-                itempoint = item.Point || item.Placemark.Point || item.Placemark[0].Point,
-                itempoint2 = item2.Point || item2.Placemark.Point || item2.Placemark[0].Point,
-                longlat = itempoint.coordinates['#text'].split(','),
-                longlat2 = itempoint2.coordinates['#text'].split(','),
                 lineStyle;
-
+            
+            if (color.length !== 8) {
+                console.log('invalid color', color);
+            }
             line.setTessellate(true);
             line.setAltitudeMode(this.ge.ALTITUDE_CLAMP_TO_GROUND);
-            mark.setName(name || item.name['#text']);
+            line.getCoordinates().pushLatLngAlt(item.coords[1], item.coords[0], 0);
+            line.getCoordinates().pushLatLngAlt(item2.coords[1], item2.coords[0], 0);
+            mark.setName(name);
             //mark.setDescription(item.desc);
             mark.setGeometry(line);
-            line.getCoordinates().pushLatLngAlt(Number(longlat[1]), Number(longlat[0]), 0);
-            line.getCoordinates().pushLatLngAlt(Number(longlat2[1]), Number(longlat2[0]), 0);
 
             // styling
             mark.setStyleSelector(this.ge.createStyle(''));

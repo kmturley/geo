@@ -18,3 +18,11 @@ Problem solving:
 
  * Avoid having too many points as it slows down the browser
  * Ensure there isn't any space around the source code because this prevents the xml from being read
+ 
+Obtaining kml files:
+
+Some useful links to generate kml files automatically for you:
+
+ * http://toolserver.org/~para/cgi-bin/kmlexport?article=paste_wikipedia_article_url_here
+ * http://www.megalithic.co.uk/
+ * http://earthquake.usgs.gov/earthquakes/search/

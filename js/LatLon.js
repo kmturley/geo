@@ -63,7 +63,7 @@ LatLon.prototype.distanceTo = function(point, precision) {
           Math.sin(dLon/2) * Math.sin(dLon/2);
   var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
   var d = R * c;
-  return d.toPrecisionFixed(precision);
+  return Number(d.toPrecisionFixed(precision)); // Modified to return number
 }
 
 
