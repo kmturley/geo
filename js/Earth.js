@@ -14,28 +14,31 @@ var Earth = function () {
         },
         init: function () {
             var me = this;
-
-            google.load("earth", "1", {
-                "other_params": "sensor=false"
-            });
-            google.setOnLoadCallback(function () {
-                google.earth.createInstance(me.defaults.id, function (e) {
-                    me.ge = e;
-                    me.ge.getWindow().setVisibility(true);
-                    me.ge.getNavigationControl().setVisibility(me.ge.VISIBILITY_SHOW);
-                    
-                    var lookAt = me.ge.createLookAt('');
-                    lookAt.setLatitude(41.26);
-                    lookAt.setLongitude(-100.00);
-                    lookAt.setRange(8000000.0);
-                    me.ge.getView().setAbstractView(lookAt);
-                    //me.ge.getNavigationControl().setVisibility(this.ge.VISIBILITY_AUTO);
-                    
-                    //me.addLine('test', 'ff000000', { coords: [-77.08611455269688, 38.70796969852373]}, {coords: [-83.431027, 39.026381]});
-                }, function (e) {
-                    console.log('error', e);
+            if (google) {
+                google.load("earth", "1", {
+                    "other_params": "sensor=false"
                 });
-            });
+                google.setOnLoadCallback(function () {
+                    google.earth.createInstance(me.defaults.id, function (e) {
+                        me.ge = e;
+                        me.ge.getWindow().setVisibility(true);
+                        me.ge.getNavigationControl().setVisibility(me.ge.VISIBILITY_SHOW);
+
+                        var lookAt = me.ge.createLookAt('');
+                        lookAt.setLatitude(41.26);
+                        lookAt.setLongitude(-100.00);
+                        lookAt.setRange(8000000.0);
+                        me.ge.getView().setAbstractView(lookAt);
+                        //me.ge.getNavigationControl().setVisibility(this.ge.VISIBILITY_AUTO);
+
+                        //me.addLine('test', 'ff000000', { coords: [-77.08611455269688, 38.70796969852373]}, {coords: [-83.431027, 39.026381]});
+                    }, function (e) {
+                        console.log('error', e);
+                    });
+                });
+            } else {
+                console.log('Please ensure Google Earth script is embedded in the page and you have an internet connection');
+            }
         },
         load: function (items) {
             var i = 0,

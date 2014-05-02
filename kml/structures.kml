@@ -291,14 +291,6 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Great Pyramid of Giza</name>
-		<Snippet maxLines="0"></Snippet>
-		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-9">List of tallest buildings and structures in the world</a>]]></description>
-		<Point>
-			<coordinates>31.13419166666669,29.9791472222222,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
 		<name>Jeddah Light</name>
 		<Snippet maxLines="0"></Snippet>
 		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#cite_ref-10">List of tallest buildings and structures in the world</a>]]></description>

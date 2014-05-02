@@ -8,54 +8,58 @@
 </head>
 <body>
     <div class="row full">
-        <div class="col w1of3">
-            <h1>Geo - Calculating line segments from points</h1>
-            <p>Calculates all possible combinations of line segments and shows the distances of points from each.</p>
-            <p>Do not select more than 120 points at once, otherwise the calculations will take a long time!</p>
-            <div id="files">
+        <div class="col w1of4">
+            <h1>Geo</h1>
+            <p>Calculates lines between points around the world, showing the distances and bearings of each.</p>
+            <p>The more points you select, the longer it will take to load, so please be patient!</p>
+            <div id="inputs">
                 <hr />
                 <p>
-                    <input type="checkbox" value="segments" /> Calculate line segments (CPU intensive!)
+                    <input type="checkbox" value="segments" name="calculate" /> Calculate line segments (CPU intensive!)
                 </p>
-                <p><input type="text" value="0.5" size="1" id="range" /> Max distance from line (km)</p>
-                <p><input type="text" value="3" size="1" id="minimum" /> Minimum points lines must have</p>
+                <p><input type="text" value="3" size="1" name="minPoints" /> Minimum points required</p>
+                <p><input type="text" value="0.5" size="1" name="maxDistance" /> Max distance from line (km)</p>
+                <p><input type="text" value="0" size="1" name="minLength" /> Min length of line (km)</p>
+                <p><input type="text" value="24901" size="1" name="maxLength" /> Max length of line (km)</p>
+                <p><input type="text" value="0" size="1" name="minBearing" /> Min bearing (degrees °)</p>
+                <p><input type="text" value="360" size="1" name="maxBearing" /> Max bearing (degrees °)</p>
                 <hr />
                 <p>
-                    <input type="checkbox" value="kml/earthquakes.kml" /> 
+                    <input type="checkbox" value="kml/earthquakes.kml" name="file" /> 
                     <a href="kml/earthquakes.kml" target="_blank">Earthquakes (41)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/haarp.kml" /> 
+                    <input type="checkbox" value="kml/haarp.kml" name="file" /> 
                     <a href="kml/haarp.kml" target="_blank">Haarp &amp; Military (37)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/landmarks.kml" /> 
+                    <input type="checkbox" value="kml/landmarks.kml" name="file" /> 
                     <a href="kml/landmarks.kml" target="_blank">Landmarks (57)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/monoliths.kml" /> 
+                    <input type="checkbox" value="kml/monoliths.kml" name="file" /> 
                     <a href="kml/monoliths.kml" target="_blank">Monoliths (19)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/worship.kml" /> 
+                    <input type="checkbox" value="kml/worship.kml" name="file" /> 
                     <a href="kml/worship.kml" target="_blank">Places of Worship (12)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/pyramids.kml" /> 
+                    <input type="checkbox" value="kml/pyramids.kml" name="file" /> 
                     <a href="kml/pyramids.kml" target="_blank">Pyramids (42)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/structures.kml" /> 
+                    <input type="checkbox" value="kml/structures.kml" name="file" /> 
                     <a href="kml/structures.kml" target="_blank">Structures (49)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/us-state-capitals.kml" /> 
+                    <input type="checkbox" value="kml/us-state-capitals.kml" name="file" /> 
                     <a href="kml/us-state-capitals.kml" target="_blank">US &amp; Canadian State Capitals (61)</a>
                 </p>
                 <hr />
                 <p>
-                    <input type="checkbox" value="textarea" /> Add pasted kml below
-                    <textarea><?xml version="1.0" encoding="UTF-8"?>
+                    <input type="checkbox" value="textarea" name="custom" /> Add pasted kml below
+                    <textarea id="custom"><?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>Example.kml</name>
@@ -131,9 +135,9 @@
                 <hr />
             </div>
         </div>
-        <div class="col w2of3">
+        <div class="col w3of4">
             <div id="map3d"></div>
-            <pre id="output" class="output">Click 'Load Results' to start calculating line segments</pre>
+            <pre id="output" class="output">Choose options on the left to start calculating line segments</pre>
         </div>
     </div>
     <script src="//www.google.com/jsapi?key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw"></script>
@@ -143,7 +147,7 @@
     <script>
         var geo = new Geo();
         geo.init({
-            id: 'files'
+            id: 'inputs'
         });
     </script>
 </body>

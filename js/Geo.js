@@ -12,14 +12,23 @@ var Geo = function () {
         init: function (options) {
             var me = this;
             this.el = document.getElementById(options.id);
-            this.range = document.getElementById('range');
-            this.minimum = document.getElementById('minimum');
-            this.inputs = this.el.getElementsByTagName('input');
+            this.custom = document.getElementById('custom');
             this.output = document.getElementById('output');
-            this.textarea = this.el.getElementsByTagName('textarea')[0];
+            this.inputs = this.el.getElementsByTagName('input');
+            this.files = this.getInputs('file');
             this.earth = new Earth();
             this.earth.init();
             this.addEvent('click', this.el, function (e) { me.onClick(e); });
+        },
+        getInputs: function (name) {
+            var i = 0,
+                list = [];
+            for (i = 0; i < this.inputs.length; i += 1) {
+                if (name === this.inputs[i].getAttribute('name')) {
+                    list.push(this.inputs[i]);
+                }
+            }
+            return list;
         },
         addEvent: function (name, el, func) {
             if (el.addEventListener) {
@@ -32,23 +41,21 @@ var Geo = function () {
         },
         onClick: function (e) {
             if (!e) { e = window.event; }
-            if (e.target.nodeName === 'INPUT') {
+            if (e.target.nodeName === 'INPUT' && e.target.getAttribute('type') === 'checkbox') {
                 var me = this,
                     i = 0,
-                    segments = false,
+                    segments = this.getInputs('calculate')[0].checked,
                     urls = [],
                     list = [],
                     lines = [];
 
                 me.earth.reset();
-                for (i = 0; i < this.inputs.length; i += 1) {
-                    if (this.inputs[i].checked === true) {
-                        if (this.inputs[i].value === 'textarea') {
-                            list = me.add(this.textarea.value, list);
-                        } else if (this.inputs[i].value === 'segments') {
-                            segments = true;
+                for (i = 0; i < this.files.length; i += 1) {
+                    if (this.files[i].checked === true) {
+                        if (this.files[i].value === 'textarea') {
+                            list = me.add(this.custom.value, list);
                         } else {
-                            urls.push(this.inputs[i].value);
+                            urls.push(this.files[i].value);
                         }
                     }
                 }
@@ -57,9 +64,9 @@ var Geo = function () {
                     this.loadAll(0, urls, list, function (items) {
                         if (segments === true) {
                             if (items.length < 250) {
-                                lines = me.calculate(items, Number(me.range.value), Number(me.minimum.value));
-                                if (lines.length < 500) {
-                                    me.output.innerHTML = me.generate(lines, Number(me.range.value), Number(me.minimum.value));
+                                lines = me.calculate(items, Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value), Number(me.getInputs('minBearing')[0].value), Number(me.getInputs('maxBearing')[0].value));
+                                if (lines.length < 1000) {
+                                    me.output.innerHTML = me.generate(lines, Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value), Number(me.getInputs('minBearing')[0].value), Number(me.getInputs('maxBearing')[0].value));
                                 } else {
                                     me.output.innerHTML = lines.length + ' lines is too many combinations to computer efficiently in the browser';
                                 }
@@ -113,7 +120,7 @@ var Geo = function () {
             } else if (data.Document) {
                 data = data.Document.Placemark;
             }
-            console.log('length', data.length);
+            //console.log('length', data.length);
             for (i = 0; i < data.length; i += 1) {
                 coords = (data[i].Point || data[i].Placemark.Point || data[i].Placemark[0].Point).coordinates['#text'].split(',');
                 data[i].coords = [Number(coords[0]), Number(coords[1])];
@@ -122,23 +129,26 @@ var Geo = function () {
             }
             return list;
         },
-        generate: function (items, range, min) {
+        generate: function (items, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing) {
+            //console.log('generate', items, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing);
             var i = 0,
                 j = 0,
                 html = '';
 
-            html += '<h1>' + items.length + ' lines <br/>';
-            html += 'each with at least ' + min + ' points <br/>';
-            html += 'within ' + range + 'km of the line</h1>';
+            html += '<h1>' + items.length + ' lines between ' + minLength + 'km and ' + maxLength + 'km in length<br/>';
+            html += 'each has at least ' + minPoints + ' points less than ' + maxDistance + 'km from the line</h1>';
+            
 
             for (i = 0; i < items.length; i += 1) {
-                html += '<h2>' + items[i].points.length + ' points - ' + items[i].distance + 'km</h1><ul>';
+                html += '<h2>' + items[i].points.length + ' points</h1><ul>';
+                items[i].points.sort(function (a, b) { return a.distance - b.distance; });
 
                 for (j = 0; j < items[i].points.length; j += 1) {
-                    html += '<li>' + Math.round(items[i].points[j].distance || 0) + 'km - ' + items[i].points[j].name['#text'] + ' - ' + Math.round(items[i].points[j].deviation || 0) + 'km</li>';
+                    html += '<li>' + Math.round(items[i].points[j].distance || 0) + 'km / ' + Math.round(items[i].points[j].bearing || 0) + '° / ' + items[i].points[j].name + ' / ' + items[i].points[j].coords[1] + ', ' + items[i].points[j].coords[0] + '</li>';
+                    
                     // don't draw a line for the first point, and limit number of lines to max of 300
-                    if (j > 0 && i < 300) {
-                        this.earth.addLine(Math.round(items[i].points[j].distance || 0) + 'km<br />' + items[i].points[0].name['#text'] + '<br />' + items[i].points[j].name['#text'], this.generateColor(items[i].points[j].distance / this.longest), items[i].points[0], items[i].points[j]);
+                    if (j > 0) {
+                        this.earth.addLine(items[i].points[j - 1].name + '<br />' + items[i].points[j].name + '<br />' +  Number(items[i].points[j].distance || 0) + 'km<br />' + Number(items[i].points[j].bearing || 0).toFixed(2) + '°', this.generateColor(items[i].points[j].distance / this.longest), items[i].points[j - 1], items[i].points[j]);
                     }
                 }
                 html += '</ul>';
@@ -151,7 +161,8 @@ var Geo = function () {
                 b = Math.round((1 - value) * 255);
             return (0xff000000 + (0x00010000 * b) + (0x00000100 * g) + (0x00000001 * r)).toString(16);
         },
-        calculate: function (items, maxDistance, minPoints) {
+        calculate: function (items, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing) {
+            //console.log('calculate', items, maxDistance, minPoints, minLength, maxLength);
             var i = 0,
                 j = 0,
                 k = 0,
@@ -172,29 +183,46 @@ var Geo = function () {
             // loop through the start point
             for (i = 0; i < items.length; i += 1) {
                 latlon1 = new LatLon(items[i].coords[1], items[i].coords[0]);
-                point1 = this.cloneObject(items[i]);
-                point1.distance = 0;
-                point1.deviation = 0;
+                point1 = {
+                    name: items[i].name['#text'],
+                    coords: [items[i].coords[0], items[i].coords[1]],
+                    bearing: 0,
+                    bearingRad: 0,
+                    distance: 0,
+                    deviation: 0
+                };
                 
                 // loop through the end point
                 for (j = (i + 1); j < items.length; j += 1) {
                     latlon2 = new LatLon(items[j].coords[1], items[j].coords[0]);
-                    point2 = this.cloneObject(items[j]);
-                    point2.distance = latlon1.distanceTo(latlon2);
-                    point2.deviation = 0;
+                    point2 = {
+                        name: items[j].name['#text'],
+                        coords: [items[j].coords[0], items[j].coords[1]],
+                        bearing: latlon1.bearingTo(latlon2),
+                        distance: latlon1.distanceTo(latlon2),
+                        deviation: 0
+                    };
+                    point2.bearingRad = point2.bearing.toRad();
                     
                     // create a line from start point to end point
                     line = {
-                        distance: latlon1.distanceTo(latlon2),
+                        bearing: point2.bearing,
+                        distance: point2.distance,
                         points: [point1, point2]
                     };
                     
                     // loop through the other points as point three
                     for (k = (j + 1); k < items.length; k += 1) {
                         latlon3 = new LatLon(items[k].coords[1], items[k].coords[0]);
-                        point3 = this.cloneObject(items[k]);
-                        point3.distance = latlon1.distanceTo(latlon3);
-                        point3.deviation = Math.abs(Math.asin(Math.sin(point3.distance / R) * Math.sin(latlon1.bearingTo(latlon3).toRad() - latlon1.bearingTo(latlon2).toRad())) * R);
+                        point3 = {
+                            name: items[k].name['#text'],
+                            coords: [items[k].coords[0], items[k].coords[1]],
+                            bearing: latlon1.bearingTo(latlon3),
+                            distance: latlon1.distanceTo(latlon3),
+                            deviation: 0
+                        };
+                        point3.bearingRad = point3.bearing.toRad();
+                        point3.deviation = Math.abs(Math.asin(Math.sin(point3.distance / R) * Math.sin(point3.bearingRad - point2.bearingRad)) * R);
                         count += 1;
                         
                         // if the third point is close enough to the line segment, then add it as a point on this line
@@ -206,8 +234,10 @@ var Geo = function () {
                         }
                     }
                     
-                    // if the line contains several points then shortlist the line
-                    if (line.points.length >= minPoints) {
+                    // if the line contains enough points and between the min and max length
+                    if (line.points.length >= minPoints &&
+                        line.distance > minLength && line.distance < maxLength &&
+                        line.bearing > minBearing && line.bearing < maxBearing) {
                         lines.push(line);
                         if (line.distance > this.longest) {
                             this.longest = line.distance;
@@ -240,19 +270,6 @@ var Geo = function () {
             var distanceAC = Math.acos(Math.sin(lat1Rads) * Math.sin(lat3Rads) + Math.cos(lat1Rads) * Math.cos(lat3Rads) * Math.cos(dLon)) * 6371;
             var min_distance = Math.abs(Math.asin(Math.sin(distanceAC / 6371) * Math.sin(this.degreesToRadians(bearing1) - this.degreesToRadians(bearing2))) * 6371);
             return { distance: min_distance, bearing: bearing1 };
-        },
-        cloneObject: function (obj) {
-            var key = '',
-                temp = null;
-            
-            if (obj === null || typeof obj !== 'object') {
-                return obj;
-            }
-            temp = obj.constructor(); // give temp the original obj's constructor
-            for (key in obj) {
-                temp[key] = this.cloneObject(obj[key]);
-            }
-            return temp;
         },
         stringToXml: function (txt) {
             var xmlDoc = null,
