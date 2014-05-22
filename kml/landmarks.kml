@@ -796,23 +796,6 @@
 			</Point>
 		</Placemark>
 		<Placemark>
-			<name>Pyramid Rock, USA</name>
-			<LookAt>
-				<longitude>-123.9835389966658</longitude>
-				<latitude>45.49585827379595</latitude>
-				<altitude>0</altitude>
-				<heading>-13.07017599517082</heading>
-				<tilt>0</tilt>
-				<range>372.7537118384461</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin011</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>-123.984582,45.495846,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
 			<name>Fort Rock Cave, USA</name>
 			<LookAt>
 				<longitude>-121.0697677787409</longitude>
@@ -929,23 +912,6 @@
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-83.431027,39.026381,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>Nazca Triangle</name>
-			<LookAt>
-				<longitude>-75.12516786183207</longitude>
-				<latitude>-14.69418033573037</latitude>
-				<altitude>0</altitude>
-				<heading>0.01263562118997434</heading>
-				<tilt>0</tilt>
-				<range>985.1224720034304</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin33</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>-75.12761830213432,-14.69521179506933,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>

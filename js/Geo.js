@@ -18,7 +18,13 @@ var Geo = function () {
             this.files = this.getInputs('file');
             this.earth = new Earth();
             this.earth.init();
-            this.addEvent('click', this.el, function (e) { me.onClick(e); });
+            this.addEvent('click', this.el, function (e) {
+                if (!e) { e = window.event; }
+                me.onClick(e.target);
+            });
+            window.setTimeout(function () {
+                me.onClick(me.getInputs('calculate')[0]);
+            }, 1000);
         },
         getInputs: function (name) {
             var i = 0,
@@ -39,9 +45,8 @@ var Geo = function () {
                 el[name] = func;
             }
         },
-        onClick: function (e) {
-            if (!e) { e = window.event; }
-            if (e.target.nodeName === 'INPUT' && e.target.getAttribute('type') === 'checkbox') {
+        onClick: function (el) {
+            if (el.nodeName === 'INPUT' && el.getAttribute('type') === 'checkbox') {
                 var me = this,
                     i = 0,
                     segments = this.getInputs('calculate')[0].checked,
@@ -63,7 +68,7 @@ var Geo = function () {
                     this.earth.reset();
                     this.loadAll(0, urls, list, function (items) {
                         if (segments === true) {
-                            if (items.length < 250) {
+                            if (items.length < 500) {
                                 lines = me.calculate(items, Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value), Number(me.getInputs('minBearing')[0].value), Number(me.getInputs('maxBearing')[0].value));
                                 if (lines.length < 1000) {
                                     me.output.innerHTML = me.generate(lines, Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value), Number(me.getInputs('minBearing')[0].value), Number(me.getInputs('maxBearing')[0].value));
@@ -133,22 +138,29 @@ var Geo = function () {
             //console.log('generate', items, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing);
             var i = 0,
                 j = 0,
+                bearing = 0,
+                distance = 0,
                 html = '';
 
             html += '<h1>' + items.length + ' lines between ' + minLength + 'km and ' + maxLength + 'km in length<br/>';
             html += 'each has at least ' + minPoints + ' points less than ' + maxDistance + 'km from the line</h1>';
-            
 
             for (i = 0; i < items.length; i += 1) {
                 html += '<h2>' + items[i].points.length + ' points</h1><ul>';
-                items[i].points.sort(function (a, b) { return a.distance - b.distance; });
+                
+                // because we are resorting the points, we will need to recalculate the bearings and distances
+                bearing = 0;
+                distance = 0;
+                items[i].points.sort(function (a, b) { return b._lat - a._lat; });
 
                 for (j = 0; j < items[i].points.length; j += 1) {
-                    html += '<li>' + Math.round(items[i].points[j].distance || 0) + 'km / ' + Math.round(items[i].points[j].bearing || 0) + '° / ' + items[i].points[j].name + ' / ' + items[i].points[j].coords[1] + ', ' + items[i].points[j].coords[0] + '</li>';
-                    
-                    // don't draw a line for the first point, and limit number of lines to max of 300
-                    if (j > 0) {
-                        this.earth.addLine(items[i].points[j - 1].name + '<br />' + items[i].points[j].name + '<br />' +  Number(items[i].points[j].distance || 0) + 'km<br />' + Number(items[i].points[j].bearing || 0).toFixed(2) + '°', this.generateColor(items[i].points[j].distance / this.longest), items[i].points[j - 1], items[i].points[j]);
+                    html += '<li>' + distance + 'km / ' + bearing + '° / ' + items[i].points[j].name + ' / ';
+                    html += items[i].points[j]._lat + ', ' + items[i].points[j]._lon + '</li>';
+
+                    if (j < items[i].points.length - 1) {
+                        bearing = items[i].points[j].bearingTo(items[i].points[j + 1]).toFixed(2);
+                        distance = items[i].points[j].distanceTo(items[i].points[j + 1]);
+                        this.earth.addLine(items[i].points[j].name + '<br />' + items[i].points[j + 1].name + '<br />' + distance + 'km<br />' + bearing + '°', this.generateColor(distance / this.longest), items[i].points[j], items[i].points[j + 1]);
                     }
                 }
                 html += '</ul>';
@@ -161,8 +173,8 @@ var Geo = function () {
                 b = Math.round((1 - value) * 255);
             return (0xff000000 + (0x00010000 * b) + (0x00000100 * g) + (0x00000001 * r)).toString(16);
         },
-        calculate: function (items, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing) {
-            //console.log('calculate', items, maxDistance, minPoints, minLength, maxLength);
+        calculate: function (items, maxDeviation, minPoints, minLength, maxLength, minBearing, maxBearing) {
+            //console.log('calculate', items, maxDeviation, minPoints, minLength, maxLength);
             var i = 0,
                 j = 0,
                 k = 0,
@@ -170,9 +182,6 @@ var Geo = function () {
                 deviation = 0,
                 lines = [],
                 line = {},
-                point1 = {},
-                point2 = {},
-                point3 = {},
                 latlon1 = {},
                 latlon2 = {},
                 latlon3 = {},
@@ -183,53 +192,38 @@ var Geo = function () {
             // loop through the start point
             for (i = 0; i < items.length; i += 1) {
                 latlon1 = new LatLon(items[i].coords[1], items[i].coords[0]);
-                point1 = {
-                    name: items[i].name['#text'],
-                    coords: [items[i].coords[0], items[i].coords[1]],
-                    bearing: 0,
-                    bearingRad: 0,
-                    distance: 0,
-                    deviation: 0
-                };
+                latlon1.name = items[i].name['#text'];
                 
                 // loop through the end point
                 for (j = (i + 1); j < items.length; j += 1) {
                     latlon2 = new LatLon(items[j].coords[1], items[j].coords[0]);
-                    point2 = {
-                        name: items[j].name['#text'],
-                        coords: [items[j].coords[0], items[j].coords[1]],
-                        bearing: latlon1.bearingTo(latlon2),
-                        distance: latlon1.distanceTo(latlon2),
-                        deviation: 0
-                    };
-                    point2.bearingRad = point2.bearing.toRad();
-                    
+                    latlon2.name = items[j].name['#text'];
+                    latlon2.bearing = latlon1.bearingTo(latlon2);
+                    latlon2.bearingRad = latlon2.bearing.toRad();
+                    latlon2.distance = latlon1.distanceTo(latlon2);
+
                     // create a line from start point to end point
                     line = {
-                        bearing: point2.bearing,
-                        distance: point2.distance,
-                        points: [point1, point2]
+                        bearing: latlon2.bearing,
+                        distance: latlon2.distance,
+                        points: [latlon1, latlon2]
                     };
                     
                     // loop through the other points as point three
                     for (k = (j + 1); k < items.length; k += 1) {
                         latlon3 = new LatLon(items[k].coords[1], items[k].coords[0]);
-                        point3 = {
-                            name: items[k].name['#text'],
-                            coords: [items[k].coords[0], items[k].coords[1]],
-                            bearing: latlon1.bearingTo(latlon3),
-                            distance: latlon1.distanceTo(latlon3),
-                            deviation: 0
-                        };
-                        point3.bearingRad = point3.bearing.toRad();
-                        point3.deviation = Math.abs(Math.asin(Math.sin(point3.distance / R) * Math.sin(point3.bearingRad - point2.bearingRad)) * R);
+                        latlon3.name = items[k].name['#text'];
+                        latlon3.bearing = latlon1.bearingTo(latlon3);
+                        latlon3.bearingRad = latlon3.bearing.toRad();
+                        latlon3.distance = latlon1.distanceTo(latlon3);
+                        latlon3.deviation = Math.abs(Math.asin(Math.sin(latlon3.distance / R) * Math.sin(latlon3.bearingRad - latlon2.bearingRad)) * R);
                         count += 1;
-                        
+
                         // if the third point is close enough to the line segment, then add it as a point on this line
-                        if (point3.distance >= maxDistance && point3.deviation <= maxDistance) {
-                            line.points.push(point3);
-                            if (point3.distance > line.distance) {
-                                line.distance = point3.distance;
+                        if (latlon3.deviation <= maxDeviation) {
+                            line.points.push(latlon3);
+                            if (latlon3.distance > line.distance) {
+                                line.distance = latlon3.distance;
                             }
                         }
                     }

@@ -2,6 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>Tallest structure by category</name>
+	<open>1</open>
 	<Placemark>
 		<name>Burj Dubai</name>
 		<Snippet maxLines="0"></Snippet>
@@ -24,14 +25,6 @@
 		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
 		<Point>
 			<coordinates>-97.2892027777778,47.3421805555556,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Abraj Al Bait Towers</name>
-		<Snippet maxLines="0"></Snippet>
-		<description><![CDATA[<br>Source: Wikipedia article <a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_and_structures_in_the_world#Tallest_structure_by_category">List of tallest buildings and structures in the world</a>]]></description>
-		<Point>
-			<coordinates>39.8263888888889,21.4188888888889,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
