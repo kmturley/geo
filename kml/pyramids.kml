@@ -1031,23 +1031,6 @@
 			</Point>
 		</Placemark>
 		<Placemark>
-			<name>Pyramid, Rome</name>
-			<LookAt>
-				<longitude>12.48093844667202</longitude>
-				<latitude>41.87645805316499</latitude>
-				<altitude>0</altitude>
-				<heading>-2.270332073642106e-06</heading>
-				<tilt>0</tilt>
-				<range>93.46300894390424</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin600</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>12.480892,41.876429,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
 			<name>Calakmul, Mexico</name>
 			<LookAt>
 				<longitude>-89.84059663985404</longitude>

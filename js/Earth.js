@@ -94,8 +94,8 @@ var Earth = function () {
             }
             line.setTessellate(true);
             line.setAltitudeMode(this.ge.ALTITUDE_CLAMP_TO_GROUND);
-            line.getCoordinates().pushLatLngAlt(item.coords[1], item.coords[0], 0);
-            line.getCoordinates().pushLatLngAlt(item2.coords[1], item2.coords[0], 0);
+            line.getCoordinates().pushLatLngAlt(item._lat, item._lon, 0);
+            line.getCoordinates().pushLatLngAlt(item2._lat, item2._lon, 0);
             mark.setName(name);
             //mark.setDescription(item.desc);
             mark.setGeometry(line);
