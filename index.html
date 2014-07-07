@@ -7,8 +7,6 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <a href="https://github.com/kmturley/geo" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-    
     <div class="row full">
         <div class="col w1of4">
             <h1>Geo</h1>
@@ -20,7 +18,8 @@
                     <input type="checkbox" value="segments" name="calculate" checked /> Calculate line segments (CPU intensive!)
                 </p>
                 <p><input type="text" value="3" size="1" name="minPoints" /> Minimum points required</p>
-                <p><input type="text" value="0.5" size="1" name="maxDistance" /> Max distance from line (km)</p>
+                <p><input type="text" value="0.02" size="1" name="maxDifference" /> Max bearing difference (degrees °) OR</p>
+                <p><input type="text" value="" size="1" name="maxDistance" /> Max distance from line (km)</p>
                 <p><input type="text" value="0" size="1" name="minLength" /> Min length of line (km)</p>
                 <p><input type="text" value="24901" size="1" name="maxLength" /> Max length of line (km)</p>
                 <p><input type="text" value="0" size="1" name="minBearing" /> Min bearing (degrees °)</p>
@@ -137,7 +136,8 @@
                 <hr />
             </div>
         </div>
-        <div class="col w3of4">
+        <div class="col w3of4 map">
+            <a href="https://github.com/kmturley/geo" target="_blank"><img style="position: absolute; top: 0; left: 10px; border: 0; z-index:2;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
             <div id="map3d"></div>
             <pre id="output" class="output">Choose options on the left to start calculating line segments</pre>
         </div>
