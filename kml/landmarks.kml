@@ -722,6 +722,40 @@
 	<Folder>
 		<name>Landmarks</name>
 		<open>1</open>
+        <Placemark>
+            <name>Amalienborg, Denmark</name>
+            <LookAt>
+                <longitude>12.5930199970561</longitude>
+                <latitude>55.68405899722767</latitude>
+                <altitude>0</altitude>
+                <heading>-2.431444998447777e-09</heading>
+                <tilt>0</tilt>
+                <range>1000.00004167438</range>
+                <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#failed1</styleUrl>
+            <Point>
+                <gx:drawOrder>1</gx:drawOrder>
+                <coordinates>12.59320008269977,55.68399720281342,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Hollywood Sign, USA</name>
+            <LookAt>
+                <longitude>-118.3215533214051</longitude>
+                <latitude>34.13413893811222</latitude>
+                <altitude>0</altitude>
+                <heading>0.3982953872786805</heading>
+                <tilt>0</tilt>
+                <range>849.896518447113</range>
+                <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#failed1</styleUrl>
+            <Point>
+                <gx:drawOrder>1</gx:drawOrder>
+                <coordinates>-118.3215411568751,34.13393178718261,0</coordinates>
+            </Point>
+        </Placemark>
 		<Placemark>
 			<name>Hillegom Hole</name>
 			<LookAt>
@@ -1708,6 +1742,74 @@
 				<coordinates>-91.40965299989713,32.63682300040318,0</coordinates>
 			</Point>
 		</Placemark>
+        <Placemark>
+            <name>Karlsruhe, Germany</name>
+            <LookAt>
+                <longitude>8.405613151140308</longitude>
+                <latitude>49.01333751491986</latitude>
+                <altitude>0</altitude>
+                <heading>0.001513269170587588</heading>
+                <tilt>0</tilt>
+                <range>429.8424773838584</range>
+                <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#m_ylw-pushpin</styleUrl>
+            <Point>
+                <gx:drawOrder>1</gx:drawOrder>
+                <coordinates>8.404494792306927,49.01387961182565,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Griffith Observatory, Los Angeles</name>
+            <LookAt>
+                <longitude>-118.3001777777778</longitude>
+                <latitude>34.1182406231617</latitude>
+                <altitude>0</altitude>
+                <heading>0.06039798135786144</heading>
+                <tilt>0</tilt>
+                <range>300</range>
+                <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#msn_ylw-pushpin</styleUrl>
+            <Point>
+                <gx:drawOrder>1</gx:drawOrder>
+                <coordinates>-118.3003596225491,34.11837742272768,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Untermyer Park</name>
+            <LookAt>
+                <longitude>-73.8859475878596</longitude>
+                <latitude>40.96704910269129</latitude>
+                <altitude>0</altitude>
+                <heading>0.001115960082246739</heading>
+                <tilt>0</tilt>
+                <range>188.5434973085452</range>
+                <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#m_ylw-pushpin0</styleUrl>
+            <Point>
+                <gx:drawOrder>1</gx:drawOrder>
+                <coordinates>-73.88632009882745,40.96697521812494,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Sleepy Hollow Cemetery, NY</name>
+            <LookAt>
+                <longitude>-73.85946388026944</longitude>
+                <latitude>41.09736957901355</latitude>
+                <altitude>0</altitude>
+                <heading>0.03266157662131916</heading>
+                <tilt>0</tilt>
+                <range>651.0352558652755</range>
+                <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#m_ylw-pushpin0</styleUrl>
+            <Point>
+                <gx:drawOrder>1</gx:drawOrder>
+                <coordinates>-73.85969072096199,41.09756888881847,0</coordinates>
+            </Point>
+        </Placemark>
 	</Folder>
 </Document>
 </kml>

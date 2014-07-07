@@ -24,7 +24,7 @@ var Geo = function () {
             });
             window.setTimeout(function () {
                 me.onClick(me.getInputs('calculate')[0]);
-            }, 1000);
+            }, 2000);
         },
         getInputs: function (name) {
             var i = 0,
@@ -69,9 +69,9 @@ var Geo = function () {
                     this.loadAll(0, urls, list, function (items) {
                         if (segments === true) {
                             if (items.length < 500) {
-                                lines = me.calculate(items, Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value), Number(me.getInputs('minBearing')[0].value), Number(me.getInputs('maxBearing')[0].value));
+                                lines = me.calculate(items, Number(me.getInputs('maxDifference')[0].value), Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value), Number(me.getInputs('minBearing')[0].value), Number(me.getInputs('maxBearing')[0].value));
                                 if (lines.length < 1000) {
-                                    me.output.innerHTML = me.generate(lines, Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value), Number(me.getInputs('minBearing')[0].value), Number(me.getInputs('maxBearing')[0].value));
+                                    me.output.innerHTML = me.generate(lines, Number(me.getInputs('maxDifference')[0].value), Number(me.getInputs('maxDistance')[0].value), Number(me.getInputs('minPoints')[0].value), Number(me.getInputs('minLength')[0].value), Number(me.getInputs('maxLength')[0].value));
                                 } else {
                                     me.output.innerHTML = lines.length + ' lines is too many combinations to computer efficiently in the browser';
                                 }
@@ -134,8 +134,8 @@ var Geo = function () {
             }
             return list;
         },
-        generate: function (items, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing) {
-            //console.log('generate', items, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing);
+        generate: function (items, maxDifference, maxDistance, minPoints, minLength, maxLength) {
+            //console.log('generate', items, maxDifference, maxDistance, minPoints, minLength, maxLength);
             var i = 0,
                 j = 0,
                 bearing = 0,
@@ -143,7 +143,7 @@ var Geo = function () {
                 html = '';
 
             html += '<h1>' + items.length + ' lines between ' + minLength + 'km and ' + maxLength + 'km in length<br/>';
-            html += 'each has at least ' + minPoints + ' points less than ' + maxDistance + 'km from the line</h1>';
+            html += 'each has at least ' + minPoints + ' points less than ' + (maxDifference ? maxDifference + '°' : maxDistance + 'km') + ' from the line</h1>';
 
             for (i = 0; i < items.length; i += 1) {
                 html += '<h2>' + items[i].points.length + ' points</h1><ul>';
@@ -173,8 +173,8 @@ var Geo = function () {
                 b = Math.round((1 - value) * 255);
             return (0xff000000 + (0x00010000 * b) + (0x00000100 * g) + (0x00000001 * r)).toString(16);
         },
-        calculate: function (items, maxDeviation, minPoints, minLength, maxLength, minBearing, maxBearing) {
-            //console.log('calculate', items, maxDeviation, minPoints, minLength, maxLength);
+        calculate: function (items, maxDifference, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing) {
+            //console.log('calculate', items, maxDifference, maxDistance, minPoints, minLength, maxLength, minBearing, maxBearing);
             var i = 0,
                 j = 0,
                 k = 0,
@@ -216,11 +216,14 @@ var Geo = function () {
                         latlon3.bearing = latlon1.bearingTo(latlon3);
                         latlon3.bearingRad = latlon3.bearing.toRad();
                         latlon3.distance = latlon1.distanceTo(latlon3);
-                        latlon3.deviation = Math.abs(Math.asin(Math.sin(latlon3.distance / R) * Math.sin(latlon3.bearingRad - latlon2.bearingRad)) * R);
+                        if (maxDifference) {
+                            latlon3.deviation = Math.abs(latlon2.bearing - latlon3.bearing);
+                            maxDistance = maxDifference;
+                        } else {
+                            latlon3.deviation = Math.abs(Math.asin(Math.sin(latlon3.distance / R) * Math.sin(latlon3.bearingRad - latlon2.bearingRad)) * R);
+                        }
                         count += 1;
-
-                        // if the third point is close enough to the line segment, then add it as a point on this line
-                        if (latlon3.deviation <= maxDeviation) {
+                        if (latlon3.deviation <= maxDistance) {
                             line.points.push(latlon3);
                             if (latlon3.distance > line.distance) {
                                 line.distance = latlon3.distance;
@@ -229,9 +232,7 @@ var Geo = function () {
                     }
                     
                     // if the line contains enough points and between the min and max length
-                    if (line.points.length >= minPoints &&
-                        line.distance > minLength && line.distance < maxLength &&
-                        line.bearing > minBearing && line.bearing < maxBearing) {
+                    if (line.points.length >= minPoints && line.distance > minLength && line.distance < maxLength && line.bearing > minBearing && line.bearing < maxBearing) {
                         lines.push(line);
                         if (line.distance > this.longest) {
                             this.longest = line.distance;
