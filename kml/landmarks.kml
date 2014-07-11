@@ -1810,6 +1810,23 @@
                 <coordinates>-73.85969072096199,41.09756888881847,0</coordinates>
             </Point>
         </Placemark>
+        <Placemark>
+            <name>Pentagon, Washington DC</name>
+            <LookAt>
+                <longitude>-77.05754340514154</longitude>
+                <latitude>38.87065292286404</latitude>
+                <altitude>0</altitude>
+                <heading>-0.03530682643401578</heading>
+                <tilt>0</tilt>
+                <range>1616.032402569478</range>
+                <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+            </LookAt>
+            <styleUrl>#m_ylw-pushpin</styleUrl>
+            <Point>
+                <gx:drawOrder>1</gx:drawOrder>
+                <coordinates>-77.05594009105342,38.87099612538606,0</coordinates>
+            </Point>
+        </Placemark>
 	</Folder>
 </Document>
 </kml>
