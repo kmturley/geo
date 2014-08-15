@@ -1,0 +1,71 @@
+/*
+ * Themes
+ */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222;
+    background-color: #f8f8f8;
+}
+
+h1,
+h2,
+p,
+img {
+    margin: 0 0 20px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+}
+th {
+    text-align: left;
+    font-weight: bold;
+    background-color: #eee;
+}
+th,
+td {
+    padding: 5px;
+    border: 1px solid #eee;
+}
+
+.viewer {
+    position: relative;
+    background-color: #000;
+}
+
+.viewer .reset {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #666;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #999;
+}
+
+.results {
+    background-color: #fff;
+}

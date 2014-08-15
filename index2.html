@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Geo</title>
+    <meta name="description" content="" />
+    <meta name=viewport content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="css/global/normalize.css" />
+    <link rel="stylesheet" href="css/global/layout.css" />
+    <link rel="stylesheet" href="css/global/themes.css" />
+    <link rel="stylesheet" href="css/modules/sidebar.css" />
+</head>
+<body class="flow-m">
+    <div class="container w1of1 h1of1">
+        <div class="row w1of1 h2of3">
+            <div class="col w1of3 h1of1 scroll sidebar">
+                <h1>Geo II</h1>
+                <p>Calculates lines from a single place to the others, showing the distances and bearings of each.</p>
+                <p>Select a place to view the lines from there.</p>
+                <ul class="inputs" id="inputs">
+                    <li>
+                        <input type="checkbox" value="kml/earthquakes.kml" name="file" /> 
+                        Earthquakes <a href="kml/earthquakes.kml" target="_blank">(kml)</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="kml/haarp.kml" name="file" /> 
+                        Haarp &amp; Military <a href="kml/haarp.kml" target="_blank">(kml)</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="kml/landmarks.kml" name="file" /> 
+                        Landmarks <a href="kml/landmarks.kml" target="_blank">(kml)</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="kml/monoliths.kml" name="file" /> 
+                        Monoliths <a href="kml/monoliths.kml" target="_blank">(kml)</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="kml/worship.kml" name="file" /> 
+                        Places of Worship <a href="kml/worship.kml" target="_blank">(kml)</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="kml/pyramids.kml" name="file" /> 
+                        Pyramids <a href="kml/pyramids.kml" target="_blank">(kml)</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="kml/structures.kml" name="file" /> 
+                        Tallest Structures <a href="kml/structures.kml" target="_blank">(kml)</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="kml/us-state-capitals.kml" name="file" checked /> 
+                        US &amp; Canadian State Capitals <a href="kml/us-state-capitals.kml" target="_blank">(kml)</a>
+                    </li>
+                </ul>
+                <p>&nbsp;</p>
+                <p><a href="index.html" class="button">&lt; Back</a> <a class="button" id="reset">Reset</a></p>
+            </div>
+            <div class="col w2of3 h1of1 viewer" id="viewer">
+            </div>
+        </div>
+        <div class="row w1of1 h1of3 results" id="results"></div>
+    </div>
+    <script src="//www.google.com/jsapi?key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw"></script>
+    <script src="js/modules/Earth.js"></script>
+    <script src="js/modules/Geo.js"></script>
+    <script src="js/modules/App.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    padding: 20px;
+}
+
+.sidebar .inputs {
+    list-style: none;
+}

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
-<Document id="http://comcat.cr.usgs.gov/fdsnws/event/1/query?starttime=1800-04-21%2000:00:00&amp;minmagnitude=8.2&amp;format=kml&amp;kmlcolorby=age&amp;endtime=2014-04-28%2023:59:59&amp;orderby=time" xml:lang="en-US" >
+<Document id="http://comcat.cr.usgs.gov/fdsnws/event/1/query?starttime=1800-04-21%2000:00:00&amp;minmagnitude=8.2&amp;format=kml&amp;kmlcolorby=age&amp;endtime=2014-04-28%2023:59:59&amp;orderby=time" xml:lang="en-US">
 	<name>USGS Earthquakes</name>
+	<visibility>0</visibility>
+	<open>1</open>
 	<description>Updated 2014-04-28 21:48:48 UTC</description>
 	<LookAt>
 		<longitude>-100</longitude>
@@ -12,19 +14,6 @@
 		<range>4000000</range>
 	</LookAt>
 	<atom:author><atom:name>U.S. Geological Survey</atom:name></atom:author><atom:link href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?starttime=1800-04-21%2000:00:00&amp;minmagnitude=8.2&amp;format=kml&amp;kmlcolorby=age&amp;endtime=2014-04-28%2023:59:59&amp;orderby=time" rel="self"></atom:link>
-	<Style id="circle-inactive">
-		<IconStyle>
-			<Icon>
-				<href>http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_circle.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<BalloonStyle>
-			<text><![CDATA[<style>h2{margin-bottom:0;font-size:16px;font-weight:bold;}.quicksummary{float:left;}.quicksummary>a{float:left;display:block;padding:4px;margin-right:8px;text-decoration:none;border:1pxsolid#333;}.quicksummary>a.tsunamilogo{padding:0;}.roman{font-family:Georgia,Times,serif;}.pager-pending{background-color:#FFF;color:#000;}.pager-green{background-color:#00b04f;color:#fff;}.pager-yellow{background-color:#ff0;color:#000;}.pager-orange{background-color:#f90;color:#000;}.pager-red{background-color:#f00;color:#fff;}.mmi-I{color:#000;background-color:#FFFFFF;}.mmi-II{color:#000;background-color:#ACD8E9;}.mmi-III{color:#000;background-color:#ACD8E9;}.mmi-IV{color:#000;background-color:#83D0DA;}.mmi-V{color:#000;background-color:#7BC87F;}.mmi-VI{color:#000;background-color:#F9F518;}.mmi-VII{color:#000;background-color:#FAC611;}.mmi-VIII{color:#000;background-color:#FA8A11;}.mmi-IX{color:#FFF;background-color:#F7100C;}.mmi-X{color:#FFF;background-color:#C80F0A;}.mmi-XI{color:#FFF;background-color:#C80F0A;}.mmi-XII{color:#FFF;background-color:#C80F0A;}dl{clear:left;font-family:Helvetica;line-height:1.3;}dt{color:#999;margin-top:.5em;}dd{margin:0;}.links{clear:both;line-height:1.3;}</style><img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_banner.jpg" alt="USGS" width="400" height="40"/>$[description]<img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/anss.gif" alt="ANSS" width="100" height="31"/>]]></text>
-		</BalloonStyle>
-	</Style>
 	<StyleMap id="circle">
 		<Pair>
 			<key>normal</key>
@@ -41,1143 +30,1054 @@
 				<href>http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_circle.png</href>
 			</Icon>
 		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<style>h2{margin-bottom:0;font-size:16px;font-weight:bold;}.quicksummary{float:left;}.quicksummary>a{float:left;display:block;padding:4px;margin-right:8px;text-decoration:none;border:1pxsolid#333;}.quicksummary>a.tsunamilogo{padding:0;}.roman{font-family:Georgia,Times,serif;}.pager-pending{background-color:#FFF;color:#000;}.pager-green{background-color:#00b04f;color:#fff;}.pager-yellow{background-color:#ff0;color:#000;}.pager-orange{background-color:#f90;color:#000;}.pager-red{background-color:#f00;color:#fff;}.mmi-I{color:#000;background-color:#FFFFFF;}.mmi-II{color:#000;background-color:#ACD8E9;}.mmi-III{color:#000;background-color:#ACD8E9;}.mmi-IV{color:#000;background-color:#83D0DA;}.mmi-V{color:#000;background-color:#7BC87F;}.mmi-VI{color:#000;background-color:#F9F518;}.mmi-VII{color:#000;background-color:#FAC611;}.mmi-VIII{color:#000;background-color:#FA8A11;}.mmi-IX{color:#FFF;background-color:#F7100C;}.mmi-X{color:#FFF;background-color:#C80F0A;}.mmi-XI{color:#FFF;background-color:#C80F0A;}.mmi-XII{color:#FFF;background-color:#C80F0A;}dl{clear:left;font-family:Helvetica;line-height:1.3;}dt{color:#999;margin-top:.5em;}dd{margin:0;}.links{clear:both;line-height:1.3;}</style><img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_banner.jpg" alt="USGS" width="400" height="40"/>$[description]<img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/anss.gif" alt="ANSS" width="100" height="31"/>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="circle-inactive">
+		<IconStyle>
+			<Icon>
+				<href>http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_circle.png</href>
+			</Icon>
+		</IconStyle>
 		<LabelStyle>
+			<scale>0</scale>
 		</LabelStyle>
 		<BalloonStyle>
 			<text><![CDATA[<style>h2{margin-bottom:0;font-size:16px;font-weight:bold;}.quicksummary{float:left;}.quicksummary>a{float:left;display:block;padding:4px;margin-right:8px;text-decoration:none;border:1pxsolid#333;}.quicksummary>a.tsunamilogo{padding:0;}.roman{font-family:Georgia,Times,serif;}.pager-pending{background-color:#FFF;color:#000;}.pager-green{background-color:#00b04f;color:#fff;}.pager-yellow{background-color:#ff0;color:#000;}.pager-orange{background-color:#f90;color:#000;}.pager-red{background-color:#f00;color:#fff;}.mmi-I{color:#000;background-color:#FFFFFF;}.mmi-II{color:#000;background-color:#ACD8E9;}.mmi-III{color:#000;background-color:#ACD8E9;}.mmi-IV{color:#000;background-color:#83D0DA;}.mmi-V{color:#000;background-color:#7BC87F;}.mmi-VI{color:#000;background-color:#F9F518;}.mmi-VII{color:#000;background-color:#FAC611;}.mmi-VIII{color:#000;background-color:#FA8A11;}.mmi-IX{color:#FFF;background-color:#F7100C;}.mmi-X{color:#FFF;background-color:#C80F0A;}.mmi-XI{color:#FFF;background-color:#C80F0A;}.mmi-XII{color:#FFF;background-color:#C80F0A;}dl{clear:left;font-family:Helvetica;line-height:1.3;}dt{color:#999;margin-top:.5em;}dd{margin:0;}.links{clear:both;line-height:1.3;}</style><img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_banner.jpg" alt="USGS" width="400" height="40"/>$[description]<img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/anss.gif" alt="ANSS" width="100" height="31"/>]]></text>
 		</BalloonStyle>
 	</Style>
-	<Folder>
-		<name>2014-04-01</name>
-		<Placemark id="usc000nzvd">
-			<name>M 8.2 - 95km NW of Iquique, Chile</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - 95km NW of Iquique, Chile</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd#pager" title="PAGER estimated impact alert level" class="pager-orange">PAGER - <strong class="roman">ORANGE</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (138 reports)">DYFI? - <strong class="roman">IX</strong></a> <a class="tsunamilogo" href="http://www.tsunami.gov/" title="Tsunami Warning Center"> <img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/tsunami-wave-warning.jpg" alt="Tsunami Warning Center"/></a></p><dl><dt>Time</dt><dd>2014-04-01 23:46:46 UTC</dd><dd>2014-04-01 18:46:46 -05:00 at epicenter</dd><dt>Location</dt><dd>19.642&deg;S 70.817&deg;W</dd><dt>Depth</dt><dd>20.13 km (12.51 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000nzvd&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-70.8171</longitude>
-				<latitude>-19.6416</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-70.8171,-19.6416,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2013-05-24</name>
-		<Placemark id="usb000h4jh">
-			<name>M 8.3 - Sea of Okhotsk</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.3 - Sea of Okhotsk</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh#pager" title="PAGER estimated impact alert level" class="pager-green">PAGER - <strong class="roman">GREEN</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-V">ShakeMap - <strong class="roman">V</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh#dyfi" class="mmi-VI" title="Did You Feel It? maximum reported intensity (101 reports)">DYFI? - <strong class="roman">VI</strong></a> <a class="tsunamilogo" href="http://www.tsunami.gov/" title="Tsunami Warning Center"> <img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/tsunami-wave-warning.jpg" alt="Tsunami Warning Center"/></a></p><dl><dt>Time</dt><dd>2013-05-24 05:44:49 UTC</dd><dd>2013-05-24 15:44:49 +10:00 at epicenter</dd><dt>Location</dt><dd>54.874&deg;N 153.281&deg;E</dd><dt>Depth</dt><dd>608.90 km (378.35 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h4jh&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>153.281</longitude>
-				<latitude>54.874</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>153.281,54.874,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2012-04-11</name>
-		<Placemark id="pde20120411104310850_25">
-			<name>M 8.2 - off the west coast of northern Sumatra</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - off the west coast of northern Sumatra</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411104310850_25#dyfi" class="mmi-VIII" title="Did You Feel It? maximum reported intensity (184 reports)">DYFI? - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>2012-04-11 10:43:10 UTC</dd><dd>2012-04-11 10:43:10 UTC at epicenter</dd><dt>Location</dt><dd>0.802&deg;N 92.463&deg;E</dd><dt>Depth</dt><dd>25.10 km (15.60 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411104310850_25">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20120411104310850_25&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>92.46299999999999</longitude>
-				<latitude>0.802</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>92.46299999999999,0.8019999999999999,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark id="pde20120411083836720_20">
-			<name>M 8.6 - off the west coast of northern Sumatra</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - off the west coast of northern Sumatra</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411083836720_20#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (3438 reports)">DYFI? - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2012-04-11 08:38:36 UTC</dd><dd>2012-04-11 08:38:36 UTC at epicenter</dd><dt>Location</dt><dd>2.327&deg;N 93.063&deg;E</dd><dt>Depth</dt><dd>20.00 km (12.43 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411083836720_20">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20120411083836720_20&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>93.063</longitude>
-				<latitude>2.327</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>93.063,2.327,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2011-03-11</name>
-		<Placemark id="pde20110311054624120_29">
-			<name>M 9.0 - near the east coast of Honshu, Japan</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 9.0 - near the east coast of Honshu, Japan</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20110311054624120_29#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20110311054624120_29#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (1415 reports)">DYFI? - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2011-03-11 05:46:24 UTC</dd><dd>2011-03-11 05:46:24 UTC at epicenter</dd><dt>Location</dt><dd>38.297&deg;N 142.373&deg;E</dd><dt>Depth</dt><dd>29.00 km (18.02 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20110311054624120_29">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20110311054624120_29&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>142.373</longitude>
-				<latitude>38.297</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>2</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>142.373,38.297,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2010-02-27</name>
-		<Placemark id="pde20100227063411530_22">
-			<name>M 8.8 - offshore Bio-Bio, Chile</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.8 - offshore Bio-Bio, Chile</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20100227063411530_22#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20100227063411530_22#dyfi" class="mmi-VIII" title="Did You Feel It? maximum reported intensity (2767 reports)">DYFI? - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>2010-02-27 06:34:11 UTC</dd><dd>2010-02-27 06:34:11 UTC at epicenter</dd><dt>Location</dt><dd>36.122&deg;S 72.898&deg;W</dd><dt>Depth</dt><dd>22.90 km (14.23 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20100227063411530_22">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20100227063411530_22&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-72.898</longitude>
-				<latitude>-36.122</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-72.898,-36.122,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2007-09-12</name>
-		<Placemark id="centennial20070912111026">
-			<name>M 8.5 - southern Sumatra, Indonesia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.5 - southern Sumatra, Indonesia</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20070912111026#dyfi" class="mmi-VII" title="Did You Feel It? maximum reported intensity (869 reports)">DYFI? - <strong class="roman">VII</strong></a></p><dl><dt>Time</dt><dd>2007-09-12 11:10:26 UTC</dd><dd>2007-09-12 11:10:26 UTC at epicenter</dd><dt>Location</dt><dd>4.440&deg;S 101.370&deg;E</dd><dt>Depth</dt><dd>34.00 km (21.13 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20070912111026">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20070912111026&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>101.37</longitude>
-				<latitude>-4.44</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>101.37,-4.44,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2006-11-15</name>
-		<Placemark id="centennial20061115111413">
-			<name>M 8.3 - Kuril Islands</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.3 - Kuril Islands</h2><dl><dt>Time</dt><dd>2006-11-15 11:14:13 UTC</dd><dd>2006-11-15 11:14:13 UTC at epicenter</dd><dt>Location</dt><dd>46.580&deg;N 153.270&deg;E</dd><dt>Depth</dt><dd>10.00 km (6.21 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20061115111413">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20061115111413&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>153.27</longitude>
-				<latitude>46.58</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>153.27,46.58,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2005-03-28</name>
-		<Placemark id="centennial20050328160937">
-			<name>M 8.6 - northern Sumatra, Indonesia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - northern Sumatra, Indonesia</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20050328160937#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2005-03-28 16:09:37 UTC</dd><dd>2005-03-28 16:09:37 UTC at epicenter</dd><dt>Location</dt><dd>2.050&deg;N 97.060&deg;E</dd><dt>Depth</dt><dd>33.70 km (20.94 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20050328160937">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20050328160937&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>97.06</longitude>
-				<latitude>2.05</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>97.06,2.05,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2004-12-26</name>
-		<Placemark id="official20041226005853450_30">
-			<name>M 9.1 - off the west coast of northern Sumatra</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 9.1 - off the west coast of northern Sumatra</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/official20041226005853450_30#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/official20041226005853450_30#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (878 reports)">DYFI? - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2004-12-26 00:58:53 UTC</dd><dd>2004-12-26 00:58:53 UTC at epicenter</dd><dt>Location</dt><dd>3.295&deg;N 95.982&deg;E</dd><dt>Depth</dt><dd>30.00 km (18.64 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/official20041226005853450_30">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=official20041226005853450_30&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>95.982</longitude>
-				<latitude>3.295</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>2</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>95.982,3.295,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2003-09-25</name>
-		<Placemark id="centennial20030925195008">
-			<name>M 8.3 - Hokkaido, Japan region</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.3 - Hokkaido, Japan region</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20030925195008#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2003-09-25 19:50:08 UTC</dd><dd>2003-09-25 19:50:08 UTC at epicenter</dd><dt>Location</dt><dd>41.860&deg;N 143.870&deg;E</dd><dt>Depth</dt><dd>27.00 km (16.78 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20030925195008">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20030925195008&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>143.87</longitude>
-				<latitude>41.86</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>143.87,41.86,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>2001-06-23</name>
-		<Placemark id="centennial20010623203315">
-			<name>M 8.4 - near the coast of southern Peru</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.4 - near the coast of southern Peru</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20010623203315#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>2001-06-23 20:33:15 UTC</dd><dd>2001-06-23 20:33:15 UTC at epicenter</dd><dt>Location</dt><dd>16.380&deg;S 73.500&deg;W</dd><dt>Depth</dt><dd>32.00 km (19.88 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20010623203315">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20010623203315&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-73.5</longitude>
-				<latitude>-16.38</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-73.5,-16.38,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1996-02-17</name>
-		<Placemark id="centennial19960217055932">
-			<name>M 8.2 - Biak region, Indonesia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Biak region, Indonesia</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19960217055932#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>1996-02-17 05:59:32 UTC</dd><dd>1996-02-17 05:59:32 UTC at epicenter</dd><dt>Location</dt><dd>0.919&deg;S 136.975&deg;E</dd><dt>Depth</dt><dd>35.90 km (22.31 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19960217055932">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19960217055932&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>136.975</longitude>
-				<latitude>-0.919</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>136.975,-0.919,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1994-10-04</name>
-		<Placemark id="centennial19941004132300">
-			<name>M 8.3 - Kuril Islands</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.3 - Kuril Islands</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19941004132300#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>1994-10-04 13:23:00 UTC</dd><dd>1994-10-04 13:23:00 UTC at epicenter</dd><dt>Location</dt><dd>43.832&deg;N 147.332&deg;E</dd><dt>Depth</dt><dd>33.30 km (20.69 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19941004132300">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19941004132300&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>147.332</longitude>
-				<latitude>43.832</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>147.332,43.832,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1994-06-09</name>
-		<Placemark id="centennial19940609003317">
-			<name>M 8.2 - La Paz, Bolivia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - La Paz, Bolivia</h2><dl><dt>Time</dt><dd>1994-06-09 00:33:17 UTC</dd><dd>1994-06-09 00:33:17 UTC at epicenter</dd><dt>Location</dt><dd>13.877&deg;S 67.532&deg;W</dd><dt>Depth</dt><dd>635.40 km (394.82 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19940609003317">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19940609003317&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-67.532</longitude>
-				<latitude>-13.877</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-67.532,-13.877,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1977-08-19</name>
-		<Placemark id="centennial19770819060854">
-			<name>M 8.3 - south of Sumbawa, Indonesia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.3 - south of Sumbawa, Indonesia</h2><dl><dt>Time</dt><dd>1977-08-19 06:08:54 UTC</dd><dd>1977-08-19 06:08:54 UTC at epicenter</dd><dt>Location</dt><dd>11.125&deg;S 118.380&deg;E</dd><dt>Depth</dt><dd>20.90 km (12.99 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19770819060854">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19770819060854&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>118.38</longitude>
-				<latitude>-11.125</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>118.38,-11.125,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1969-08-11</name>
-		<Placemark id="centennial19690811212737">
-			<name>M 8.2 - Kuril Islands</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Kuril Islands</h2><dl><dt>Time</dt><dd>1969-08-11 21:27:37 UTC</dd><dd>1969-08-11 21:27:37 UTC at epicenter</dd><dt>Location</dt><dd>43.477&deg;N 147.815&deg;E</dd><dt>Depth</dt><dd>45.60 km (28.33 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19690811212737">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19690811212737&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>147.815</longitude>
-				<latitude>43.477</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>147.815,43.477,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1968-05-16</name>
-		<Placemark id="centennial19680516004900">
-			<name>M 8.2 - off the east coast of Honshu, Japan</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - off the east coast of Honshu, Japan</h2><dl><dt>Time</dt><dd>1968-05-16 00:49:00 UTC</dd><dd>1968-05-16 00:49:00 UTC at epicenter</dd><dt>Location</dt><dd>40.901&deg;N 143.346&deg;E</dd><dt>Depth</dt><dd>26.00 km (16.16 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19680516004900">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19680516004900&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>143.346</longitude>
-				<latitude>40.901</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>143.346,40.901,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1966-10-17</name>
-		<Placemark id="centennial19661017214157">
-			<name>M 8.2 - near the coast of central Peru</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - near the coast of central Peru</h2><dl><dt>Time</dt><dd>1966-10-17 21:41:57 UTC</dd><dd>1966-10-17 21:41:57 UTC at epicenter</dd><dt>Location</dt><dd>10.799&deg;S 78.680&deg;W</dd><dt>Depth</dt><dd>34.30 km (21.31 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19661017214157">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19661017214157&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-78.68000000000001</longitude>
-				<latitude>-10.799</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-78.68000000000001,-10.799,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1965-02-04</name>
-		<Placemark id="centennial19650204050121">
-			<name>M 8.7 - Rat Islands, Aleutian Islands, Alaska</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.7 - Rat Islands, Aleutian Islands, Alaska</h2><dl><dt>Time</dt><dd>1965-02-04 05:01:21 UTC</dd><dd>1965-02-04 05:01:21 UTC at epicenter</dd><dt>Location</dt><dd>51.210&deg;N 178.498&deg;E</dd><dt>Depth</dt><dd>28.80 km (17.90 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19650204050121">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19650204050121&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>178.498</longitude>
-				<latitude>51.21</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>178.498,51.21000000000001,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1965-01-24</name>
-		<Placemark id="centennial19650124001117">
-			<name>M 8.2 - Kepulauan Sula, Indonesia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Kepulauan Sula, Indonesia</h2><dl><dt>Time</dt><dd>1965-01-24 00:11:17 UTC</dd><dd>1965-01-24 00:11:17 UTC at epicenter</dd><dt>Location</dt><dd>2.453&deg;S 125.963&deg;E</dd><dt>Depth</dt><dd>28.60 km (17.77 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19650124001117">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19650124001117&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>125.963</longitude>
-				<latitude>-2.453</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>125.963,-2.453,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1964-03-28</name>
-		<Placemark id="centennial19640328033612">
-			<name>M 9.2 - Southern Alaska</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 9.2 - Southern Alaska</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19640328033612#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>1964-03-28 03:36:12 UTC</dd><dd>1964-03-28 03:36:12 UTC at epicenter</dd><dt>Location</dt><dd>61.019&deg;N 147.626&deg;W</dd><dt>Depth</dt><dd>6.30 km (3.91 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19640328033612">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19640328033612&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-147.626</longitude>
-				<latitude>61.019</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>2</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-147.626,61.019,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1963-10-13</name>
-		<Placemark id="centennial19631013051755">
-			<name>M 8.6 - Kuril Islands</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - Kuril Islands</h2><dl><dt>Time</dt><dd>1963-10-13 05:17:55 UTC</dd><dd>1963-10-13 05:17:55 UTC at epicenter</dd><dt>Location</dt><dd>44.763&deg;N 149.801&deg;E</dd><dt>Depth</dt><dd>26.00 km (16.16 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19631013051755">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19631013051755&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>149.801</longitude>
-				<latitude>44.763</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>149.801,44.763,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1960-05-22</name>
-		<Placemark id="centennial19600522191117">
-			<name>M 9.6 - Araucania, Chile</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 9.6 - Araucania, Chile</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19600522191117#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>1960-05-22 19:11:17 UTC</dd><dd>1960-05-22 19:11:17 UTC at epicenter</dd><dt>Location</dt><dd>38.294&deg;S 73.054&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19600522191117">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19600522191117&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-73.054</longitude>
-				<latitude>-38.294</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>2</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-73.054,-38.294,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1960-05-21</name>
-		<Placemark id="centennial19600521100254">
-			<name>M 8.2 - Bio-Bio, Chile</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Bio-Bio, Chile</h2><dl><dt>Time</dt><dd>1960-05-21 10:02:54 UTC</dd><dd>1960-05-21 10:02:54 UTC at epicenter</dd><dt>Location</dt><dd>37.825&deg;S 73.379&deg;W</dd><dt>Depth</dt><dd>11.50 km (7.15 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19600521100254">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19600521100254&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-73.379</longitude>
-				<latitude>-37.825</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-73.379,-37.825,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1958-11-06</name>
-		<Placemark id="centennial19581106225809">
-			<name>M 8.4 - Kuril Islands</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.4 - Kuril Islands</h2><dl><dt>Time</dt><dd>1958-11-06 22:58:09 UTC</dd><dd>1958-11-06 22:58:09 UTC at epicenter</dd><dt>Location</dt><dd>44.311&deg;N 148.650&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19581106225809">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19581106225809&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>148.65</longitude>
-				<latitude>44.311</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>148.65,44.311,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1957-03-09</name>
-		<Placemark id="centennial19570309142233">
-			<name>M 8.6 - Andreanof Islands, Aleutian Islands, Alaska</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - Andreanof Islands, Aleutian Islands, Alaska</h2><dl><dt>Time</dt><dd>1957-03-09 14:22:33 UTC</dd><dd>1957-03-09 14:22:33 UTC at epicenter</dd><dt>Location</dt><dd>51.587&deg;N 175.419&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19570309142233">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19570309142233&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-175.419</longitude>
-				<latitude>51.587</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-175.419,51.58700000000001,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1952-11-04</name>
-		<Placemark id="centennial19521104165827">
-			<name>M 9.0 - off the east coast of the Kamchatka Peninsula, Russia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 9.0 - off the east coast of the Kamchatka Peninsula, Russia</h2><dl><dt>Time</dt><dd>1952-11-04 16:58:27 UTC</dd><dd>1952-11-04 16:58:27 UTC at epicenter</dd><dt>Location</dt><dd>52.756&deg;N 160.056&deg;E</dd><dt>Depth</dt><dd>22.10 km (13.73 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19521104165827">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19521104165827&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>160.056</longitude>
-				<latitude>52.756</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>2</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>160.056,52.756,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1950-08-15</name>
-		<Placemark id="centennial19500815140936">
-			<name>M 8.6 - eastern Xizang-India border region</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - eastern Xizang-India border region</h2><dl><dt>Time</dt><dd>1950-08-15 14:09:36 UTC</dd><dd>1950-08-15 14:09:36 UTC at epicenter</dd><dt>Location</dt><dd>28.290&deg;N 96.657&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19500815140936">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19500815140936&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>96.657</longitude>
-				<latitude>28.29</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>96.65700000000001,28.29,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1946-04-01</name>
-		<Placemark id="centennial19460401122903">
-			<name>M 8.6 - south of Alaska</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - south of Alaska</h2><dl><dt>Time</dt><dd>1946-04-01 12:29:03 UTC</dd><dd>1946-04-01 12:29:03 UTC at epicenter</dd><dt>Location</dt><dd>53.362&deg;N 162.854&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19460401122903">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19460401122903&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-162.854</longitude>
-				<latitude>53.362</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-162.854,53.362,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1943-04-06</name>
-		<Placemark id="centennial19430406160716">
-			<name>M 8.2 - Coquimbo, Chile</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Coquimbo, Chile</h2><dl><dt>Time</dt><dd>1943-04-06 16:07:16 UTC</dd><dd>1943-04-06 16:07:16 UTC at epicenter</dd><dt>Location</dt><dd>31.369&deg;S 71.433&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19430406160716">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19430406160716&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-71.43300000000001</longitude>
-				<latitude>-31.369</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-71.43300000000001,-31.369,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1938-11-10</name>
-		<Placemark id="centennial19381110201846">
-			<name>M 8.3 - Alaska Peninsula</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.3 - Alaska Peninsula</h2><dl><dt>Time</dt><dd>1938-11-10 20:18:46 UTC</dd><dd>1938-11-10 20:18:46 UTC at epicenter</dd><dt>Location</dt><dd>55.328&deg;N 158.370&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19381110201846">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19381110201846&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-158.37</longitude>
-				<latitude>55.328</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-158.37,55.328,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1938-02-01</name>
-		<Placemark id="centennial19380201190421">
-			<name>M 8.6 - Banda Sea</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - Banda Sea</h2><dl><dt>Time</dt><dd>1938-02-01 19:04:21 UTC</dd><dd>1938-02-01 19:04:21 UTC at epicenter</dd><dt>Location</dt><dd>5.050&deg;S 131.620&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19380201190421">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19380201190421&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>131.62</longitude>
-				<latitude>-5.05</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>131.62,-5.05,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1933-03-02</name>
-		<Placemark id="centennial19330302173100">
-			<name>M 8.4 - off the east coast of Honshu, Japan</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.4 - off the east coast of Honshu, Japan</h2><dl><dt>Time</dt><dd>1933-03-02 17:31:00 UTC</dd><dd>1933-03-02 17:31:00 UTC at epicenter</dd><dt>Location</dt><dd>39.224&deg;N 144.622&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19330302173100">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19330302173100&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>144.622</longitude>
-				<latitude>39.224</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>144.622,39.224,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1924-04-14</name>
-		<Placemark id="centennial19240414162041">
-			<name>M 8.2 - Mindanao, Philippines</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Mindanao, Philippines</h2><dl><dt>Time</dt><dd>1924-04-14 16:20:41 UTC</dd><dd>1924-04-14 16:20:41 UTC at epicenter</dd><dt>Location</dt><dd>7.023&deg;N 125.954&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19240414162041">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19240414162041&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>125.954</longitude>
-				<latitude>7.023</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>125.954,7.023,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1923-02-03</name>
-		<Placemark id="centennial19230203160148">
-			<name>M 8.5 - near the east coast of the Kamchatka Peninsula, Russia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.5 - near the east coast of the Kamchatka Peninsula, Russia</h2><dl><dt>Time</dt><dd>1923-02-03 16:01:48 UTC</dd><dd>1923-02-03 16:01:48 UTC at epicenter</dd><dt>Location</dt><dd>53.853&deg;N 160.761&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19230203160148">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19230203160148&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>160.761</longitude>
-				<latitude>53.853</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>160.761,53.853,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1922-11-11</name>
-		<Placemark id="centennial19221111043245">
-			<name>M 8.7 - Atacama, Chile</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.7 - Atacama, Chile</h2><dl><dt>Time</dt><dd>1922-11-11 04:32:45 UTC</dd><dd>1922-11-11 04:32:45 UTC at epicenter</dd><dt>Location</dt><dd>28.553&deg;S 70.755&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19221111043245">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19221111043245&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-70.755</longitude>
-				<latitude>-28.553</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-70.755,-28.553,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1919-04-30</name>
-		<Placemark id="centennial19190430071712">
-			<name>M 8.2 - Tonga</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Tonga</h2><dl><dt>Time</dt><dd>1919-04-30 07:17:12 UTC</dd><dd>1919-04-30 07:17:12 UTC at epicenter</dd><dt>Location</dt><dd>18.420&deg;S 173.430&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19190430071712">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19190430071712&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-173.43</longitude>
-				<latitude>-18.42</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-173.43,-18.42,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1918-08-15</name>
-		<Placemark id="centennial19180815121816">
-			<name>M 8.2 - Celebes Sea</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Celebes Sea</h2><dl><dt>Time</dt><dd>1918-08-15 12:18:16 UTC</dd><dd>1918-08-15 12:18:16 UTC at epicenter</dd><dt>Location</dt><dd>5.653&deg;N 123.563&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19180815121816">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19180815121816&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>123.563</longitude>
-				<latitude>5.653</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>123.563,5.653,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1906-08-17</name>
-		<Placemark id="centennial19060817004000">
-			<name>M 8.2 - Valparaiso, Chile</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.2 - Valparaiso, Chile</h2><dl><dt>Time</dt><dd>1906-08-17 00:40:00 UTC</dd><dd>1906-08-17 00:40:00 UTC at epicenter</dd><dt>Location</dt><dd>32.400&deg;S 71.400&deg;W</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19060817004000">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19060817004000&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-71.40000000000001</longitude>
-				<latitude>-32.4</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-71.40000000000001,-32.4,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark id="centennial19060817001100">
-			<name>M 8.4 - Rat Islands, Aleutian Islands, Alaska</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.4 - Rat Islands, Aleutian Islands, Alaska</h2><dl><dt>Time</dt><dd>1906-08-17 00:11:00 UTC</dd><dd>1906-08-17 00:11:00 UTC at epicenter</dd><dt>Location</dt><dd>50.600&deg;N 178.360&deg;E</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19060817001100">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19060817001100&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>178.36</longitude>
-				<latitude>50.6</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>178.36,50.60000000000001,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1906-01-31</name>
-		<Placemark id="centennial19060131153600">
-			<name>M 8.6 - near the coast of Ecuador</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.6 - near the coast of Ecuador</h2><dl><dt>Time</dt><dd>1906-01-31 15:36:00 UTC</dd><dd>1906-01-31 15:36:00 UTC at epicenter</dd><dt>Location</dt><dd>1.000&deg;N 80.000&deg;W</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19060131153600">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19060131153600&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>-80</longitude>
-				<latitude>1</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>-80,1,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<Folder>
-		<name>1905-07-23</name>
-		<Placemark id="centennial19050723024612">
-			<name>M 8.5 - western Mongolia</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<h2>M 8.5 - western Mongolia</h2><dl><dt>Time</dt><dd>1905-07-23 02:46:12 UTC</dd><dd>1905-07-23 02:46:12 UTC at epicenter</dd><dt>Location</dt><dd>49.300&deg;N 94.900&deg;E</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19050723024612">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19050723024612&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
-			<LookAt>
-				<longitude>94.90000000000001</longitude>
-				<latitude>49.3</latitude>
-				<altitude>0</altitude>
-				<heading>0</heading>
-				<tilt>0</tilt>
-				<range>1000000</range>
-			</LookAt>
-			<styleUrl>#circle</styleUrl>
-			<Style>
-				<IconStyle>
-					<color>dd03fffb</color>
-					<scale>1.5</scale>
-				</IconStyle>
-			</Style>
-			<Point>
-				<coordinates>94.90000000000001,49.29999999999999,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
-	<ScreenOverlay>
-		<name>Legend</name>
-		<Icon>
-			<href>http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_age_legend.png</href>
-		</Icon>
-		<overlayXY x="0" y="380" xunits="pixels" yunits="pixels"/>
-		<screenXY x="5" y="1" xunits="pixels" yunits="fraction"/>
-		<rotationXY x="0" y="0" xunits="pixels" yunits="pixels"/>
-		<size x="0" y="0" xunits="pixels" yunits="pixels"/>
-	</ScreenOverlay>
-	<ScreenOverlay>
-		<name>USGS Logo</name>
-		<Icon>
-			<href>http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/kml_usgs_logo.png</href>
-		</Icon>
-		<overlayXY x="1" y="0" xunits="fraction" yunits="pixels"/>
-		<screenXY x="0.82" y="30" xunits="fraction" yunits="pixels"/>
-		<rotationXY x="0" y="0" xunits="pixels" yunits="pixels"/>
-		<size x="0" y="0" xunits="pixels" yunits="pixels"/>
-	</ScreenOverlay>
+	<Placemark id="usc000nzvd">
+		<name>M 8.2 - 95km NW of Iquique, Chile</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - 95km NW of Iquique, Chile</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd#pager" title="PAGER estimated impact alert level" class="pager-orange">PAGER - <strong class="roman">ORANGE</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (138 reports)">DYFI? - <strong class="roman">IX</strong></a> <a class="tsunamilogo" href="http://www.tsunami.gov/" title="Tsunami Warning Center"> <img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/tsunami-wave-warning.jpg" alt="Tsunami Warning Center"/></a></p><dl><dt>Time</dt><dd>2014-04-01 23:46:46 UTC</dd><dd>2014-04-01 18:46:46 -05:00 at epicenter</dd><dt>Location</dt><dd>19.642&deg;S 70.817&deg;W</dd><dt>Depth</dt><dd>20.13 km (12.51 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usc000nzvd">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usc000nzvd&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-70.8171</longitude>
+			<latitude>-19.6416</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-70.8171,-19.6416,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="usb000h4jh">
+		<name>M 8.3 - Sea of Okhotsk</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.3 - Sea of Okhotsk</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh#pager" title="PAGER estimated impact alert level" class="pager-green">PAGER - <strong class="roman">GREEN</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-V">ShakeMap - <strong class="roman">V</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh#dyfi" class="mmi-VI" title="Did You Feel It? maximum reported intensity (101 reports)">DYFI? - <strong class="roman">VI</strong></a> <a class="tsunamilogo" href="http://www.tsunami.gov/" title="Tsunami Warning Center"> <img src="http://comcat.cr.usgs.gov/earthquakes/feed/v1.0/images/tsunami-wave-warning.jpg" alt="Tsunami Warning Center"/></a></p><dl><dt>Time</dt><dd>2013-05-24 05:44:49 UTC</dd><dd>2013-05-24 15:44:49 +10:00 at epicenter</dd><dt>Location</dt><dd>54.874&deg;N 153.281&deg;E</dd><dt>Depth</dt><dd>608.90 km (378.35 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/usb000h4jh">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=usb000h4jh&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>153.281</longitude>
+			<latitude>54.874</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>153.281,54.874,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="pde20120411104310850_25">
+		<name>M 8.2 - off the west coast of northern Sumatra</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - off the west coast of northern Sumatra</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411104310850_25#dyfi" class="mmi-VIII" title="Did You Feel It? maximum reported intensity (184 reports)">DYFI? - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>2012-04-11 10:43:10 UTC</dd><dd>2012-04-11 10:43:10 UTC at epicenter</dd><dt>Location</dt><dd>0.802&deg;N 92.463&deg;E</dd><dt>Depth</dt><dd>25.10 km (15.60 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411104310850_25">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20120411104310850_25&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>92.46299999999999</longitude>
+			<latitude>0.802</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>92.46299999999999,0.8019999999999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="pde20120411083836720_20">
+		<name>M 8.6 - off the west coast of northern Sumatra</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - off the west coast of northern Sumatra</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411083836720_20#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (3438 reports)">DYFI? - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2012-04-11 08:38:36 UTC</dd><dd>2012-04-11 08:38:36 UTC at epicenter</dd><dt>Location</dt><dd>2.327&deg;N 93.063&deg;E</dd><dt>Depth</dt><dd>20.00 km (12.43 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20120411083836720_20">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20120411083836720_20&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>93.063</longitude>
+			<latitude>2.327</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>93.063,2.327,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="pde20110311054624120_29">
+		<name>M 9.0 - near the east coast of Honshu, Japan</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 9.0 - near the east coast of Honshu, Japan</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20110311054624120_29#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20110311054624120_29#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (1415 reports)">DYFI? - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2011-03-11 05:46:24 UTC</dd><dd>2011-03-11 05:46:24 UTC at epicenter</dd><dt>Location</dt><dd>38.297&deg;N 142.373&deg;E</dd><dt>Depth</dt><dd>29.00 km (18.02 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20110311054624120_29">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20110311054624120_29&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>142.373</longitude>
+			<latitude>38.297</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>2</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>142.373,38.297,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="pde20100227063411530_22">
+		<name>M 8.8 - offshore Bio-Bio, Chile</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.8 - offshore Bio-Bio, Chile</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20100227063411530_22#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20100227063411530_22#dyfi" class="mmi-VIII" title="Did You Feel It? maximum reported intensity (2767 reports)">DYFI? - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>2010-02-27 06:34:11 UTC</dd><dd>2010-02-27 06:34:11 UTC at epicenter</dd><dt>Location</dt><dd>36.122&deg;S 72.898&deg;W</dd><dt>Depth</dt><dd>22.90 km (14.23 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/pde20100227063411530_22">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=pde20100227063411530_22&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-72.898</longitude>
+			<latitude>-36.122</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-72.898,-36.122,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial20070912111026">
+		<name>M 8.5 - southern Sumatra, Indonesia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.5 - southern Sumatra, Indonesia</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20070912111026#dyfi" class="mmi-VII" title="Did You Feel It? maximum reported intensity (869 reports)">DYFI? - <strong class="roman">VII</strong></a></p><dl><dt>Time</dt><dd>2007-09-12 11:10:26 UTC</dd><dd>2007-09-12 11:10:26 UTC at epicenter</dd><dt>Location</dt><dd>4.440&deg;S 101.370&deg;E</dd><dt>Depth</dt><dd>34.00 km (21.13 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20070912111026">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20070912111026&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>101.37</longitude>
+			<latitude>-4.44</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>101.37,-4.44,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial20061115111413">
+		<name>M 8.3 - Kuril Islands</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.3 - Kuril Islands</h2><dl><dt>Time</dt><dd>2006-11-15 11:14:13 UTC</dd><dd>2006-11-15 11:14:13 UTC at epicenter</dd><dt>Location</dt><dd>46.580&deg;N 153.270&deg;E</dd><dt>Depth</dt><dd>10.00 km (6.21 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20061115111413">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20061115111413&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>153.27</longitude>
+			<latitude>46.58</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>153.27,46.58,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial20050328160937">
+		<name>M 8.6 - northern Sumatra, Indonesia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - northern Sumatra, Indonesia</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20050328160937#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2005-03-28 16:09:37 UTC</dd><dd>2005-03-28 16:09:37 UTC at epicenter</dd><dt>Location</dt><dd>2.050&deg;N 97.060&deg;E</dd><dt>Depth</dt><dd>33.70 km (20.94 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20050328160937">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20050328160937&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>97.06</longitude>
+			<latitude>2.05</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>97.06,2.05,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="official20041226005853450_30">
+		<name>M 9.1 - off the west coast of northern Sumatra</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 9.1 - off the west coast of northern Sumatra</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/official20041226005853450_30#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a> <a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/official20041226005853450_30#dyfi" class="mmi-IX" title="Did You Feel It? maximum reported intensity (878 reports)">DYFI? - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2004-12-26 00:58:53 UTC</dd><dd>2004-12-26 00:58:53 UTC at epicenter</dd><dt>Location</dt><dd>3.295&deg;N 95.982&deg;E</dd><dt>Depth</dt><dd>30.00 km (18.64 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/official20041226005853450_30">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=official20041226005853450_30&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>95.982</longitude>
+			<latitude>3.295</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>2</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>95.982,3.295,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial20030925195008">
+		<name>M 8.3 - Hokkaido, Japan region</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.3 - Hokkaido, Japan region</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20030925195008#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>2003-09-25 19:50:08 UTC</dd><dd>2003-09-25 19:50:08 UTC at epicenter</dd><dt>Location</dt><dd>41.860&deg;N 143.870&deg;E</dd><dt>Depth</dt><dd>27.00 km (16.78 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20030925195008">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20030925195008&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>143.87</longitude>
+			<latitude>41.86</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>143.87,41.86,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial20010623203315">
+		<name>M 8.4 - near the coast of southern Peru</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.4 - near the coast of southern Peru</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20010623203315#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>2001-06-23 20:33:15 UTC</dd><dd>2001-06-23 20:33:15 UTC at epicenter</dd><dt>Location</dt><dd>16.380&deg;S 73.500&deg;W</dd><dt>Depth</dt><dd>32.00 km (19.88 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial20010623203315">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial20010623203315&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-73.5</longitude>
+			<latitude>-16.38</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-73.5,-16.38,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19960217055932">
+		<name>M 8.2 - Biak region, Indonesia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Biak region, Indonesia</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19960217055932#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>1996-02-17 05:59:32 UTC</dd><dd>1996-02-17 05:59:32 UTC at epicenter</dd><dt>Location</dt><dd>0.919&deg;S 136.975&deg;E</dd><dt>Depth</dt><dd>35.90 km (22.31 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19960217055932">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19960217055932&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>136.975</longitude>
+			<latitude>-0.919</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>136.975,-0.919,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19941004132300">
+		<name>M 8.3 - Kuril Islands</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.3 - Kuril Islands</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19941004132300#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>1994-10-04 13:23:00 UTC</dd><dd>1994-10-04 13:23:00 UTC at epicenter</dd><dt>Location</dt><dd>43.832&deg;N 147.332&deg;E</dd><dt>Depth</dt><dd>33.30 km (20.69 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19941004132300">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19941004132300&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>147.332</longitude>
+			<latitude>43.832</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>147.332,43.832,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19940609003317">
+		<name>M 8.2 - La Paz, Bolivia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - La Paz, Bolivia</h2><dl><dt>Time</dt><dd>1994-06-09 00:33:17 UTC</dd><dd>1994-06-09 00:33:17 UTC at epicenter</dd><dt>Location</dt><dd>13.877&deg;S 67.532&deg;W</dd><dt>Depth</dt><dd>635.40 km (394.82 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19940609003317">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19940609003317&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-67.532</longitude>
+			<latitude>-13.877</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-67.532,-13.877,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19770819060854">
+		<name>M 8.3 - south of Sumbawa, Indonesia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.3 - south of Sumbawa, Indonesia</h2><dl><dt>Time</dt><dd>1977-08-19 06:08:54 UTC</dd><dd>1977-08-19 06:08:54 UTC at epicenter</dd><dt>Location</dt><dd>11.125&deg;S 118.380&deg;E</dd><dt>Depth</dt><dd>20.90 km (12.99 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19770819060854">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19770819060854&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>118.38</longitude>
+			<latitude>-11.125</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>118.38,-11.125,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19690811212737">
+		<name>M 8.2 - Kuril Islands</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Kuril Islands</h2><dl><dt>Time</dt><dd>1969-08-11 21:27:37 UTC</dd><dd>1969-08-11 21:27:37 UTC at epicenter</dd><dt>Location</dt><dd>43.477&deg;N 147.815&deg;E</dd><dt>Depth</dt><dd>45.60 km (28.33 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19690811212737">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19690811212737&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>147.815</longitude>
+			<latitude>43.477</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>147.815,43.477,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19680516004900">
+		<name>M 8.2 - off the east coast of Honshu, Japan</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - off the east coast of Honshu, Japan</h2><dl><dt>Time</dt><dd>1968-05-16 00:49:00 UTC</dd><dd>1968-05-16 00:49:00 UTC at epicenter</dd><dt>Location</dt><dd>40.901&deg;N 143.346&deg;E</dd><dt>Depth</dt><dd>26.00 km (16.16 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19680516004900">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19680516004900&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>143.346</longitude>
+			<latitude>40.901</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>143.346,40.901,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19661017214157">
+		<name>M 8.2 - near the coast of central Peru</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - near the coast of central Peru</h2><dl><dt>Time</dt><dd>1966-10-17 21:41:57 UTC</dd><dd>1966-10-17 21:41:57 UTC at epicenter</dd><dt>Location</dt><dd>10.799&deg;S 78.680&deg;W</dd><dt>Depth</dt><dd>34.30 km (21.31 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19661017214157">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19661017214157&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-78.68000000000001</longitude>
+			<latitude>-10.799</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-78.68000000000001,-10.799,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19650204050121">
+		<name>M 8.7 - Rat Islands, Aleutian Islands, Alaska</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.7 - Rat Islands, Aleutian Islands, Alaska</h2><dl><dt>Time</dt><dd>1965-02-04 05:01:21 UTC</dd><dd>1965-02-04 05:01:21 UTC at epicenter</dd><dt>Location</dt><dd>51.210&deg;N 178.498&deg;E</dd><dt>Depth</dt><dd>28.80 km (17.90 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19650204050121">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19650204050121&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>178.498</longitude>
+			<latitude>51.21</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>178.498,51.21000000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19650124001117">
+		<name>M 8.2 - Kepulauan Sula, Indonesia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Kepulauan Sula, Indonesia</h2><dl><dt>Time</dt><dd>1965-01-24 00:11:17 UTC</dd><dd>1965-01-24 00:11:17 UTC at epicenter</dd><dt>Location</dt><dd>2.453&deg;S 125.963&deg;E</dd><dt>Depth</dt><dd>28.60 km (17.77 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19650124001117">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19650124001117&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>125.963</longitude>
+			<latitude>-2.453</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>125.963,-2.453,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19640328033612">
+		<name>M 9.2 - Southern Alaska</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 9.2 - Southern Alaska</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19640328033612#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-VIII">ShakeMap - <strong class="roman">VIII</strong></a></p><dl><dt>Time</dt><dd>1964-03-28 03:36:12 UTC</dd><dd>1964-03-28 03:36:12 UTC at epicenter</dd><dt>Location</dt><dd>61.019&deg;N 147.626&deg;W</dd><dt>Depth</dt><dd>6.30 km (3.91 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19640328033612">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19640328033612&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-147.626</longitude>
+			<latitude>61.019</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>2</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-147.626,61.019,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19631013051755">
+		<name>M 8.6 - Kuril Islands</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - Kuril Islands</h2><dl><dt>Time</dt><dd>1963-10-13 05:17:55 UTC</dd><dd>1963-10-13 05:17:55 UTC at epicenter</dd><dt>Location</dt><dd>44.763&deg;N 149.801&deg;E</dd><dt>Depth</dt><dd>26.00 km (16.16 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19631013051755">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19631013051755&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>149.801</longitude>
+			<latitude>44.763</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>149.801,44.763,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19600522191117">
+		<name>M 9.6 - Araucania, Chile</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 9.6 - Araucania, Chile</h2><p class="quicksummary"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19600522191117#shakemap" title="ShakeMap maximum estimated intensity" class="mmi-IX">ShakeMap - <strong class="roman">IX</strong></a></p><dl><dt>Time</dt><dd>1960-05-22 19:11:17 UTC</dd><dd>1960-05-22 19:11:17 UTC at epicenter</dd><dt>Location</dt><dd>38.294&deg;S 73.054&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19600522191117">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19600522191117&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-73.054</longitude>
+			<latitude>-38.294</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>2</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-73.054,-38.294,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19600521100254">
+		<name>M 8.2 - Bio-Bio, Chile</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Bio-Bio, Chile</h2><dl><dt>Time</dt><dd>1960-05-21 10:02:54 UTC</dd><dd>1960-05-21 10:02:54 UTC at epicenter</dd><dt>Location</dt><dd>37.825&deg;S 73.379&deg;W</dd><dt>Depth</dt><dd>11.50 km (7.15 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19600521100254">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19600521100254&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-73.379</longitude>
+			<latitude>-37.825</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-73.379,-37.825,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19581106225809">
+		<name>M 8.4 - Kuril Islands</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.4 - Kuril Islands</h2><dl><dt>Time</dt><dd>1958-11-06 22:58:09 UTC</dd><dd>1958-11-06 22:58:09 UTC at epicenter</dd><dt>Location</dt><dd>44.311&deg;N 148.650&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19581106225809">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19581106225809&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>148.65</longitude>
+			<latitude>44.311</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>148.65,44.311,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19570309142233">
+		<name>M 8.6 - Andreanof Islands, Aleutian Islands, Alaska</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - Andreanof Islands, Aleutian Islands, Alaska</h2><dl><dt>Time</dt><dd>1957-03-09 14:22:33 UTC</dd><dd>1957-03-09 14:22:33 UTC at epicenter</dd><dt>Location</dt><dd>51.587&deg;N 175.419&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19570309142233">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19570309142233&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-175.419</longitude>
+			<latitude>51.587</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-175.419,51.58700000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19521104165827">
+		<name>M 9.0 - off the east coast of the Kamchatka Peninsula, Russia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 9.0 - off the east coast of the Kamchatka Peninsula, Russia</h2><dl><dt>Time</dt><dd>1952-11-04 16:58:27 UTC</dd><dd>1952-11-04 16:58:27 UTC at epicenter</dd><dt>Location</dt><dd>52.756&deg;N 160.056&deg;E</dd><dt>Depth</dt><dd>22.10 km (13.73 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19521104165827">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19521104165827&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>160.056</longitude>
+			<latitude>52.756</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>2</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>160.056,52.756,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19500815140936">
+		<name>M 8.6 - eastern Xizang-India border region</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - eastern Xizang-India border region</h2><dl><dt>Time</dt><dd>1950-08-15 14:09:36 UTC</dd><dd>1950-08-15 14:09:36 UTC at epicenter</dd><dt>Location</dt><dd>28.290&deg;N 96.657&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19500815140936">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19500815140936&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>96.657</longitude>
+			<latitude>28.29</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>96.65700000000001,28.29,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19460401122903">
+		<name>M 8.6 - south of Alaska</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - south of Alaska</h2><dl><dt>Time</dt><dd>1946-04-01 12:29:03 UTC</dd><dd>1946-04-01 12:29:03 UTC at epicenter</dd><dt>Location</dt><dd>53.362&deg;N 162.854&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19460401122903">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19460401122903&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-162.854</longitude>
+			<latitude>53.362</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-162.854,53.362,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19430406160716">
+		<name>M 8.2 - Coquimbo, Chile</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Coquimbo, Chile</h2><dl><dt>Time</dt><dd>1943-04-06 16:07:16 UTC</dd><dd>1943-04-06 16:07:16 UTC at epicenter</dd><dt>Location</dt><dd>31.369&deg;S 71.433&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19430406160716">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19430406160716&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-71.43300000000001</longitude>
+			<latitude>-31.369</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-71.43300000000001,-31.369,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19381110201846">
+		<name>M 8.3 - Alaska Peninsula</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.3 - Alaska Peninsula</h2><dl><dt>Time</dt><dd>1938-11-10 20:18:46 UTC</dd><dd>1938-11-10 20:18:46 UTC at epicenter</dd><dt>Location</dt><dd>55.328&deg;N 158.370&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19381110201846">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19381110201846&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-158.37</longitude>
+			<latitude>55.328</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-158.37,55.328,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19380201190421">
+		<name>M 8.6 - Banda Sea</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - Banda Sea</h2><dl><dt>Time</dt><dd>1938-02-01 19:04:21 UTC</dd><dd>1938-02-01 19:04:21 UTC at epicenter</dd><dt>Location</dt><dd>5.050&deg;S 131.620&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19380201190421">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19380201190421&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>131.62</longitude>
+			<latitude>-5.05</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>131.62,-5.05,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19330302173100">
+		<name>M 8.4 - off the east coast of Honshu, Japan</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.4 - off the east coast of Honshu, Japan</h2><dl><dt>Time</dt><dd>1933-03-02 17:31:00 UTC</dd><dd>1933-03-02 17:31:00 UTC at epicenter</dd><dt>Location</dt><dd>39.224&deg;N 144.622&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19330302173100">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19330302173100&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>144.622</longitude>
+			<latitude>39.224</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>144.622,39.224,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19240414162041">
+		<name>M 8.2 - Mindanao, Philippines</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Mindanao, Philippines</h2><dl><dt>Time</dt><dd>1924-04-14 16:20:41 UTC</dd><dd>1924-04-14 16:20:41 UTC at epicenter</dd><dt>Location</dt><dd>7.023&deg;N 125.954&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19240414162041">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19240414162041&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>125.954</longitude>
+			<latitude>7.023</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>125.954,7.023,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19230203160148">
+		<name>M 8.5 - near the east coast of the Kamchatka Peninsula, Russia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.5 - near the east coast of the Kamchatka Peninsula, Russia</h2><dl><dt>Time</dt><dd>1923-02-03 16:01:48 UTC</dd><dd>1923-02-03 16:01:48 UTC at epicenter</dd><dt>Location</dt><dd>53.853&deg;N 160.761&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19230203160148">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19230203160148&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>160.761</longitude>
+			<latitude>53.853</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>160.761,53.853,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19221111043245">
+		<name>M 8.7 - Atacama, Chile</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.7 - Atacama, Chile</h2><dl><dt>Time</dt><dd>1922-11-11 04:32:45 UTC</dd><dd>1922-11-11 04:32:45 UTC at epicenter</dd><dt>Location</dt><dd>28.553&deg;S 70.755&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19221111043245">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19221111043245&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-70.755</longitude>
+			<latitude>-28.553</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-70.755,-28.553,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19190430071712">
+		<name>M 8.2 - Tonga</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Tonga</h2><dl><dt>Time</dt><dd>1919-04-30 07:17:12 UTC</dd><dd>1919-04-30 07:17:12 UTC at epicenter</dd><dt>Location</dt><dd>18.420&deg;S 173.430&deg;W</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19190430071712">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19190430071712&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-173.43</longitude>
+			<latitude>-18.42</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-173.43,-18.42,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19180815121816">
+		<name>M 8.2 - Celebes Sea</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Celebes Sea</h2><dl><dt>Time</dt><dd>1918-08-15 12:18:16 UTC</dd><dd>1918-08-15 12:18:16 UTC at epicenter</dd><dt>Location</dt><dd>5.653&deg;N 123.563&deg;E</dd><dt>Depth</dt><dd>35.00 km (21.75 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19180815121816">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19180815121816&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>123.563</longitude>
+			<latitude>5.653</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>123.563,5.653,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19060817004000">
+		<name>M 8.2 - Valparaiso, Chile</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.2 - Valparaiso, Chile</h2><dl><dt>Time</dt><dd>1906-08-17 00:40:00 UTC</dd><dd>1906-08-17 00:40:00 UTC at epicenter</dd><dt>Location</dt><dd>32.400&deg;S 71.400&deg;W</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19060817004000">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19060817004000&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-71.40000000000001</longitude>
+			<latitude>-32.4</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-71.40000000000001,-32.4,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19060817001100">
+		<name>M 8.4 - Rat Islands, Aleutian Islands, Alaska</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.4 - Rat Islands, Aleutian Islands, Alaska</h2><dl><dt>Time</dt><dd>1906-08-17 00:11:00 UTC</dd><dd>1906-08-17 00:11:00 UTC at epicenter</dd><dt>Location</dt><dd>50.600&deg;N 178.360&deg;E</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19060817001100">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19060817001100&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>178.36</longitude>
+			<latitude>50.6</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>178.36,50.60000000000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19060131153600">
+		<name>M 8.6 - near the coast of Ecuador</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.6 - near the coast of Ecuador</h2><dl><dt>Time</dt><dd>1906-01-31 15:36:00 UTC</dd><dd>1906-01-31 15:36:00 UTC at epicenter</dd><dt>Location</dt><dd>1.000&deg;N 80.000&deg;W</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19060131153600">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19060131153600&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>-80</longitude>
+			<latitude>1</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-80,1,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="centennial19050723024612">
+		<name>M 8.5 - western Mongolia</name>
+		<visibility>0</visibility>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<h2>M 8.5 - western Mongolia</h2><dl><dt>Time</dt><dd>1905-07-23 02:46:12 UTC</dd><dd>1905-07-23 02:46:12 UTC at epicenter</dd><dt>Location</dt><dd>49.300&deg;N 94.900&deg;E</dd><dt>Depth</dt><dd>0.00 km (0.00 mi)</dd></dl><p class="links"><a href="http://comcat.cr.usgs.gov/earthquakes/eventpage/centennial19050723024612">Details from USGS web site</a><br/><a href="http://comcat.cr.usgs.gov/fdsnws/event/1/query?eventid=centennial19050723024612&amp;format=kml">Google Earth KML layers for this event</a></p>]]></description>
+		<LookAt>
+			<longitude>94.90000000000001</longitude>
+			<latitude>49.3</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<range>1000000</range>
+		</LookAt>
+		<styleUrl>#circle</styleUrl>
+		<Style>
+			<IconStyle>
+				<color>dd03fffb</color>
+				<scale>1.5</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>94.90000000000001,49.29999999999999,0</coordinates>
+		</Point>
+	</Placemark>
 </Document>
 </kml>
