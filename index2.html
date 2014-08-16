@@ -18,6 +18,12 @@
                 <h1>Geo II</h1>
                 <p>Calculates lines from a single place to the others, showing the distances and bearings of each.</p>
                 <p>Select a place to view the lines from there.</p>
+                <ul class="filters" id="filters">
+                    <li><input type="text" value="0" size="1" name="minLength" /> Min length of line (km)</li>
+                    <li><input type="text" value="24901" size="1" name="maxLength" /> Max length of line (km)</li>
+                    <li><input type="text" value="0" size="1" name="minBearing" /> Min bearing (degrees °)</li>
+                    <li><input type="text" value="360" size="1" name="maxBearing" /> Max bearing (degrees °)</li>
+                </ul>
                 <ul class="inputs" id="inputs">
                     <li>
                         <input type="checkbox" value="kml/earthquakes.kml" name="file" /> 
@@ -52,7 +58,7 @@
                         US &amp; Canadian State Capitals <a href="kml/us-state-capitals.kml" target="_blank">(kml)</a>
                     </li>
                 </ul>
-                <p>&nbsp;</p>
+                <p><input type="checkbox" id="show" /> Show selected place only</p>
                 <p><a href="index.html" class="button">&lt; Back</a> <a class="button" id="reset">Reset</a></p>
             </div>
             <div class="col w2of3 h1of1 viewer" id="viewer">

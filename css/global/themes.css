@@ -58,6 +58,7 @@ td {
     padding: 10px 20px;
     text-align: center;
     color: #fff;
+    cursor: pointer;
     background-color: #666;
     text-decoration: none;
 }

@@ -9,3 +9,16 @@
 .sidebar .inputs {
     list-style: none;
 }
+
+.sidebar .filters {
+    display: none;
+}
+
+.line-show .line-on,
+.line-hide .line-on {
+    background-color: #eadeda;
+}
+
+.line-hide .line {
+    display: none;
+}

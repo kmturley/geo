@@ -9,10 +9,14 @@ var Earth = function () {
     'use strict';
     
     var module = {
+        options: {
+            maxPlaces: 1000,
+            maxLines: 1000
+        },
         init: function (id, options) {
             var me = this;
             this.el = document.getElementById(id);
-            this.options = options || { maxPlaces: 1000, maxLines: 1000 };
+            this.options.onClick = options.onClick;
             google.load("earth", "1", {
                 "other_params": "sensor=false"
             });
@@ -35,7 +39,6 @@ var Earth = function () {
                             });
                         }
                     });
-                    options.onLoad();
                 });
             });
         },
