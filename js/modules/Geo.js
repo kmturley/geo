@@ -12,17 +12,24 @@ var Geo = function () {
     
     var module = {
         radius: 6371, // earth's mean radius in km
+        options: {
+            minDistance: 0,
+            maxDistance: 40000,
+            minBearing: 0,
+            maxBearing: 360,
+            urls: []
+        },
         /**
          * @method init
          */
         init: function (id, options) {
             var me = this,
                 html = '';
-            this.options = options || { minDistance: 0, maxDistance: 40000, minBearing: 0, maxBearing: 360 };
             this.el = document.getElementById(id);
-            this.loadAll(options.urls, function (items) {
+            /*
+            this.loadAll(this.options.urls, function (items) {
                 options.onLoad(items);
-            });
+            });*/
         },
         /**
          * @method loadAll
@@ -96,11 +103,12 @@ var Geo = function () {
         /**
          * @method calculate
          */
-        calculate: function (items) {
+        calculate: function (items, place) {
             var i = 0,
                 j = 0,
                 distance = 0,
                 bearing = 0,
+                selected = false,
                 lines = [];
             
             for (i = 0; i < items.length; i += 1) {
@@ -110,6 +118,11 @@ var Geo = function () {
                         if (distance > this.options.minDistance && distance < this.options.maxDistance) {
                             bearing = this.bearing(items[i], items[j]);
                             if (bearing > this.options.minBearing && bearing < this.options.maxBearing) {
+                                if (place && (items[i].lat === place.lat && items[i].lon === place.lon) || (items[j].lat === place.lat && items[j].lon === place.lon)) {
+                                    selected = true;
+                                } else {
+                                    selected = false;
+                                }
                                 lines.push({
                                     name: items[i].name + '<br/>' + items[j].name,
                                     distance: distance,
@@ -118,6 +131,7 @@ var Geo = function () {
                                     color: this.generateColor(distance / this.radius),
                                     start: items[i],
                                     end: items[j],
+                                    selected: selected,
                                     duplicate: (i < j) ? true : false
                                 });
                             }
@@ -140,7 +154,7 @@ var Geo = function () {
             var i = 0,
                 html = '';
             for (i = 0; i < items.length; i += 1) {
-                html += '<tr><td>' + items[i].name + '</td><td>' + items[i].distance.toFixed(2) + 'km</td><td>' + items[i].bearing.toFixed(2) + '°</td></tr>';
+                html += '<tr class="' + (items[i].selected ? 'line-on' : 'line') + '"><td>' + items[i].name + '</td><td>' + items[i].distance.toFixed(2) + 'km</td><td>' + items[i].bearing.toFixed(2) + '°</td></tr>';
             }
             if (html === '') {
                 html = '<tr><td colspan="3" style="text-align:center;">No results found</td></tr>';

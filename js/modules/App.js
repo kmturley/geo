@@ -8,54 +8,37 @@
 (function () {
     'use strict';
     
-    var place = {},
+    var lines = [],
         places = [],
-        lines = [];
-
+        place = {};
+    
     var earth = new Earth();
     earth.init('viewer', {
-        maxPlaces: 1000,
-        maxLines: 1000,
-        onLoad: function (e) {
-            //earth.addPlaces(places);
-        },
         onClick: function (item) {
             place = item;
             earth.addLines(lines, place);
+            update();
         }
     });
 
     var geo = new Geo();
-    geo.init('results', {
-        minDistance: 0,
-        maxDistance: 40000,
-        minBearing: 0,
-        maxBearing: 360,
-        urls: [
-            //'kml/landmarks.kml',
-            //'kml/monoliths.kml',
-            //'kml/pyramids.kml',
-            //'kml/structures.kml',
-            //'kml/us-state-capitals.kml',
-            //'kml/worship.kml'
-        ],
-        onLoad: function (items) {
-            update(items);
-        }
-    });
+    geo.init('results');
 
     function update(items) {
-        var html = '';
-        places = items;
-        lines = geo.calculate(items);
-        html += '<div class="col w1of3 h1of1 scroll"><table><tr><th>Name &#x25BE;</th><th>Distance</th><th>Bearing</th></tr>';
-        html += geo.createTable(lines.sort(function (a, b) { return (a.name < b.name) ? -1 : 1; }));
+        var html = '',
+            show = document.getElementById('show').checked;
+        if (items) {
+            places = items;
+        }
+        lines = geo.calculate(places, place);
+        html += '<div class="col w1of3 h1of1 scroll' + (show ? ' line-hide' : ' line-show') + '"><table><tr><th>Name &#x25BE;</th><th>Distance</th><th>Bearing</th></tr>';
+        html += geo.createTable(lines.sort(function (a, b) { return (a.name < b.name) ? -1 : 1; }), place);
         html += '</table></div>';
-        html += '<div class="col w1of3 h1of1 scroll"><table><tr><th>Name</th><th>Distance &#x25BE;</th><th>Bearing</th></tr>';
-        html += geo.createTable(lines.sort(function (a, b) { return a.distance - b.distance; }));
+        html += '<div class="col w1of3 h1of1 scroll' + (show ? ' line-hide' : ' line-show') + '"><table><tr><th>Name</th><th>Distance &#x25BE;</th><th>Bearing</th></tr>';
+        html += geo.createTable(lines.sort(function (a, b) { return a.distance - b.distance; }), place);
         html += '</table></div>';
-        html += '<div class="col w1of3 h1of1 scroll"><table><tr><th>Name</th><th>Distance</th><th>Bearing &#x25BE;</th></tr>';
-        html += geo.createTable(lines.sort(function (a, b) { return a.bearing - b.bearing; }));
+        html += '<div class="col w1of3 h1of1 scroll' + (show ? ' line-hide' : ' line-show') + '"><table><tr><th>Name</th><th>Distance</th><th>Bearing &#x25BE;</th></tr>';
+        html += geo.createTable(lines.sort(function (a, b) { return a.bearing - b.bearing; }), place);
         html += '</table></div>';
         geo.el.innerHTML = html;
     }
@@ -69,9 +52,9 @@
             }
         }
         earth.reset();
-        geo.loadAll(urls, function (items) {
-            earth.addPlaces(items);
-            update(items);
+        geo.loadAll(urls, function (places) {
+            earth.addPlaces(places);
+            update(places);
         });
     }
 
@@ -80,7 +63,9 @@
         for (var i = 0; i < inputs.length; i += 1) {
             inputs[i].checked = false;
         }
+        place = null;
         earth.reset();
+        update();
     }
 
     document.getElementById('inputs').addEventListener('click', function (e) {
@@ -91,6 +76,10 @@
 
     document.getElementById('reset').addEventListener('click', function (e) {
         resetInputs();
+    });
+    
+    document.getElementById('show').addEventListener('click', function (e) {
+        update();
     });
 
     window.setTimeout(function () {
