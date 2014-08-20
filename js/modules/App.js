@@ -10,13 +10,12 @@
     
     var lines = [],
         places = [],
-        place = {};
+        place = null;
     
     var earth = new Earth();
     earth.init('viewer', {
         onClick: function (item) {
             place = item;
-            earth.addLines(lines, place);
             update();
         }
     });
@@ -41,6 +40,14 @@
         html += geo.createTable(lines.sort(function (a, b) { return a.bearing - b.bearing; }), place);
         html += '</table></div>';
         geo.el.innerHTML = html;
+        
+        //console.log('update', place, places, lines);
+        
+        earth.reset();
+        earth.addPlaces(places);
+        if (place) {
+            earth.addLines(lines, place);
+        }
     }
 
     function checkInputs() {
@@ -51,9 +58,8 @@
                 urls.push(inputs[i].value);
             }
         }
-        earth.reset();
+
         geo.loadAll(urls, function (places) {
-            earth.addPlaces(places);
             update(places);
         });
     }
@@ -64,8 +70,7 @@
             inputs[i].checked = false;
         }
         place = null;
-        earth.reset();
-        update();
+        checkInputs();
     }
 
     document.getElementById('inputs').addEventListener('click', function (e) {
@@ -79,6 +84,18 @@
     });
     
     document.getElementById('show').addEventListener('click', function (e) {
+        update();
+    });
+    
+    document.getElementById('min').addEventListener('change', function (e) {
+        geo.options.minDistance = e.target.value;
+        document.getElementById('minValue').innerHTML = e.target.value;
+        update();
+    });
+    
+    document.getElementById('max').addEventListener('change', function (e) {
+        geo.options.maxDistance = e.target.value;
+        document.getElementById('maxValue').innerHTML = e.target.value;
         update();
     });
 

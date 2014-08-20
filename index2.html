@@ -17,7 +17,7 @@
             <div class="col w1of3 h1of1 scroll sidebar">
                 <h1>Geo II</h1>
                 <p>Calculates lines from a single place to the others, showing the distances and bearings of each.</p>
-                <p>Select a place to view the lines from there.</p>
+                <h2>Places</h2>
                 <ul class="filters" id="filters">
                     <li><input type="text" value="0" size="1" name="minLength" /> Min length of line (km)</li>
                     <li><input type="text" value="24901" size="1" name="maxLength" /> Max length of line (km)</li>
@@ -58,7 +58,12 @@
                         US &amp; Canadian State Capitals <a href="kml/us-state-capitals.kml" target="_blank">(kml)</a>
                     </li>
                 </ul>
-                <p><input type="checkbox" id="show" /> Show selected place only</p>
+                <h2>Filters</h2>
+                <ul class="inputs">
+                    <li><input type="range" min="0" max="40000" value="0" id="min" step="100" /> Min line length (<span id="minValue">0</span>km)</li>
+                    <li><input type="range" min="0" max="40000" value="40000" id="max" step="100" /> Max line length (<span id="maxValue">40000</span>km)</li>
+                    <li><input type="checkbox" id="show" /> Show selected place only</li>
+                </ul>
                 <p><a href="index.html" class="button">&lt; Back</a> <a class="button" id="reset">Reset</a></p>
             </div>
             <div class="col w2of3 h1of1 viewer" id="viewer">
