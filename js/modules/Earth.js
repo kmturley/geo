@@ -10,8 +10,8 @@ var Earth = function () {
     
     var module = {
         options: {
-            maxPlaces: 1000,
-            maxLines: 1000
+            maxPlaces: 2000,
+            maxLines: 250
         },
         init: function (id, options) {
             var me = this;
@@ -67,19 +67,25 @@ var Earth = function () {
         },
         addLines: function (items, filter) {
             var i = 0,
-                total = items.length < this.options.maxLines ? items.length : this.options.maxLines;
+                count = 0;
             for (i = 0; i < items.length; i += 1) {
-                if (filter) {
-                    if (filter.lat === items[i].start.lat && filter.lon === items[i].start.lon) {
+                if (items[i].duplicate !== true) {
+                    if (filter) {
+                        if (filter.lat === items[i].start.lat && filter.lon === items[i].start.lon) {
+                            this.addLine(items[i]);
+                            count += 1;
+                        } else if (filter.lat === items[i].end.lat && filter.lon === items[i].end.lon) {
+                            this.addLine(items[i]);
+                            count += 1;
+                        }
+                    } else {
                         this.addLine(items[i]);
-                    } else if (filter.lat === items[i].end.lat && filter.lon === items[i].end.lon) {
-                        this.addLine(items[i]);
+                        count += 1;
                     }
-                } else if (items[i].duplicate !== true) {
-                    this.addLine(items[i]);
-                    if (i > total) {
-                        return false;
-                    }
+                }
+                if (count === this.options.maxLines) {
+                    console.log('Only processed ' + i + ' of ' + items.length + ' possible lines');
+                    return false;
                 }
             }
         },

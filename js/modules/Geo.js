@@ -118,7 +118,7 @@ var Geo = function () {
                         if (distance > this.options.minDistance && distance < this.options.maxDistance) {
                             bearing = this.bearing(items[i], items[j]);
                             if (bearing > this.options.minBearing && bearing < this.options.maxBearing) {
-                                if (place && (items[i].lat === place.lat && items[i].lon === place.lon) || (items[j].lat === place.lat && items[j].lon === place.lon)) {
+                                if (place && (items[i].lat === place.lat && items[i].lon === place.lon) || place && (items[j].lat === place.lat && items[j].lon === place.lon)) {
                                     selected = true;
                                 } else {
                                     selected = false;
