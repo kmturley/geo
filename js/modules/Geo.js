@@ -1,11 +1,9 @@
-/**
- * Geo
- * @class Geo
- * @example var geo = new Geo();
- * @requires LatLon
- **/
+/*
+    Geo
+    by kmturley
+*/
 
-/*globals window, document */
+/*global window, document, google*/
 
 var Geo = function () {
     'use strict';
@@ -19,159 +17,138 @@ var Geo = function () {
             maxBearing: 360,
             urls: []
         },
+        current: {},
         /**
          * @method init
          */
-        init: function (id, options) {
-            var me = this,
-                html = '';
-            this.el = document.getElementById(id);
-            /*
-            this.loadAll(this.options.urls, function (items) {
-                options.onLoad(items);
-            });*/
-        },
-        /**
-         * @method loadAll
-         */
-        loadAll: function (urls, callback, index, list) {
+        init: function () {
             var me = this;
-            if (!index) { index = 0; }
-            if (!list) { list = []; }
-            if (urls[index]) {
-                this.load(urls[index], function (items) {
-                    list = me.convertXml(items, list);
-                    console.log(urls[index], list.length);
-                    if (index < urls.length - 1) {
-                        me.loadAll(urls, callback, index + 1, list);
-                    } else {
-                        callback(list);
-                    }
+            google.load('earth', '1', {'other_params': 'sensor=false'});
+            google.setOnLoadCallback(function () {
+                google.earth.createInstance('viewer', function (instance) {
+                    me.ge = instance;
+                    me.ge.getWindow().setVisibility(true);
+                }, function (e) {
+                    window.alert('error: ' + e);
                 });
+            });
+        },
+        /**
+         * @method add
+         */
+        add: function (url, callback) {
+            var me = this;
+            console.log('add', url);
+            google.earth.fetchKml(me.ge, window.location.origin + '/geo/' + url, function (kml) {
+                console.log('add.success', kml);
+                if (kml) {
+                    me.current[url] = kml;
+                    me.ge.getFeatures().appendChild(kml);
+                    callback(kml);
+                }
+                if (kml.getAbstractView() !== null) {
+                    me.ge.getView().setAbstractView(kml.getAbstractView());
+                }
+            });
+        },
+        /**
+         * @method remove
+         */
+        remove: function (url) {
+            console.log('remove', url);
+            var kml = this.current[url];
+            if (kml) {
+                console.log('remove.success', kml);
+                this.ge.getFeatures().removeChild(kml);
+            }
+        },
+        /**
+         * @method getCache
+         */
+        getCache: function (i, places, items) {
+            if (places[i]) {
+                return places[i];
             } else {
-                callback([]);
+                var item = items.item(i);
+                places[i] = {
+                    name: item.getName(),
+                    lat: item.getGeometry().getLatitude(),
+                    lon: item.getGeometry().getLongitude()
+                };
+                return places[i];
             }
-        },
-        /**
-         * @method load
-         */
-        load: function (url, callback) {
-            var me = this,
-                xhr = new window.XMLHttpRequest();
-            xhr.open('GET', url, true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        callback(xhr.responseText);
-                    } else {
-                        callback('error');
-                    }
-                }
-            };
-            xhr.send();
-        },
-        /**
-         * @method convertXml
-         */
-        convertXml: function (data, list) {
-            var i = 0,
-                coords = [];
-            
-            data = this.stringToXml(data);
-            data = this.xmlToJson(data);
-            if (data.Folder) {
-                data = data.Folder.Placemark;
-            } else if (data.Document && data.Document.Folder) {
-                if (data.Document.Folder.Placemark) {
-                    data = data.Document.Folder.Placemark;
-                } else {
-                    data = data.Document.Folder;
-                }
-            } else if (data.Document) {
-                data = data.Document.Placemark;
-            }
-            for (i = 0; i < data.length; i += 1) {
-                coords = (data[i].Point || data[i].Placemark.Point || data[i].Placemark[0].Point).coordinates['#text'].split(',');
-                list.push({
-                    name: data[i].name['#text'],
-                    lat: Number(coords[1]),
-                    lon: Number(coords[0])
-                });
-            }
-            return list;
         },
         /**
          * @method calculate
          */
-        calculate: function (items, place) {
+        calculate: function (kml) {
             var i = 0,
                 j = 0,
-                distance = 0,
-                bearing = 0,
-                selected = false,
-                lines = [];
-            
-            for (i = 0; i < items.length; i += 1) {
-                for (j = 0; j < items.length; j += 1) {
-                    if (i !== j) {
-                        distance = this.distance(items[i], items[j]);
-                        if (distance > this.options.minDistance && distance < this.options.maxDistance) {
-                            bearing = this.bearing(items[i], items[j]);
-                            if (bearing > this.options.minBearing && bearing < this.options.maxBearing) {
-                                if (place && (items[i].lat === place.lat && items[i].lon === place.lon) || place && (items[j].lat === place.lat && items[j].lon === place.lon)) {
-                                    selected = true;
-                                } else {
-                                    selected = false;
-                                }
-                                lines.push({
-                                    name: items[i].name + '<br/>' + items[j].name,
-                                    distance: distance,
-                                    bearing: bearing,
-                                    bearing2: (bearing - 180 < 0 ? bearing + 180 : bearing - 180),
-                                    color: this.generateColor(distance / this.radius),
-                                    start: items[i],
-                                    end: items[j],
-                                    selected: selected,
-                                    duplicate: (i < j) ? true : false
-                                });
-                            }
+                items = kml.getElementsByType('KmlPlacemark'),
+                length = items.getLength(),
+                places = [],
+                lines = [],
+                line = {};
+
+            for (i = 0; i < length; i += 1) {
+                line = { start: this.getCache(i, places, items) };
+                for (j = i + 1; j < length; j += 1) {
+                    line.end = this.getCache(j, places, items);
+                    line.distance = this.distance(line.start, line.end);
+                    if (line.distance > this.options.minDistance && line.distance < this.options.maxDistance) {
+                        line.bearing = this.bearing(line.start, line.end);
+                        line.bearing2 = (line.bearing - 180 < 0 ? line.bearing + 180 : line.bearing - 180);
+                        if (line.bearing > this.options.minBearing && line.bearing < this.options.maxBearing) {
+                            line.color = this.generateColor(line.distance / this.radius);
+                            line.name = line.start.name + '<br/>' + line.end.name;
+                            lines.push({
+                                bearing: line.bearing,
+                                bearing2: line.bearing2,
+                                color: line.color,
+                                distance: line.distance,
+                                name: line.name,
+                                start: line.start,
+                                end: line.end
+                            });
+                            this.addLine(line);
                         }
                     }
                 }
             }
+            console.log('calculate.success', lines.length);
             return lines;
         },
+        /**
+         * @method addLine
+         */
+        addLine: function (item) {
+            var placemark = this.ge.createPlacemark(''),
+                line = this.ge.createLineString(''),
+                lineStyle;
+            
+            //console.log('addLine', item);
+            
+            line.setTessellate(true);
+            line.setAltitudeMode(this.ge.ALTITUDE_CLAMP_TO_GROUND);
+            line.getCoordinates().pushLatLngAlt(item.start.lat, item.start.lon, 0);
+            line.getCoordinates().pushLatLngAlt(item.end.lat, item.end.lon, 0);
+            placemark.setName(item.name);
+            placemark.setDescription(item.distance.toFixed(2) + 'km<br/>' + item.bearing.toFixed(2) + '° / ' + item.bearing2.toFixed(2) + '°');
+            placemark.setGeometry(line);
+            placemark.setStyleSelector(this.ge.createStyle(''));
+            lineStyle = placemark.getStyleSelector().getLineStyle();
+            lineStyle.setWidth(2);
+            lineStyle.getColor().set(item.color);
+            this.ge.getFeatures().appendChild(placemark);
+        },
+        /**
+         * @method generateColor
+         */
         generateColor: function (value) {
             var r = Math.round(value * 255),
                 g = Math.round((1 - Math.abs(0.5 - value)) * 255),
                 b = Math.round((1 - value) * 255);
             return (0xff000000 + (0x00010000 * b) + (0x00000100 * g) + (0x00000001 * r)).toString(16);
-        },
-        /**
-         * @method createTable
-         */
-        createTable: function (items) {
-            var i = 0,
-                html = '';
-            for (i = 0; i < items.length; i += 1) {
-                html += '<tr class="' + (items[i].selected ? 'line-on' : 'line') + '"><td>' + items[i].name + '</td><td>' + items[i].distance.toFixed(2) + 'km</td><td>' + items[i].bearing.toFixed(2) + '°</td></tr>';
-            }
-            if (html === '') {
-                html = '<tr><td colspan="3" style="text-align:center;">No results found</td></tr>';
-            }
-            return html;
-        },
-        /**
-         * @method addEvent
-         */
-        addEvent: function (name, el, func) {
-            if (el.addEventListener) {
-                el.addEventListener(name, func, false);
-            } else if (el.attachEvent) {
-                el.attachEvent('on' + name, func);
-            } else {
-                el[name] = func;
-            }
         },
         /**
          * @method distance
@@ -235,63 +212,6 @@ var Geo = function () {
                 return '0.' + sig;
             });
             return Number(n);
-        },
-        /**
-         * @method stringToXml
-         */
-        stringToXml: function (txt) {
-            var xmlDoc = null,
-                parser = null;
-            if (window.DOMParser) {
-                parser = new window.DOMParser();
-                xmlDoc = parser.parseFromString(txt, "application/xml");
-            } else {
-                xmlDoc = new window.ActiveXObject("Microsoft.XMLDOM");
-                xmlDoc.async = false;
-                xmlDoc.loadXML(txt);
-            }
-            return xmlDoc.documentElement;
-        },
-        /**
-         * @method xmlToJson
-         */
-        xmlToJson: function (xml) {
-            var obj = {},
-                i = 0,
-                j = 0,
-                attribute = {},
-                item = {},
-                nodeName = '',
-                old = [];
-            
-            if (xml.nodeType === 1) {
-                if (xml.attributes.length > 0) {
-                    obj["@attributes"] = {};
-                    for (j = 0; j < xml.attributes.length; j += 1) {
-                        attribute = xml.attributes.item(j);
-                        obj["@attributes"][attribute.nodeName] = attribute.value;
-                    }
-                }
-            } else if (xml.nodeType === 3) { // text
-                obj = xml.nodeValue;
-            }
-            if (xml.hasChildNodes()) {
-                for (i = 0; i < xml.childNodes.length; i += 1) {
-                    item = xml.childNodes.item(i);
-                    nodeName = item.nodeName;
-                    if (typeof obj[nodeName] === "undefined") {
-                        obj[nodeName] = this.xmlToJson(item);
-                    } else {
-                        if (typeof obj[nodeName].push === "undefined") {
-                            old = obj[nodeName];
-                            obj[nodeName] = [];
-                            obj[nodeName].push(old);
-                        }
-                        obj[nodeName].push(this.xmlToJson(item));
-                    }
-                }
-            }
-            return obj;
         }
     };
     return module;

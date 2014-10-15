@@ -2,119 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>Pyramids</name>
-	<Style id="style90">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style79">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style98">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style540">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style11">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/ltblu-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style290">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms2/micons/yellow.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style420">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style96">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<Style id="style101">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style6">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style390">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style410">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style970">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style38">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style121">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style74">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style88">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
@@ -128,129 +16,27 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style53">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/purple-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style62">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style99">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style78">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style16">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style60">
+	<StyleMap id="m_ylw-pushpin0010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin61</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style72">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style120">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style83">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style122">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style114">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style13">
+	<Style id="style41">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style85">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style210">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style100">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style190">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style21">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/purple-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style109">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style123">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
@@ -261,42 +47,80 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style470">
+	<StyleMap id="m_ylw-pushpin013">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style11">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/ltblu-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style60">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style84">
+	<Style id="style67">
 		<IconStyle>
 			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style27">
+	<Style id="style94">
 		<IconStyle>
 			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/yellow-dot.png</href>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style70">
+	<Style id="s_ylw-pushpin61">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style96">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style111">
+	<Style id="s_ylw-pushpin_hl031">
 		<IconStyle>
+			<scale>1.3</scale>
 			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-pushpin.png</href>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="style41">
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style69">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
@@ -310,73 +134,49 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style72">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style560">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style170">
+	<Style id="style58">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style91">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style66">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style44">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style67">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style119">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style500">
+	<Style id="style420">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style4300">
+	<Style id="sn_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style970">
 		<IconStyle>
 			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style21">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/purple-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
@@ -387,17 +187,66 @@
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="style122">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl200">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style99">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin60">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin700</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style13">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style53">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/purple-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
 	<Style id="style200">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style69">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
@@ -408,7 +257,208 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style58">
+	<Style id="style98">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl17">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style210">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style290">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms2/micons/yellow.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="style88">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style880</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style881</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin700">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin140">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style500">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style119">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style27">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/yellow-dot.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style85">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style880">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin9">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style71">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style410">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style87">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin300">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin42">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin300</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl301</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style37">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style62">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ltblu-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin1011">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style109">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style74">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
@@ -422,35 +472,48 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style64">
+	<Style id="style450">
 		<IconStyle>
 			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style510">
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl301">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="style76">
 		<IconStyle>
 			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style115">
+	<Style id="s_ylw-pushpin_hl1000">
 		<IconStyle>
+			<scale>1.3</scale>
 			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/ylw-pushpin.png</href>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="style82">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style94">
+	<Style id="style78">
 		<IconStyle>
 			<Icon>
 				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
@@ -464,10 +527,41 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style450">
+	<Style id="style16">
 		<IconStyle>
 			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style170">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="style6">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin011">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1011</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl031</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style70">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
@@ -478,39 +572,20 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style71">
+	<Style id="style881">
 		<IconStyle>
 			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/red-pushpin.png</href>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/red-pushpin.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="style76">
+	<Style id="s_ylw-pushpin_hl3">
 		<IconStyle>
+			<scale>1.3</scale>
 			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style118">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style37">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/ylw-pushpin.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="style87">
-		<IconStyle>
-			<Icon>
-				<href>http://maps.gstatic.com/mapfiles/ms2/micons/grn-pushpin.png</href>
-			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
 	<Style id="style95">
@@ -520,12 +595,200 @@
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="style82">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/ms2/micons/pink.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin25">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin140</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
 	<Placemark>
-		<name>Pyramid Amenemhat III</name>
-		<description><![CDATA[<div dir="ltr"><font size="1" face="arial, sans-serif"><a href="http://en.wikipedia.org/wiki/Amenemhet_III" target="_blank">Wikipedia</a><br><br>Amenemhat III, also spelled Amenemhet III was a pharaoh of the Twelfth Dynasty of Egypt. He ruled from c.1860 BC to c.1814 BC, the highest known date being found in a papyrus dated to Regnal Year 46, I Akhet 22 of his rule.[2] His reign is regarded as the golden age of the Middle Kingdom.[3] He may have had a long coregency (of 20 years) with his father, Senusret III.[4]</font></div>]]></description>
-		<styleUrl>#style115</styleUrl>
+		<name>Djedefre&apos;s Pyramid, Egypt</name>
+		<LookAt>
+			<longitude>31.07539701937952</longitude>
+			<latitude>30.03176407380883</latitude>
+			<altitude>0</altitude>
+			<heading>2.630625327107362</heading>
+			<tilt>0</tilt>
+			<range>1083.362061483315</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
 		<Point>
-			<coordinates>30.898962,29.274439,0</coordinates>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>31.0749487033362,30.03218472836634,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Pyramid of Falicon, France</name>
+		<LookAt>
+			<longitude>7.260449355695254</longitude>
+			<latitude>43.74969081377493</latitude>
+			<altitude>0</altitude>
+			<heading>5.670067744905469e-05</heading>
+			<tilt>0</tilt>
+			<range>195.9093015317841</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>7.260412319518307,43.74990314450021,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Temple Of Ramses, Egypt</name>
+		<LookAt>
+			<longitude>31.62555248326538</longitude>
+			<latitude>22.33630152341214</latitude>
+			<altitude>0</altitude>
+			<heading>9.611347001342555</heading>
+			<tilt>0</tilt>
+			<range>708.7141980223225</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin42</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>31.625587,22.336892,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Jabal Barkal Pyramids, Sudan</name>
+		<LookAt>
+			<longitude>31.82264426234266</longitude>
+			<latitude>18.53760962085251</latitude>
+			<altitude>0</altitude>
+			<heading>-0.003398188616824575</heading>
+			<tilt>0</tilt>
+			<range>812.7900824605262</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>31.82223721048307,18.53808917062679,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Karnak, Egypt</name>
+		<LookAt>
+			<longitude>32.65600073804082</longitude>
+			<latitude>25.71939544438923</latitude>
+			<altitude>0</altitude>
+			<heading>0.006385666144518566</heading>
+			<tilt>0</tilt>
+			<range>1081.166175916469</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0010</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>32.65712410457849,25.71895359390526,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Kafr Al Masallat Pyramids, Egypt</name>
+		<LookAt>
+			<longitude>30.64679480082846</longitude>
+			<latitude>29.54400018689516</latitude>
+			<altitude>0</altitude>
+			<heading>22.47489714751272</heading>
+			<tilt>0</tilt>
+			<range>554.3861048576321</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin25</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>30.64672777777778,29.54471111111111,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Huapalcalco Pyramid, Mexico</name>
+		<LookAt>
+			<longitude>-98.36227906989689</longitude>
+			<latitude>20.11700238415302</latitude>
+			<altitude>0</altitude>
+			<heading>0.0001978025542923316</heading>
+			<tilt>0</tilt>
+			<range>323.9552952253213</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin011</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>-98.362495,20.117035,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Edzna, Mexico</name>
+		<LookAt>
+			<longitude>-90.23050227207077</longitude>
+			<latitude>19.5962065655957</latitude>
+			<altitude>0</altitude>
+			<heading>116.3285568389448</heading>
+			<tilt>0</tilt>
+			<range>591.2547612794455</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-pushpin010</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>-90.229095,19.59676,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Tiwanaku, Bolivia</name>
+		<LookAt>
+			<longitude>-68.67249463990959</longitude>
+			<latitude>-16.55487204329974</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0001770565045549034</heading>
+			<tilt>0</tilt>
+			<range>243.8409778836966</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin60</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>-68.673316,-16.554804,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Bosnian Pyramids, Bosnia</name>
+		<LookAt>
+			<longitude>18.17861866086216</longitude>
+			<latitude>43.97728277015256</latitude>
+			<altitude>0</altitude>
+			<heading>0.001399001446307678</heading>
+			<tilt>0</tilt>
+			<range>1239.194998608472</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin013</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>18.17636111111111,43.97693888888889,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
@@ -534,22 +797,6 @@
 		<styleUrl>#style450</styleUrl>
 		<Point>
 			<coordinates>31.216394,29.871267,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Layer Pyramid</name>
-		<description><![CDATA[<font face="arial, sans-serif" size="2"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Layer_Pyramid" target="_blank">Wikipedia</a></span></font><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Layer Pyramid</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(known locally in&nbsp;</span><a href="http://en.wikipedia.org/wiki/Arabic" title="Arabic" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Arabic</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;as&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">il-haram il-midawwar</i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Arabic_language" title="Arabic language" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Arabic</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">:&nbsp;</span><span lang="ar" lang="ar" style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">الهرم المدور</span><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">‎, meaning 'rubble-hill pyramid') is located in the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Necropolis" title="Necropolis" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">necropolis</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Zawyet_el%27Aryan" title="Zawyet el&#39;Aryan" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Zawyet el'Aryan</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;in&nbsp;</span><a href="http://en.wikipedia.org/wiki/Egypt" title="Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. It is thought to be the tomb of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pharaoh" title="Pharaoh" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pharaoh</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Khaba" title="Khaba" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Khaba</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;of the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Third_dynasty_of_Egypt" title="Third dynasty of Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Third Dynasty</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, but this is disputed.</span></font><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></font></div><div><img src="http://upload.wikimedia.org/wikipedia/commons/4/42/Khaba_pyramid_at_Zawyet_el%27Aryan.jpg" style="width:242px"></div><div><font size="1" face="arial, sans-serif">Wikipedia Commons /&nbsp;<a href="http://commons.wikimedia.org/w/index.php?title=User:Pottery_Fan&amp;action=edit&amp;redlink=1" title="User:Pottery Fan (page does not exist)" style="text-decoration:none;color:rgb(165, 88, 88);background-color:rgb(249, 249, 249);line-height:19.200000762939453px" target="_blank">Pottery Fan</a></font></div></div>]]></description>
-		<styleUrl>#style84</styleUrl>
-		<Point>
-			<coordinates>31.16126300000001,29.93281899999999,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Bent Pyramid</name>
-		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Bent_Pyramid" style="font-size:10pt" target="_blank">Wikipedia</a></div><div style="font-family:arial;font-size:10pt"><br><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Bent Pyramid</b><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is an ancient Egyptian pyramid located at the royal&nbsp;</span><a href="http://en.wikipedia.org/wiki/Necropolis" title="Necropolis" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">necropolis</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Dahshur" title="Dahshur" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Dahshur</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, approximately 40 kilometres south of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Cairo" title="Cairo" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Cairo</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, built under the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Old_Kingdom" title="Old Kingdom" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Old Kingdom</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;Pharaoh&nbsp;</span><a href="http://en.wikipedia.org/wiki/Sneferu" title="Sneferu" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Sneferu</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(c. 2600 BC). A unique example of early pyramid development in&nbsp;</span><a href="http://en.wikipedia.org/wiki/Ancient_Egypt" title="Ancient Egypt" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, this was the second pyramid built by&nbsp;</span><a href="http://en.wikipedia.org/wiki/Sneferu" title="Sneferu" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Sneferu</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span></div><div style="font-family:arial;font-size:10pt"><span style="font-family:sans-serif;font-size:13.513513565063477px;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/e/eb/Snefru%27s_Bent_Pyramid_in_Dahshur.jpg" style="width:240px"></div><div style="font-family:arial;font-size:10pt"><div><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div></div>]]></description>
-		<styleUrl>#style100</styleUrl>
-		<Point>
-			<coordinates>31.209391,29.790466,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
@@ -569,67 +816,11 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Mastabet el-Fara&apos;un</name>
-		<description><![CDATA[<div style="font-size:10pt;font-family:arial"><a href="http://en.wikipedia.org/wiki/Mastabet_el-Fara%27un" style="font-size:10pt" target="_blank">Wikipedia</a></div><div><font face="arial, sans-serif" size="1"><br></font></div><div><font face="arial, sans-serif" size="1"><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Mastabat Fara'un</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, located in south&nbsp;</span><a href="http://en.wikipedia.org/wiki/Saqqara" title="Saqqara" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Saqqara</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Egypt" title="Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;in the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Memphis,_Egypt" title="Memphis, Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Memphite</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Necropolis" title="Necropolis" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Necropolis</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, is the burial place of king&nbsp;</span><a href="http://en.wikipedia.org/wiki/Shepseskaf" title="Shepseskaf" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Shepseskaf</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, of the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Fourth_dynasty_of_Egypt" title="Fourth dynasty of Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Fourth Dynasty</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Mastabet_el-Fara%27un#cite_note-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup></font></div><div><font face="arial, sans-serif" size="1"><br></font></div><div style="font-size:10pt;font-family:arial"><img src="http://upload.wikimedia.org/wikipedia/commons/a/ab/Mastaba-faraoun-3.jpg" style="width:240px">\</div><div style="font-size:10pt;font-family:arial"><span style="font-family:arial, sans-serif;font-size:x-small">Wikipedia Commons</span></div>]]></description>
-		<styleUrl>#style190</styleUrl>
-		<Point>
-			<coordinates>31.215216,29.838919,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
 		<name>Pyramid of Neferefre</name>
 		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Neferefre" style="font-size:10pt" target="_blank">Wikipedia</a></div><div><font size="1" face="arial, sans-serif"><br></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Pyramid of Raneferef</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, also known as the&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Pyramid of Neferefre</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, is an unfinished&nbsp;</span><a href="http://en.wikipedia.org/wiki/Egyptian_pyramid" title="Egyptian pyramid" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egyptian pyramid</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;from the&nbsp;</span><a href="http://en.wikipedia.org/wiki/5th_Dynasty" title="5th Dynasty" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">5th Dynasty</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, located in the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Necropolis" title="Necropolis" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">necropolis</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Abusir" title="Abusir" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Abusir</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Egypt" title="Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. After the early death of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pharaoh" title="Pharaoh" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Pharaoh</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Raneferef" title="Raneferef" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Raneferef</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, the unfinished building was reconstructed into a&nbsp;</span><a href="http://en.wikipedia.org/wiki/Square_(geometry)" title="Square (geometry)" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">geometric</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mastaba" title="Mastaba" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">mastaba</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, becoming the burial place of the deceased king. Despite the demolition of the actual pyramid, the complex was augmented through extensive construction of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Temple" title="Temple" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">temples</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;by Raneferef's successors.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Neferefre#cite_note-Verner-Raneferef-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Neferefre#cite_note-Lehner-Raneferef-2" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[2]</a></sup></font></div><div><font size="2" style="font-family:arial"><img src="http://upload.wikimedia.org/wikipedia/commons/b/b4/Pyramid_of_Neferefre%2C_Abusir%2C_1970ies.jpg" style="width:240px"></font></div><div style="font-family:arial;font-size:10pt"><div><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div></div>]]></description>
 		<styleUrl>#style210</styleUrl>
 		<Point>
 			<coordinates>31.201668,29.893806,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Mortuary complex of Pepi I</name>
-		<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Pyramid_of_Pepi_I" style="font-family:arial;font-size:10pt" target="_blank">Wikipedia</a><br><div><font size="1" face="arial, sans-serif"><br></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">mortuary complex of&nbsp;<a href="http://en.wikipedia.org/wiki/Pepi_I" title="Pepi I" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Pepi I</a></b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is situated in the southern archaeological complex of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Saqqara" title="Saqqara" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Saqqara</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Egypt" title="Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. It was excavated in the 1960s by the French Archaeological Mission of Saqqara (MafS) which, all around the main pharaoh's pyramid, discovered about ten new pyramids for the queens and family of this pharaoh.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Pepi_I#cite_note-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;Several have Pyramid Texts (Akhenespepy II, Behenou, Reherichefnakht)</span></font></div>]]></description>
-		<styleUrl>#style123</styleUrl>
-		<Point>
-			<coordinates>31.218906,29.854549,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Pyramid of Senusret I</name>
-		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Senusret_I" style="font-size:10pt" target="_blank">Wikipedi</a>a</div><div><font size="1" face="arial, sans-serif"><br></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Pyramid of Senusret I</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is an&nbsp;</span><a href="http://en.wikipedia.org/wiki/Ancient_Egypt" title="Ancient Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egyptian</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pyramid" title="Pyramid" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Pyramid</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;built to be the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Burial" title="Burial" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">burial</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;place of the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pharaoh" title="Pharaoh" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Pharaoh</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Senusret_I" title="Senusret I" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Senusret I</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. The pyramid was built during the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Twelfth_dynasty_of_Egypt" title="Twelfth dynasty of Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">twelfth dynasty of Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;at&nbsp;</span><a href="http://en.wikipedia.org/wiki/El-Lisht" title="El-Lisht" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">el-Lisht</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, near the pyramid of his father,</span><a href="http://en.wikipedia.org/wiki/Amenemhat_I" title="Amenemhat I" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Amenemhat I</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. Its ancient name was&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Senusret Petei Tawi</i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Senusret beholds the&nbsp;<a href="http://en.wikipedia.org/wiki/Upper_and_Lower_Egypt" title="Upper and Lower Egypt" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">two lands</a></i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">).</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Senusret_I#cite_note-TCM-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup></font></div><div><font size="1" face="arial, sans-serif"><br></font></div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/d/d6/Licht-senwsPyramids_01.jpg" style="width:240px"></div><div style="font-family:arial;font-size:10pt"><div><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div></div>]]></description>
-		<styleUrl>#style114</styleUrl>
-		<Point>
-			<coordinates>31.220945,29.560011,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Pyramid of Senusret II at El-Lahun</name>
-		<description><![CDATA[<div dir="ltr"><font size="1" face="arial, sans-serif"><a href="http://en.wikipedia.org/wiki/Senusret_II" target="_blank">Wikipedia</a><br><br>Khakeperre Senusret II was the fourth pharaoh of the Twelfth Dynasty of Egypt. He ruled from 1897 BC to 1878 BC. His pyramid was constructed at El-Lahun. Senusret II took a great deal of interest in the Faiyum oasis region and began work on an extensive irrigation system from Bahr Yusuf through to Lake Moeris through the construction of a dike at El-Lahun and the addition of a network of drainage canals. The purpose of his project was to increase the amount of cultivable land in that area.[2] The importance of this project is emphasized by Senusret II's decision to move the royal necropolis from Dahshur to El-Lahun where he built his pyramid. This location would remain the political capital for the 12th and 13th Dynasties of Egypt. The king also established the first known workers' quarter in the nearby town of Senusrethotep (Kahun).[3]<br></font><br>&nbsp;</div>]]></description>
-		<styleUrl>#style120</styleUrl>
-		<Point>
-			<coordinates>30.970758,29.23626700000001,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>White Pyramid</name>
-		<description><![CDATA[<div style="font-size:10pt;font-family:arial"><a href="http://en.wikipedia.org/wiki/White_Pyramid" target="_blank">Wikipedia</a></div><div><font face="arial, sans-serif" size="1"><br></font></div><div><font face="arial, sans-serif" size="1"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">White Pyramid</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Amenemhat_II" title="Amenemhat II" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Amenemhat II</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is located in the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pyramid" title="Pyramid" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pyramid</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;field at&nbsp;</span><a href="http://en.wikipedia.org/wiki/Dahshur" title="Dahshur" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Dahshur</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Egypt" title="Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, and is now nothing more than a pile of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Rubble" title="Rubble" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">rubble</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, having been heavily quarried for stone. The remaining&nbsp;</span><a href="http://en.wikipedia.org/wiki/Limestone" title="Limestone" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">limestone</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;rubble has given rise to its modern name.</span></font></div>]]></description>
-		<styleUrl>#style118</styleUrl>
-		<Point>
-			<coordinates>31.223124,29.805815,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Pyramid of Amenemhat III (Dahshur)</name>
-		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Amenemhat_III_(Dahshur)" style="font-size:10pt" target="_blank">Wikipedia</a></div><div><font size="1" face="arial, sans-serif"><br></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Black Pyramid</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;was built by King&nbsp;</span><a href="http://en.wikipedia.org/wiki/Amenemhat_III" title="Amenemhat III" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Amenemhat III</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;during the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Middle_Kingdom_of_Egypt" title="Middle Kingdom of Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Middle Kingdom of Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(2055-1650 BC). It is one of the five remaining&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pyramid" title="Pyramid" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pyramids</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;of the original eleven pyramids at&nbsp;</span><a href="http://en.wikipedia.org/wiki/Dahshur" title="Dahshur" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Dahshur</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;in</span><a href="http://en.wikipedia.org/wiki/Egypt" title="Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. Originally named&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Amenemhet is Mighty</i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, the pyramid earned the name "Black Pyramid" for its dark, decaying appearance as a rubble mound. The Black pyramid was the first to house both the deceased pharaoh and his queens.&nbsp;</span></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></font></div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/e/ea/Black_Pyramid_of_Amenemhat_III..JPG" style="width:240px"></div><div style="font-family:arial;font-size:10pt"><div><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div></div>]]></description>
-		<styleUrl>#style79</styleUrl>
-		<Point>
-			<coordinates>31.223612,29.791668,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Pyramid of Khendjer</name>
-		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Khendjer" style="font-size:10pt" target="_blank">Wikipedia</a></div><div><font size="1" face="arial, sans-serif"><br></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Pyramid of Khendjer</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;was built for the burial of the 13th dynasty pharaoh&nbsp;</span><a href="http://en.wikipedia.org/wiki/Khendjer" title="Khendjer" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Khendjer</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, who ruled&nbsp;</span><a href="http://en.wikipedia.org/wiki/Ancient_Egypt" title="Ancient Egypt" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Egypt</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;c. 1760 BC during the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Second_Intermediate_Period" title="Second Intermediate Period" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Second Intermediate Period</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Khendjer#cite_note-ryholt-2" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[2]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The pyramid, which is part of larger complex comprising a morturary temple, a chapel, two enclosure walls and a subsidiary pyramid, originally stood around 37&nbsp;m (121&nbsp;ft) high and is now completely ruined.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Khendjer#cite_note-lehner-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The pyramidion was discovered during excavations under the direction of Gustave Jéquier in 1929, indicating that the pyramid was finished during Khendjer's lifetime.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_Khendjer#cite_note-jequier-3" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[3]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;It is the only pyramid known to have been completed during the 13th dynasty.</span></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></font></div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/a/a3/Khendjer-complexe-1.jpg" style="width:240px"></div><div style="font-family:arial;font-size:10pt"><div><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div></div>]]></description>
-		<styleUrl>#style121</styleUrl>
-		<Point>
-			<coordinates>31.223888,29.832222,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
@@ -665,14 +856,6 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Becán Structure IX</name>
-		<description><![CDATA[<div><font face="arial, sans-serif" size="2"><a href="http://en.wikipedia.org/wiki/Becan" target="_blank">Wikipedia</a></font></div><font size="1" face="arial, sans-serif" style="font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bec%C3%A1n_-_Structure_IX.jpg/479px-Bec%C3%A1n_-_Structure_IX.jpg" style="width:240px"></font><div style="font-size:10pt"><font size="1" face="arial, sans-serif">Wikipedia Commons /&nbsp;<span style="background-color:rgb(249, 249, 249);line-height:19.1875px">PhilippN</span></font></div>]]></description>
-		<styleUrl>#style38</styleUrl>
-		<Point>
-			<coordinates>-89.466446,18.518089,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
 		<name>Calakmul</name>
 		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Calakmul" style="font-size:10pt" target="_blank">Wikipedia</a></div><div style="font-family:arial;font-size:10pt"><br><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">There are 6,750 ancient structures identified at Calakmul the largest of which is the great pyramid at the site. Structure 2 is over 45 metres (148&nbsp;ft) high, making it one of the tallest of the Maya&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_pyramids" title="Mesoamerican pyramids" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pyramids</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. Four tombs have been located within the pyramid. Like many temples or pyramids within&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerica" title="Mesoamerica" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Mesoamerica</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;the pyramid at Calakmul increased in size by building upon the existing temple to reach its current size. The size of the central monumental&nbsp;</span><a href="http://en.wikipedia.org/wiki/Maya_architecture" title="Maya architecture" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">architecture</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is approximately 2 square kilometres (0.77&nbsp;sq&nbsp;mi) and the whole of the site, mostly covered with dense residential structures, is about 20 square kilometres (7.7&nbsp;sq&nbsp;mi).</span></div><div style="font-family:arial;font-size:10pt"><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/f/f7/Calakmul2.jpg" style="width:240px"></div><div style="font-family:arial;font-size:10pt"><div><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
 		<styleUrl>#style23</styleUrl>
@@ -697,27 +880,11 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Coba</name>
-		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><font size="2"><a href="http://en.wikipedia.org/wiki/Coba" target="_blank">Wikipedia</a></font></div><div><font size="1" face="arial, sans-serif"><br></font></div><div><span style="font-family:arial, sans-serif;font-size:x-small">(No useful information available specifically about the pyramid)</span></div><div><font size="1" face="arial, sans-serif"><br></font></div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coba_Nohoch_Mul-27527.jpg/800px-Coba_Nohoch_Mul-27527.jpg" style="width:244px"></div><div style="font-family:arial"><div><font size="1"><font face="arial, sans-serif">Wikipedia Commons / Public Domain / Ken Thomas</font></font></div></div>]]></description>
-		<styleUrl>#style510</styleUrl>
-		<Point>
-			<coordinates>-87.72172500000001,20.493366,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
 		<name>Comalcalco</name>
 		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Comalcalco" style="font-size:10pt" target="_blank">Wikipedia</a></div><div><font size="1" face="arial, sans-serif"><br></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Important architectural features include the northern plaza and two&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pyramid" title="Pyramid" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pyramids</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, the&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Gran Acropolis</i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;and the&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Acropolis Este</i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></font></div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/d/d3/Comalcalco.jpg" style="width:242px"></div><div style="font-family:arial;font-size:10pt"><div><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
 		<styleUrl>#style48</styleUrl>
 		<Point>
 			<coordinates>-93.201752,18.280081,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Copán</name>
-		<description><![CDATA[<p style="font-family:arial;font-size:10pt;margin:0.4em 0px 0.5em;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><font face="arial, sans-serif" size="2"><a href="http://en.wikipedia.org/wiki/Copan#Main_Group" target="_blank">Wikipedia</a></font></p><p style="margin:0.4em 0px 0.5em;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><span style="font-family:arial, sans-serif;font-size:x-small;line-height:normal">(No useful information available specifically about the pyramid)</span></p><p style="margin:0.4em 0px 0.5em;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><span style="font-family:arial, sans-serif;font-size:x-small;line-height:normal"><br></span></p><div><font size="1" face="arial, sans-serif" style="font-family:arial;font-size:10pt"><sup style="line-height:1em"></sup></font><div style="font-family:arial;font-size:10pt"><span style="width:242px"><font size="1" face="arial, sans-serif"><img src="http://static.panoramio.com/photos/large/51742607.jpg" style="width:242px"></font></span><div><font size="1" face="arial, sans-serif">Google Map / Panoramio /&nbsp;<span style="background-color:rgb(255, 255, 255);color:rgb(90, 123, 243);line-height:14px;text-decoration:underline">letatehn</span></font></div></div></div>]]></description>
-		<styleUrl>#style4300</styleUrl>
-		<Point>
-			<coordinates>-89.142021,14.83954,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
@@ -729,35 +896,11 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>El Mirador</name>
-		<description><![CDATA[<div dir="ltr" style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/El_Mirador" style="font-size:10pt" target="_blank">Wikipedia</a></div><div dir="ltr" style="font-family:arial;font-size:10pt"><br><span style="font-family:arial, sans-serif;font-size:x-small">(No useful information available specifically about the pyramid)</span></div><div dir="ltr" style="font-family:arial;font-size:10pt"></div><br><div dir="ltr" style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/3/32/El_Mirador_3.jpg" style="width:242px"></div><div dir="ltr" style="font-family:arial;font-size:10pt"><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
-		<styleUrl>#style64</styleUrl>
-		<Point>
-			<coordinates>-89.920433,17.755051,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
 		<name>El Tajín</name>
 		<description><![CDATA[<div style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/El_Taj%C3%ADn" style="font-size:small" target="_blank">Wikipedia</a></div><div style="font-family:arial;font-size:10pt"><br><b style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">El Tajín</b><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is a&nbsp;</span><a href="http://en.wikipedia.org/wiki/Pre-Columbian" title="Pre-Columbian" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pre-Columbian</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;archeological site and one of the largest and most important cities of the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_chronology" title="Mesoamerican chronology" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Classic era of Mesoamerica</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. A part of the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Classic_Veracruz_culture" title="Classic Veracruz culture" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Classic Veracruz culture</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, El Tajín flourished from 600 to 1200 C.E. and during this time numerous temples, palaces,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_ballcourt" title="Mesoamerican ballcourt" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">ballcourts</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, and pyramids were built.</span><sup style="font-family:arial, sans-serif;line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/El_Taj%C3%ADn#cite_note-wilkerson7273-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;From the time the city fell, in 1230, to 1785, no European seems to have known of its existence, until a government inspector chanced upon the Pyramid of the Niches.</span><sup style="font-family:arial, sans-serif;line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/El_Taj%C3%ADn#cite_note-wilkerson12-2" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[2]</a></sup></div><div style="font-family:arial;font-size:10pt">&nbsp;</div><div style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/c/cd/El_Taj%C3%ADn_1.jpg" style="width:242px"></div><div style="font-family:arial;font-size:10pt"><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
 		<styleUrl>#style69</styleUrl>
 		<Point>
 			<coordinates>-97.37824199999999,20.448057,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Hormiguero Structure V</name>
-		<description><![CDATA[<div dir="ltr" style="font-size:10pt;font-family:arial"><a href="http://en.wikipedia.org/wiki/Hormiguero,_Mexico" target="_blank">Wikipedia</a></div><div dir="ltr" style="font-size:10pt;font-family:arial"><br><b style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Hormiguero</b><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;was a&nbsp;</span><a href="http://en.wikipedia.org/wiki/Maya_civilization" title="Maya civilization" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Mayan</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;city which was at its peak in the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_chronology" title="Mesoamerican chronology" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Late Classic Period</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(650–850). It is located 22 kilometers south of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Xpuhil" title="Xpuhil" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Xpuhil</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;in the Mexican state of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Campeche" title="Campeche" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Campeche</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. Only a few of its 84 known structures have been excavated.&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Nearby is the Central Group, a complex of large temples most of which are not excavated. Of those that are&nbsp;</span><b style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Structure V</b><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is the most impressive. It is a towering pyramid with a well preserved Chenes style temple at the top.</span></div><div dir="ltr" style="font-size:10pt;font-family:arial"><span style="font-family:sans-serif;font-size:13.513513565063477px;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></div><div dir="ltr" style="font-size:10pt;font-family:arial"><img src="http://mw2.google.com/mw-panoramio/photos/medium/5997948.jpg" style="width:240px"></div><div dir="ltr" style="font-size:10pt;font-family:arial"><font size="1" face="arial, sans-serif">Panoramio/Google Map -&nbsp;<span style="line-height:16px;background-color:rgb(255, 255, 255)">by&nbsp;</span><a href="http://www.panoramio.com/user/169069?with_photo_id=5997948" rel="author" style="color:rgb(0, 82, 150);text-decoration:none;font-weight:bold;line-height:16px;background-color:rgb(255, 255, 255)" target="_blank">stephanie parker</a></font></div>]]></description>
-		<styleUrl>#style90</styleUrl>
-		<Point>
-			<coordinates>-89.495178,18.410452,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Lamanai</name>
-		<description><![CDATA[<div dir="ltr" style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Lamanai" style="font-size:10pt" target="_blank">Wikipedia</a></div><div dir="ltr" style="font-family:arial;font-size:10pt"><br><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Lamanai was occupied as early as the 16th century BC.</span><sup style="font-family:arial, sans-serif;line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Lamanai#cite_note-lapsite-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The vast majority of the site remained unexcavated until the mid-1970s. Archaeological work has concentrated on the investigation and restoration of the larger structures, most notably the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mask_Temple,_Lamanai" title="Mask Temple, Lamanai" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Mask Temple</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Lamanai_Structure_N10-9" title="Lamanai Structure N10-9" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Structure N10-9 ("Temple of the Jaguar Masks")</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;and&nbsp;</span><a href="http://en.wikipedia.org/wiki/High_Temple,_Lamanai" title="High Temple, Lamanai" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">High Temple</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. (shown below)</span></div><div dir="ltr" style="font-family:arial;font-size:10pt">&nbsp;</div><div dir="ltr" style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lamanai_High_Temple.jpg/800px-Lamanai_High_Temple.jpg" style="width:242px"></div><div dir="ltr"><div><font size="1" face="arial, sans-serif">Wikipedia Commons /&nbsp;<a rel="nofollow" href="http://www.flickr.com/people/brostad/" style="text-decoration:none;color:rgb(102, 51, 102);background-color:rgb(249, 249, 249);padding-right:13px;line-height:19.200000762939453px" target="_blank">Bernt Rostad</a></font></div></div>]]></description>
-		<styleUrl>#style470</styleUrl>
-		<Point>
-			<coordinates>-88.65451,17.752171,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
@@ -777,31 +920,7 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Río Azul (approximated)</name>
-		<description><![CDATA[<a href="http://en.wikipedia.org/wiki/R%C3%ADo_Azul" style="font-size:10pt;font-family:arial" target="_blank">Wikipedia</a><br><div style="font-size:10pt;font-family:arial"><br><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Río Azul possesses nine major architectural groups in its site core, each including an elite residential complex and its associated funerary&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_pyramids" title="Mesoamerican pyramids" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pyramids</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span><sup style="font-family:arial, sans-serif;line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/R%C3%ADo_Azul#cite_note-Hammond00p217-6" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[6]</a></sup><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span></div><div style="font-size:10pt"><font face="sans-serif"><span style="line-height:19.200000762939453px"><br></span></font><font size="1" face="arial, sans-serif" style="font-family:arial">&nbsp;<img src="http://mw2.google.com/mw-panoramio/photos/medium/8034207.jpg" style="width:240px"></font></div><div style="font-size:10pt;font-family:arial"><font size="1" face="arial, sans-serif">Panoramio / Google Map - by&nbsp;<a href="http://www.panoramio.com/user/1426940?with_photo_id=8034207" rel="author" style="color:rgb(0, 82, 150);font-weight:bold;line-height:16px;background-color:rgb(255, 255, 255)" target="_blank">Chris Estrada</a></font></div>]]></description>
-		<styleUrl>#style390</styleUrl>
-		<Point>
-			<coordinates>-89.17235599999999,17.783691,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>San Bartolo (approximated)</name>
-		<description><![CDATA[<a href="http://en.wikipedia.org/wiki/San_Bartolo_(Maya_site)" style="font-family:arial;font-size:10pt" target="_blank">Wikipedia</a><div style="font-family:arial;font-size:10pt"><font face="arial" size="2"><a href="http://www.petroglyphs.us/article_mural_reveals_pre-classic_Maya_as_a%20civilized_society.htm" target="_blank">petroglyphs.us</a>&nbsp;(Illustration of buried pyramid)</font></div><div style="font-family:arial;font-size:10pt"><font face="arial" size="2"><br></font></div><div><p style="margin:0.4em 0px 0.5em;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><span style="font-family:arial, sans-serif;font-size:x-small">The&nbsp;</span><a href="http://en.wikipedia.org/wiki/List_of_Maya_sites" title="List of Maya sites" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Maya site</a><span style="font-family:arial, sans-serif;font-size:x-small">&nbsp;includes an 85-foot&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_pyramids" title="Mesoamerican pyramids" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">pyramid</a><span style="font-family:arial, sans-serif;font-size:x-small">&nbsp;named "Las Ventanas" (The Windows); the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Maya_architecture#Pyramids_and_temples" title="Maya architecture" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Temple</a><span style="font-family:arial, sans-serif;font-size:x-small">&nbsp;of "Las Pinturas" (The Paintings); an early royal&nbsp;</span><a href="http://en.wikipedia.org/wiki/Tomb" title="Tomb" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">tomb</a><span style="font-family:arial, sans-serif;font-size:x-small">&nbsp;in the "Tigrillo Complex" (Ocelot Complex); and (in the "Jabalí" [Wild Boar] group some 500 mt. to the east from the central Plaza) a&nbsp;</span><a href="http://en.wikipedia.org/wiki/Triadic_pyramid" title="Triadic pyramid" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">triadic complex</a><span style="font-family:arial, sans-serif;font-size:x-small">&nbsp;similar to the H group in&nbsp;</span><a href="http://en.wikipedia.org/wiki/Uaxact%C3%BAn" title="Uaxactún" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Uaxactún</a><span style="font-family:arial, sans-serif;font-size:x-small">&nbsp;and&nbsp;</span><a href="http://en.wikipedia.org/wiki/Tikal" title="Tikal" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Tikal</a><span style="font-family:arial, sans-serif;font-size:x-small">'s&nbsp;</span><a href="http://en.wikipedia.org/wiki/North_Acropolis,_Tikal" title="North Acropolis, Tikal" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">North Acropolis</a><span style="font-family:arial, sans-serif;font-size:x-small">. The pyramid was constructed from ca 300 BC (base rooms) and was completed ca 50 AD.</span></p></div>]]></description>
-		<styleUrl>#style83</styleUrl>
-		<Point>
-			<coordinates>-89.322968,17.619156,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Templo del Sol or Great Pyramid at Cempoalla</name>
-		<description><![CDATA[<div dir="ltr" style="font-family:arial;font-size:10pt"><font face="arial" size="2"><a href="http://en.wikipedia.org/wiki/Cempoala" target="_blank">Wikipedia</a></font></div><div dir="ltr" style="font-family:arial;font-size:10pt"><br><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">Templo del Sol or Great Pyramid&nbsp;or Sun Temple built on the same platform as the Templo Mayor, separated by an ample square. This is probably the most impressive structure on site.</span><sup style="font-family:arial, sans-serif;background-color:rgb(255, 255, 255);line-height:1em"><a href="http://en.wikipedia.org/wiki/Cempoala#cite_note-Nombre1-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;The great temple resembles the Sun Temple in Tenochtitlan. The Quetzalcoatl Temple, the Feathered Serpent God is a square platform, and the Ehécatl Temple, the wind God is round.</span><sup style="font-family:arial, sans-serif;background-color:rgb(255, 255, 255);line-height:1em"><a href="http://en.wikipedia.org/wiki/Cempoala#cite_note-Nombre1-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup></div><div dir="ltr" style="font-family:arial;font-size:10pt"><span style="font-family:arial;font-size:x-small"><img src="http://static.panoramio.com/photos/small/50103750.jpg"></span></div><div dir="ltr" style="font-family:arial;font-size:10pt"><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
-		<styleUrl>#style540</styleUrl>
-		<Point>
-			<coordinates>-96.40391499999998,19.447733,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Tikal  Temple I</name>
+		<name>Tikal</name>
 		<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Tikal#Structures" style="font-family:arial, sans-serif;font-size:small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)" target="_blank">Wikipedia</a><div><font size="1" face="arial, sans-serif"><br></font></div><div><font size="1" face="arial, sans-serif"><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal_Temple_I" title="Tikal Temple I" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Temple I</a></b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(also known as the&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Temple of Ah Cacao</i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;or&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Temple of the Great Jaguar</i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">) is a funerary pyramid dedicated to Jasaw Chan K'awil, who was entombed in the structure in AD 734,</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-mg43-83" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[83]</a></sup><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-c123-88" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[88]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;the pyramid was completed around 740–750.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-104" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[104]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The temple rises 47 metres (154&nbsp;ft) high.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-mg47-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The massive roofcomb that topped the temple was originally decorated with a giant sculpture of the enthroned king, although little of this decoration survives.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-105" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[105]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The tomb of the king was discovered by Aubrey Trik of the University of Pennsylvania in 1962.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-c124-18" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[18]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;Among items recovered from the Late Classic tomb were a large collection of inscribed human and animal bone tubes and strips with sophisticated scenes depicting deities and people, finely carved and rubbed with</span><a href="http://en.wikipedia.org/wiki/Vermilion" title="Vermilion" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">vermilion</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, as well as jade and shell ornaments and ceramic vessels filled with offerings of food and drink.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-c124-18" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[18]</a></sup><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-m78-106" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[106]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The shrine at the summit of the pyramid has three chambers, each behind the next, with the doorways spanned by wooden lintels fashioned from multiple beams. The outermost lintel is plain but the two inner lintels were carved, some of the beams were removed in the 19th century and their location is unknown, while others were taken to museums in Europe.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tikal#cite_note-k133-103" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[103]</a></sup></font></div>]]></description>
 		<styleUrl>#style88</styleUrl>
 		<Point>
@@ -825,22 +944,6 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Xultun Pyramid</name>
-		<description><![CDATA[<div dir="ltr" style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Xultun" target="_blank">Wikipedia</a></div><div dir="ltr" style="font-family:arial;font-size:10pt"><br><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The site contains a 35 m tall&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_pyramid" title="Mesoamerican pyramid" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pyramid</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, two&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_ballgame#The_Court" title="Mesoamerican ballgame" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">ballcourts</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, 24&nbsp;</span><a href="http://en.wikipedia.org/wiki/Stele" title="Stele" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">stele</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(the last of which, Stele 10, dates to 889), several&nbsp;</span><a href="http://en.wikipedia.org/wiki/Plaza" title="Plaza" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">plazas</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, and five aguadas (water&nbsp;</span><a href="http://en.wikipedia.org/wiki/Reservoirs" title="Reservoirs" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">reservoirs</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">). Xultún is the largest-known Classic Maya site that has yet to be archaeologically investigated.</span><sup style="font-family:arial, sans-serif;line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Xultun#cite_note-NG120510-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;Nearby sites include Chaj K’e’k Cué, a site believed to be the residential area of the Xultún&nbsp;</span><a href="http://en.wikipedia.org/wiki/Elite" title="Elite" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">elite</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, containing an 8 meter tall&nbsp;</span><a href="http://en.wikipedia.org/wiki/Palace" title="Palace" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">palace</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, Isla Oasis, and Las Minas. These later sites contain large&nbsp;</span><a href="http://en.wikipedia.org/wiki/Limestone" title="Limestone" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">limestone</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Quarry" title="Quarry" style="font-family:arial, sans-serif;font-size:x-small;text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">quarries</a><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span></div><div dir="ltr" style="font-family:arial;font-size:10pt"><span style="font-family:sans-serif;font-size:13.513513565063477px;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></div><div dir="ltr" style="font-family:arial;font-size:10pt"><img src="https://mw2.google.com/mw-panoramio/photos/small/6175121.jpg"></div><div dir="ltr" style="font-family:arial;font-size:10pt"><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
-		<styleUrl>#style44</styleUrl>
-		<Point>
-			<coordinates>-89.629395,17.391565,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Yaxha</name>
-		<description><![CDATA[<div dir="ltr" style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Yaxha" style="font-size:10pt" target="_blank">Wikipedia</a></div><div dir="ltr" style="font-family:arial;font-size:10pt"><br><b style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Structure 216</b><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is a large pyramid on the east side of Plaza A upon the East Acropolis. The remains of the temple shrine still stand upon the pyramidal base and the total height of the structure is over 30 metres (100&nbsp;ft), making it the tallest structure at Yaxha.</span><sup style="font-family:arial, sans-serif;line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Yaxha#cite_note-Kelly96p117-40" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[40]</a></sup><span style="font-family:arial, sans-serif;font-size:x-small;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span></div><div dir="ltr" style="font-family:arial;font-size:10pt">&nbsp;</div><div dir="ltr" style="font-family:arial;font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/8/8d/Yaxhatemplo216.jpg" style="width:240px"></div><div dir="ltr" style="font-family:arial;font-size:10pt"><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
-		<styleUrl>#style91</styleUrl>
-		<Point>
-			<coordinates>-89.383736,17.058022,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
 		<name>Aztec Pyramid at Cholula</name>
 		<description><![CDATA[<div><div dir="ltr" style="font-family:arial;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula" style="font-size:small" target="_blank">Wikipedia</a>&nbsp;</div><div dir="ltr" style="font-family:arial;font-size:10pt"><span style="font-size:small"><br></span></div><div dir="ltr"><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Great Pyramid of Cholula</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, also known as&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><span lang="nah">Tlachihualtepetl</span></b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(</span><a href="http://en.wikipedia.org/wiki/Nahuatl" title="Nahuatl" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Nahuatl</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;for "artificial mountain"), is a huge complex located in&nbsp;</span><a href="http://en.wikipedia.org/wiki/Cholula,_Puebla" title="Cholula, Puebla" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Cholula</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Puebla" title="Puebla" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Puebla</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mexico" title="Mexico" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Mexico</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">. It is the largest archaeological site of a pyramid (temple) in the&nbsp;</span><a href="http://en.wikipedia.org/wiki/New_World" title="New World" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">New World</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula#cite_note-CoeKoontz02p120-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_pyramids" title="Mesoamerican pyramids" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">pyramid</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;stands 55 metres (180&nbsp;ft) above the surrounding plain,</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula#cite_note-CoeKoontz02p121-2" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[2]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;and in its final form it measured 400 by 400 metres (1,300 by 1,300&nbsp;ft).</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula#cite_note-Davies90p92-3" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[3]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The pyramid is a temple that has traditionally been viewed as having been dedicated to the god&nbsp;</span><a href="http://en.wikipedia.org/wiki/Quetzalcoatl" title="Quetzalcoatl" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Quetzalcoatl</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula#cite_note-CoeKoontz02p121-2" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[2]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;The&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_architecture" title="Mesoamerican architecture" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">architectural</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;style of the building was closely linked to that of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Teotihuacan" title="Teotihuacan" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Teotihuacan</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;in the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Valley_of_Mexico" title="Valley of Mexico" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Valley of Mexico</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, although influence from the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Gulf_of_Mexico" title="Gulf of Mexico" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Gulf Coast</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;is also evident, especially from&nbsp;</span><a href="http://en.wikipedia.org/wiki/El_Taj%C3%ADn" title="El Tajín" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">El Tajín</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula#cite_note-Davies90p92-3" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[3]</a></sup></font></div><div dir="ltr" style="font-family:arial;font-size:10pt"><span style="font-size:small"><img src="http://upload.wikimedia.org/wikipedia/commons/8/8b/Mexico.Pue.Cholula.Pyramid.01.jpg" style="width:242px"></span></div><div dir="ltr" style="font-family:arial;font-size:10pt"><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div></div>]]></description>
 		<styleUrl>#style99</styleUrl>
@@ -857,19 +960,11 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Pyramid of the Sun </name>
+		<name>Pyramid of the Sun</name>
 		<description><![CDATA[<a href="http://en.wikipedia.org/wiki/Pyramid_of_the_Sun" style="font-family:arial;font-size:small" target="_blank">Wikipedia</a><font size="2" style="font-family:arial">&nbsp;</font><div style="font-family:arial;font-size:10pt"><font size="2" face="arial" style="font-size:10pt"><br></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">The name&nbsp;</span><b style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">Pyramid of the Sun</b><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;comes from the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Aztecs" title="Aztecs" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Aztecs</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, who visited the city of Teotihuacan centuries after it was abandoned; the name given to the pyramid by the Teotihuacanos is unknown. It was constructed in two phases. The first construction stage, around 100 A.D., brought the pyramid to nearly the size it is today. The second round of construction resulted in its completed size of 738 feet (224.942 meters) across and 246 feet (75 meters) high, making it the third largest pyramid in the world,&nbsp;</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Pyramid_of_the_Sun#cite_note-1" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[1]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;but being much shorter than the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Great_Pyramid_of_Giza" title="Great Pyramid of Giza" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Great Pyramid of Giza</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(146 metres). The second phase also saw the construction of an altar atop of the pyramid, which has not survived into modern times. The Adosada platform was added to the pyramid in the early third century, at around the same time that the Ciudadela and Temple of the Feathered Serpent, Teotihuacan Pyramid of the Feathered Serpent were constructed.</span></font></div><div><font size="1" face="arial, sans-serif"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><br></span></font></div><div style="font-family:arial;font-size:10pt"><font size="2" face="arial" style="font-size:10pt"><img src="http://upload.wikimedia.org/wikipedia/commons/e/e0/Piramide_del_Sol_072006.JPG" style="width:242px"><br></font><div><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div></div>]]></description>
 		<styleUrl>#style67</styleUrl>
 		<Point>
 			<coordinates>-98.84354399999998,19.692434,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Tenochtitlan Templo Mayor</name>
-		<description><![CDATA[<div dir="ltr" style="font-size:10pt;font-family:arial"><font size="2" face="Arial, sans-serif"><span style="white-space:nowrap"><a href="http://en.wikipedia.org/wiki/Tenochtitlan" target="_blank">Tenochtitlan on Wikipedia</a></span></font></div><div dir="ltr"><font face="arial, sans-serif" size="1"><font>Destroyed by&nbsp;</font><span style="line-height:38px">Cortés</span></font></div><div dir="ltr"><font face="arial, sans-serif" size="1"><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">In the center of the city were the public buildings, temples and prostis. Inside a walled square, 300 meters to a side, was the ceremonial center. There were about 45 public buildings including: the&nbsp;</span><a href="http://en.wikipedia.org/wiki/Templo_Mayor" title="Templo Mayor" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">Templo Mayor</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">, which dedicated to the Aztec patron deity Huitzilopochtli and the Rain God Tlaloc, the temple of Quetzalcoatl, the&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Mesoamerican_ballgame#Aztec" title="Mesoamerican ballgame" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">tlachtli</a></i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;(</span><a href="http://en.wikipedia.org/wiki/Mesoamerican_ballgame" title="Mesoamerican ballgame" style="text-decoration:none;color:rgb(11, 0, 128);background-color:rgb(255, 255, 255);line-height:19.200000762939453px" target="_blank">ball game</a><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;court) with the&nbsp;</span><i style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tzompantli" title="Tzompantli" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">tzompantli</a></i><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;or rack of skulls, the Sun Temple, which was dedicated to Tonatiuh, the Eagle's House, which was associated with warriors and the ancient power of rulers, the platforms for the gladiatorial sacrifice, and some minor temples.</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"><a href="http://en.wikipedia.org/wiki/Tenochtitlan#cite_note-8" style="text-decoration:none;color:rgb(11, 0, 128);white-space:nowrap" target="_blank">[8]</a></sup><span style="line-height:19.200000762939453px;background-color:rgb(255, 255, 255)">&nbsp;</span><sup style="line-height:1em;background-color:rgb(255, 255, 255)"></sup></font></div><div dir="ltr" style="font-size:10pt;font-family:arial"><span style="font-family:Arial, sans-serif;white-space:nowrap;font-size:x-small"><b><img src="http://upload.wikimedia.org/wikipedia/commons/9/9d/TenochtitlanModel.JPG" style="width:242px"></b></span></div><div dir="ltr" style="font-size:10pt;font-family:arial"><div style="font-size:medium"><font size="1" face="arial, sans-serif">Wikipedia Commons</font></div></div>]]></description>
-		<styleUrl>#style66</styleUrl>
-		<Point>
-			<coordinates>-99.133369,19.419689,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
@@ -929,14 +1024,6 @@
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Cahuachi Gran Piramide</name>
-		<description><![CDATA[<span style="font-family:arial, sans-serif;font-size:x-small">(No useful information available specifically about the pyramid)</span>]]></description>
-		<styleUrl>#style111</styleUrl>
-		<Point>
-			<coordinates>-75.116272,-14.818677,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
 		<name>Huaca Huallamarca (Inca Pyramid)</name>
 		<description><![CDATA[<font face="arial" size="2"><a href="http://www.limaeasy.com/culture-guide/huacas-adobe-pyramids/the-adobe-pyramid-huallamarca-pan-de-azucar" target="_blank">limaeasy.com</a></font><div><br>&nbsp;</div><div><span style="font-family:arial, sans-serif;font-size:x-small">(No useful information available specifically about the pyramid)</span></div>]]></description>
 		<styleUrl>#style53</styleUrl>
@@ -991,14 +1078,6 @@
 		<styleUrl>#style70</styleUrl>
 		<Point>
 			<coordinates>109.254013,34.381271,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark>
-		<name>Tomb of Three Kings of Zhou</name>
-		<description><![CDATA[<div><a href="http://en.wikipedia.org/wiki/Chinese_pyramids" style="font-family:sans-serif;font-size:10pt;line-height:19px" target="_blank">Wikipedia</a></div><div><span style="line-height:19px;background-color:rgb(255, 255, 255)"><font size="1" face="arial, sans-serif"><br></font></span></div><div><b style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">Chinese pyramids</b><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">are ancient</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mausoleum" title="Mausoleum" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">mausoleums</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">and burial</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mound" title="Mound" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">mounds</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">built to house the remains of several early</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Emperors_of_China" title="Emperors of China" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">emperors of China</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">and their imperial relatives. About 38 of them are located around 25 kilometres (16&nbsp;mi) - 35 kilometres (22&nbsp;mi) north-west of</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Xi%27an" title="Xi&#39;an" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Xi'an</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">, on the Qin Chuan Plains in</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Shaanxi" title="Shaanxi" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Shaanxi</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">Province. The most famous is the</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Mausoleum_of_the_First_Qin_Emperor" title="Mausoleum of the First Qin Emperor" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Mausoleum of the First Qin Emperor</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">, northeast of Xi'an and 1.7&nbsp;km west of where the</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Terracotta_Warriors" title="Terracotta Warriors" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Terracotta Warriors</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">were found</span><sup style="font-family:arial, sans-serif;background-color:rgb(255, 255, 255);line-height:1em;white-space:nowrap">[<i><a href="http://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank"><span title="This claim needs references to reliable sources. (March 2012)">citation needed</span></a></i>]</sup><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">. Chinese pyramids were also built during the</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Han_Dynasty" title="Han Dynasty" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Han</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">,</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Tang_Dynasty" title="Tang Dynasty" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Tang</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">,</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Song_Dynasty" title="Song Dynasty" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Song</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">, and</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><a href="http://en.wikipedia.org/wiki/Western_Xia" title="Western Xia" style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px;text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Western Xia</a><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">&nbsp;</span><span style="font-family:arial, sans-serif;font-size:x-small;background-color:rgb(255, 255, 255);line-height:19.200000762939453px">dynasties.</span><sup style="font-family:arial, sans-serif;background-color:rgb(255, 255, 255);line-height:1em;white-space:nowrap">[<i><a href="http://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank"><span title="This claim needs references to reliable sources. (March 2012)">citation needed</span></a></i>]</sup></div><div><p style="margin:0.4em 0px 0.5em;line-height:19.200000762939453px;background-color:rgb(255, 255, 255)"><font size="1" face="arial, sans-serif">They have flat tops, and thus are more similar in shape to the&nbsp;<a href="http://en.wikipedia.org/wiki/Teotihuacan" title="Teotihuacan" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Teotihuacan</a>&nbsp;pyramids north-east of&nbsp;<a href="http://en.wikipedia.org/wiki/Mexico_City" title="Mexico City" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Mexico City</a>,&nbsp;<a href="http://en.wikipedia.org/wiki/Mexico" title="Mexico" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Mexico</a>&nbsp;than to the pyramids in&nbsp;<a href="http://en.wikipedia.org/wiki/Giza_Necropolis" title="Giza Necropolis" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Giza</a>,&nbsp;<a href="http://en.wikipedia.org/wiki/Egypt" title="Egypt" style="text-decoration:none;color:rgb(11, 0, 128)" target="_blank">Egypt</a>. Although known in the West for at least a century, their existence has been made controversial by sensationalist publicity and the problems of Chinese archaeology in early 20th century.</font></p></div>]]></description>
-		<styleUrl>#style560</styleUrl>
-		<Point>
-			<coordinates>112.382843,34.628326,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
