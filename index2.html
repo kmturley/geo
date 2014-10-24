@@ -52,12 +52,14 @@
                         US &amp; Canadian State Capitals <a href="kml/us-state-capitals.kml" target="_blank">(kml)</a>
                     </li>
                 </ul>
-                <h2>Filters</h2>
-                <ul class="inputs">
-                    <li><input type="range" min="0" max="40000" value="0" id="minDistance" step="100" /> Min distance (<span id="minDistanceVal">0</span>km)</li>
-                    <li><input type="range" min="0" max="40000" value="40000" id="maxDistance" step="100" /> Max distance (<span id="maxDistanceVal">40000</span>km)</li>
+                <h2>Lines</h2>
+                <ul class="inputs" id="sliders">
+                    <li><input type="range" min="0" max="5" value="0" id="minDeviation" step="0.1" /> Min deviation (<span id="minDeviationVal">0</span>km)</li>
+                    <li><input type="range" min="0" max="5" value="0.5" id="maxDeviation" step="0.1" /> Max deviation (<span id="maxDeviationVal">0.5</span>km)</li>
+                    <li><input type="range" min="0" max="10000" value="0" id="minDistance" step="100" /> Min distance (<span id="minDistanceVal">0</span>km)</li>
+                    <li><input type="range" min="0" max="10000" value="10000" id="maxDistance" step="100" /> Max distance (<span id="maxDistanceVal">10000</span>km)</li>
                     <li><input type="range" min="0" max="360" value="0" id="minBearing" step="1" /> Min bearing (<span id="minBearingVal">0</span>°)</li>
-                    <li><input type="range" min="0" max="360" value="40000" id="maxBearing" step="1" /> Max bearing (<span id="maxBearingVal">360</span>°)</li>
+                    <li><input type="range" min="0" max="360" value="360" id="maxBearing" step="1" /> Max bearing (<span id="maxBearingVal">360</span>°)</li>
                 </ul>
             </div>
             <div class="col w2of3 h1of1 viewer" id="viewer">

@@ -11,8 +11,10 @@ var Geo = function () {
     var module = {
         radius: 6371, // earth's mean radius in km
         options: {
+            minDeviation: 0,
+            maxDeviation: 0.5,
             minDistance: 0,
-            maxDistance: 40000,
+            maxDistance: 10000,
             minBearing: 0,
             maxBearing: 360,
             urls: []
@@ -34,22 +36,27 @@ var Geo = function () {
             });
         },
         /**
-         * @method add
+         * @method load
          */
-        add: function (url, callback) {
+        load: function (url, callback) {
             var me = this;
             console.log('add', url);
             google.earth.fetchKml(me.ge, window.location.origin + '/geo/' + url, function (kml) {
                 console.log('add.success', kml);
                 if (kml) {
                     me.current[url] = kml;
-                    me.ge.getFeatures().appendChild(kml);
                     callback(kml);
                 }
                 if (kml.getAbstractView() !== null) {
                     me.ge.getView().setAbstractView(kml.getAbstractView());
                 }
             });
+        },
+        /**
+         * @method add
+         */
+        add: function (kml) {
+            this.ge.getFeatures().appendChild(kml);
         },
         /**
          * @method remove
@@ -81,6 +88,75 @@ var Geo = function () {
         /**
          * @method calculate
          */
+        calculate: function (kml) {
+            var i = 0,
+                j = 0,
+                k = 0,
+                items = kml.getElementsByType('KmlPlacemark'),
+                length = items.getLength(),
+                places = [],
+                lines = [],
+                line = {},
+                match = false,
+                place1 = {},
+                place2 = {},
+                place3 = {},
+                distance1 = 0,
+                distance2 = 0,
+                distance3 = 0,
+                bearing1 = 0,
+                bearing2 = 0,
+                bearing2reverse = 0,
+                bearing3 = 0,
+                deviation = 0;
+
+            for (i = 0; i < length; i += 1) {
+                place1 = this.getCache(i, places, items);
+                distance1 = 0;
+                bearing1 = 0;
+                for (j = i + 1; j < length; j += 1) {
+                    place2 = this.getCache(j, places, items);
+                    distance2 = this.distance(place1, place2);
+                    if (distance2 > this.options.minDistance && distance2 < this.options.maxDistance) {
+                        bearing2 = this.bearing(place1, place2);
+                        bearing2reverse = (bearing2 - 180 < 0 ? bearing2 + 180 : bearing2 - 180);
+                        if ((bearing2 > this.options.minBearing && bearing2 < this.options.maxBearing) ||
+                            (bearing2reverse > this.options.minBearing && bearing2reverse < this.options.maxBearing)) {
+                            match = false;
+                            for (k = 0; k < length; k += 1) {
+                                if (k !== i && k !== j) {
+                                    place3 = this.getCache(k, places, items);
+                                    distance3 = this.distance(place1, place3);
+                                    bearing3 = this.bearing(place1, place3);
+                                    deviation = Math.abs(Math.asin(Math.sin(distance3 / this.radius) * Math.sin(this.toRad(bearing3) - this.toRad(bearing2))) * this.radius);
+                                    if (deviation > this.options.minDeviation && deviation < this.options.maxDeviation) {
+                                        //console.log(place1.name + ' to ' + place2.name + ' is ' + distance2 + 'km / ' + bearing2 + '°');
+                                        //console.log(place1.name + ' to ' + place3.name + ' is ' + distance3 + 'km / ' + bearing3 + '°');
+                                        match = true;
+                                    }
+                                }
+                            }
+                            if (match === true) {
+                                lines.push({
+                                    bearing: bearing2,
+                                    bearing2: (bearing2 - 180 < 0 ? bearing2 + 180 : bearing2 - 180),
+                                    color: this.generateColor(distance2 / this.radius),
+                                    distance: distance2,
+                                    name: place1.name + '<br/>' + place2.name,
+                                    start: place1,
+                                    end: place2
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+            console.log('calculate.success', lines);
+            return lines;
+        },
+        /**
+         * @method calculate
+         
         calculate: function (kml) {
             var i = 0,
                 j = 0,
@@ -118,6 +194,7 @@ var Geo = function () {
             console.log('calculate.success', lines.length);
             return lines;
         },
+        */
         /**
          * @method addLine
          */
@@ -140,6 +217,15 @@ var Geo = function () {
             lineStyle.setWidth(2);
             lineStyle.getColor().set(item.color);
             this.ge.getFeatures().appendChild(placemark);
+        },
+        /**
+         * @method reset
+         */
+        reset: function () {
+            var features = this.ge.getFeatures();
+            while (features.getLastChild() !== null) {
+                features.removeChild(features.getLastChild());
+            }
         },
         /**
          * @method generateColor
@@ -177,6 +263,12 @@ var Geo = function () {
                 x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLon),
                 brng = Math.atan2(y, x);
             return (this.toDeg(brng) + 360) % 360;
+        },
+        /**
+         * @method deviation
+         */
+        deviation: function (bearing1, bearing2, distance) {
+            return Math.abs(Math.asin(Math.sin(distance / this.radius) * Math.sin(this.toRad(bearing2) - this.toRad(bearing1))) * this.radius);
         },
         /**
          * @method toRad
