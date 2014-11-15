@@ -22,7 +22,6 @@ var App = function () {
             this.addEvent('click', this.inputs, function (e) {
                 if (e.target.checked === true) {
                     me.geo.load(e.target.value, function (kml) {
-                        me.kml = kml;
                         me.update();
                     });
                 } else if (e.target.checked === false) {
@@ -67,31 +66,35 @@ var App = function () {
             this.el.innerHTML = this.createFooter([]);
         },
         update: function () {
+            var i = 0;
+            
             this.geo.reset();
-            this.geo.add(this.kml);
-            var lines = this.geo.calculate(this.kml);
+            this.geo.add();
+            
+            var lines = this.geo.calculate(),
+                length = lines.length;
+            
             this.el.innerHTML = this.createFooter(lines);
+            
+            // limit lines on google earth to prevent performance issues
+            if (length > 200) {
+                length = 200;
+            }
+                
+            for (i = 0; i < length; i += 1) {
+                this.geo.addLine(lines[i]);
+            }
         },
         /**
          * @method createFooter
          */
         createFooter: function (lines) {
             var me = this,
-                i = 0,
                 html = '',
                 show = false;
 
             html += '<div class="col w1of3 h1of1 scroll' + (show ? ' line-hide' : ' line-show') + '"><table><tr><th>Name &#x25BE;</th><th>Distance</th><th>Bearing</th></tr>';
-            html += this.createTable(lines.sort(function (a, b) {
-                // limit lines on google earth to prevent performance issues
-                if (i < 200) {
-                    me.geo.addLine(a);
-                } else if (i === 200) {
-                    alert('There are too many lines to be drawn on the map, try narrowing the line filters');
-                }
-                i += 1;
-                return (a.name < b.name) ? -1 : 1;
-            }));
+            html += this.createTable(lines.sort(function (a, b) { return (a.name < b.name) ? -1 : 1; }));
             html += '</table></div>';
             html += '<div class="col w1of3 h1of1 scroll' + (show ? ' line-hide' : ' line-show') + '"><table><tr><th>Name</th><th>Distance &#x25BE;</th><th>Bearing</th></tr>';
             html += this.createTable(lines.sort(function (a, b) { return a.distance - b.distance; }));

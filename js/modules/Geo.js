@@ -42,7 +42,6 @@ var Geo = function () {
             var me = this;
             console.log('add', url);
             google.earth.fetchKml(me.ge, window.location.origin + '/geo/' + url, function (kml) {
-                console.log('add.success', kml);
                 if (kml) {
                     me.current[url] = kml;
                     callback(kml);
@@ -55,18 +54,20 @@ var Geo = function () {
         /**
          * @method add
          */
-        add: function (kml) {
-            this.ge.getFeatures().appendChild(kml);
+        add: function () {
+            var url;
+            for (url in this.current) {
+                this.ge.getFeatures().appendChild(this.current[url]);
+            }
         },
         /**
          * @method remove
          */
         remove: function (url) {
             console.log('remove', url);
-            var kml = this.current[url];
-            if (kml) {
-                console.log('remove.success', kml);
-                this.ge.getFeatures().removeChild(kml);
+            if (this.current[url]) {
+                this.ge.getFeatures().removeChild(this.current[url]);
+                delete this.current[url];
             }
         },
         /**
@@ -88,7 +89,13 @@ var Geo = function () {
         /**
          * @method calculate
          */
-        calculate: function (kml) {
+        calculate: function () {
+            var kml = {},
+                url = '';
+            
+            for (url in this.current) {
+                kml = this.current[url];
+            }
             var i = 0,
                 j = 0,
                 k = 0,
@@ -109,7 +116,7 @@ var Geo = function () {
                 bearing2reverse = 0,
                 bearing3 = 0,
                 deviation = 0;
-
+            
             for (i = 0; i < length; i += 1) {
                 place1 = this.getCache(i, places, items);
                 distance1 = 0;
@@ -120,8 +127,7 @@ var Geo = function () {
                     if (distance2 > this.options.minDistance && distance2 < this.options.maxDistance) {
                         bearing2 = this.bearing(place1, place2);
                         bearing2reverse = (bearing2 - 180 < 0 ? bearing2 + 180 : bearing2 - 180);
-                        if ((bearing2 > this.options.minBearing && bearing2 < this.options.maxBearing) ||
-                            (bearing2reverse > this.options.minBearing && bearing2reverse < this.options.maxBearing)) {
+                        if ((bearing2 > this.options.minBearing && bearing2 < this.options.maxBearing) || (bearing2reverse > this.options.minBearing && bearing2reverse < this.options.maxBearing)) {
                             match = false;
                             for (k = 0; k < length; k += 1) {
                                 if (k !== i && k !== j) {
