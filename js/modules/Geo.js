@@ -30,6 +30,7 @@ var Geo = function () {
                 google.earth.createInstance('viewer', function (instance) {
                     me.ge = instance;
                     me.ge.getWindow().setVisibility(true);
+                    me.ge.getNavigationControl().setVisibility(me.ge.VISIBILITY_SHOW);
                 }, function (e) {
                     window.alert('error: ' + e);
                 });
@@ -90,24 +91,35 @@ var Geo = function () {
          * @method calculate
          */
         calculate: function () {
-            var kml = {},
+            var placemarks = [],
+                place = {},
+                items = [],
+                i = 0,
+                length = 0,
                 url = '';
             
+            // put all kml files into one array ready for calculation
             for (url in this.current) {
-                kml = this.current[url];
+                placemarks = this.current[url].getElementsByType('KmlPlacemark');
+                length = placemarks.getLength();
+                for (i = 0; i < length; i += 1) {
+                    place = placemarks.item(i);
+                    items.push({
+                        name: place.getName(),
+                        lat: place.getGeometry().getLatitude(),
+                        lon: place.getGeometry().getLongitude()
+                    });
+                }
+                console.log(url, items.length);
             }
-            var i = 0,
-                j = 0,
+            length = items.length;
+            
+            var j = 0,
                 k = 0,
-                items = kml.getElementsByType('KmlPlacemark'),
-                length = items.getLength(),
                 places = [],
                 lines = [],
                 line = {},
                 match = false,
-                place1 = {},
-                place2 = {},
-                place3 = {},
                 distance1 = 0,
                 distance2 = 0,
                 distance3 = 0,
@@ -118,26 +130,23 @@ var Geo = function () {
                 deviation = 0;
             
             for (i = 0; i < length; i += 1) {
-                place1 = this.getCache(i, places, items);
                 distance1 = 0;
                 bearing1 = 0;
                 for (j = i + 1; j < length; j += 1) {
-                    place2 = this.getCache(j, places, items);
-                    distance2 = this.distance(place1, place2);
+                    distance2 = this.distance(items[i], items[j]);
                     if (distance2 > this.options.minDistance && distance2 < this.options.maxDistance) {
-                        bearing2 = this.bearing(place1, place2);
+                        bearing2 = this.bearing(items[i], items[j]);
                         bearing2reverse = (bearing2 - 180 < 0 ? bearing2 + 180 : bearing2 - 180);
                         if ((bearing2 > this.options.minBearing && bearing2 < this.options.maxBearing) || (bearing2reverse > this.options.minBearing && bearing2reverse < this.options.maxBearing)) {
                             match = false;
                             for (k = 0; k < length; k += 1) {
                                 if (k !== i && k !== j) {
-                                    place3 = this.getCache(k, places, items);
-                                    distance3 = this.distance(place1, place3);
-                                    bearing3 = this.bearing(place1, place3);
+                                    distance3 = this.distance(items[i], items[k]);
+                                    bearing3 = this.bearing(items[i], items[k]);
                                     deviation = Math.abs(Math.asin(Math.sin(distance3 / this.radius) * Math.sin(this.toRad(bearing3) - this.toRad(bearing2))) * this.radius);
                                     if (deviation > this.options.minDeviation && deviation < this.options.maxDeviation) {
-                                        //console.log(place1.name + ' to ' + place2.name + ' is ' + distance2 + 'km / ' + bearing2 + '°');
-                                        //console.log(place1.name + ' to ' + place3.name + ' is ' + distance3 + 'km / ' + bearing3 + '°');
+                                        //console.log(items[i].name + ' to ' + items[j].name + ' is ' + distance2 + 'km / ' + bearing2 + '°');
+                                        //console.log(items[i].name + ' to ' + items[k].name + ' is ' + distance3 + 'km / ' + bearing3 + '°');
                                         match = true;
                                     }
                                 }
@@ -148,9 +157,9 @@ var Geo = function () {
                                     bearing2: (bearing2 - 180 < 0 ? bearing2 + 180 : bearing2 - 180),
                                     color: this.generateColor(distance2 / this.radius),
                                     distance: distance2,
-                                    name: place1.name + '<br/>' + place2.name,
-                                    start: place1,
-                                    end: place2
+                                    name: items[i].name + '<br/>' + items[j].name,
+                                    start: items[i],
+                                    end: items[j]
                                 });
                             }
                         }
@@ -160,47 +169,6 @@ var Geo = function () {
             console.log('calculate.success', lines);
             return lines;
         },
-        /**
-         * @method calculate
-         
-        calculate: function (kml) {
-            var i = 0,
-                j = 0,
-                items = kml.getElementsByType('KmlPlacemark'),
-                length = items.getLength(),
-                places = [],
-                lines = [],
-                line = {};
-
-            for (i = 0; i < length; i += 1) {
-                line = { start: this.getCache(i, places, items) };
-                for (j = i + 1; j < length; j += 1) {
-                    line.end = this.getCache(j, places, items);
-                    line.distance = this.distance(line.start, line.end);
-                    if (line.distance > this.options.minDistance && line.distance < this.options.maxDistance) {
-                        line.bearing = this.bearing(line.start, line.end);
-                        line.bearing2 = (line.bearing - 180 < 0 ? line.bearing + 180 : line.bearing - 180);
-                        if (line.bearing > this.options.minBearing && line.bearing < this.options.maxBearing) {
-                            line.color = this.generateColor(line.distance / this.radius);
-                            line.name = line.start.name + '<br/>' + line.end.name;
-                            lines.push({
-                                bearing: line.bearing,
-                                bearing2: line.bearing2,
-                                color: line.color,
-                                distance: line.distance,
-                                name: line.name,
-                                start: line.start,
-                                end: line.end
-                            });
-                            this.addLine(line);
-                        }
-                    }
-                }
-            }
-            console.log('calculate.success', lines.length);
-            return lines;
-        },
-        */
         /**
          * @method addLine
          */

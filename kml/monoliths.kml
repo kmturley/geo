@@ -2,33 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>monoliths.kml</name>
-	<Style id="sn_ylw-pushpin011">
-	</Style>
-	<StyleMap id="m_ylw-pushpin23">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin12</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl41</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="failed">
-	</Style>
-	<Style id="failed0">
-	</Style>
-	<StyleMap id="msn_ylw-pushpin1000">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin011</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin201</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin_hl10">
+	<Style id="s_ylw-pushpin_hl191">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -37,7 +11,11 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="s_ylw-pushpin_hl40">
+	<Style id="failed29">
+	</Style>
+	<Style id="failed132">
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -46,49 +24,93 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin201">
+	<StyleMap id="m_ylw-pushpin000101">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin000000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl191</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed72">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed122</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed04</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl2102">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin401">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed1120">
+	</Style>
+	<Style id="hl">
 		<IconStyle>
 			<scale>1.2</scale>
 		</IconStyle>
 	</Style>
-	<Style id="failed1">
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default0">
 	</Style>
-	<Style id="failed2">
-	</Style>
-	<Style id="failed3">
-	</Style>
-	<Style id="s_ylw-pushpin00000">
+	<Style id="sh_ylw-pushpin2011">
 		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			<scale>1.2</scale>
 		</IconStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin00000">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin60</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed4">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed11</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="failed5">
+	<Style id="failed113">
 	</Style>
-	<Style id="s_ylw-pushpin_hl41">
+	<Style id="failed122">
+	</Style>
+	<StyleMap id="failed102">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed132</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed51</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl01011">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -97,9 +119,9 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="failed6">
+	<Style id="sn_ylw-pushpin0111">
 	</Style>
-	<Style id="s_ylw-pushpin8">
+	<Style id="s_ylw-pushpin123">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -108,7 +130,16 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="s_ylw-pushpin_hl0111">
+	<Style id="s_ylw-pushpin801">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl01111">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -117,7 +148,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="s_ylw-pushpin80">
+	<Style id="s_ylw-pushpin1141">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -126,86 +157,17 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin3001">
+	<StyleMap id="failed80">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin40</styleUrl>
+			<styleUrl>#failed29</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl210</styleUrl>
+			<styleUrl>#failed1120</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="failed7">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed12</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin40">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="failed8">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin11">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin114</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl40</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed9">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed6</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed3</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin00010">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin00000</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl19</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="failed10">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#failed13</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#failed5</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin_hl0101">
+	<Style id="s_ylw-pushpin_hl402">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -214,7 +176,79 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="s_ylw-pushpin_hl19">
+	<StyleMap id="m_ylw-pushpin30010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin401</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2102</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin116">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1141</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl402</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin000000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin10001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0111</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2011</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="failed43">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed113</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed33</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed04">
+	</Style>
+	<Style id="failed51">
+	</Style>
+	<StyleMap id="m_ylw-pushpin0312">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin801</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl01011</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin9">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl411">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -223,70 +257,40 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin033">
+	<StyleMap id="m_ylw-pushpin0331">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin8</styleUrl>
+			<styleUrl>#s_ylw-pushpin83</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl0111</styleUrl>
+			<styleUrl>#s_ylw-pushpin_hl01111</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="failed11">
-	</Style>
-	<Style id="s_ylw-pushpin_hl210">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin12">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin60">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed12">
-	</Style>
-	<Style id="s_ylw-pushpin114">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="failed13">
-	</Style>
-	<StyleMap id="m_ylw-pushpin031">
+	<StyleMap id="m_ylw-pushpin230">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin80</styleUrl>
+			<styleUrl>#s_ylw-pushpin123</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl0101</styleUrl>
+			<styleUrl>#s_ylw-pushpin_hl411</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="s_ylw-pushpin83">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="failed33">
+	</Style>
 	<Folder>
 		<name>Monoliths</name>
+		<open>1</open>
 		<Placemark>
 			<name>Mogadishu, Somalia</name>
 			<LookAt>
@@ -298,27 +302,10 @@
 				<range>228.4184869133184</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin23</styleUrl>
+			<styleUrl>#m_ylw-pushpin230</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>45.34201053150399,2.03912507170909,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>Atlanta Obelisk, USA</name>
-			<LookAt>
-				<longitude>-84.37199827105226</longitude>
-				<latitude>33.7480098455607</latitude>
-				<altitude>0</altitude>
-				<heading>0.0005685234321563437</heading>
-				<tilt>0</tilt>
-				<range>100.2182906032528</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin033</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>-84.372061,33.748018,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
@@ -333,7 +320,7 @@
 				<range>257.1989738190513</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin11</styleUrl>
+			<styleUrl>#m_ylw-pushpin116</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-100.0594786655277,48.99940818694532,0</coordinates>
@@ -350,7 +337,7 @@
 				<range>250.7531545357087</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin00010</styleUrl>
+			<styleUrl>#m_ylw-pushpin000101</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>96.159502,16.773109,0</coordinates>
@@ -367,7 +354,7 @@
 				<range>235.8381591790023</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin033</styleUrl>
+			<styleUrl>#m_ylw-pushpin0331</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-58.381613,-34.603714,0</coordinates>
@@ -384,27 +371,10 @@
 				<range>296.427560086439</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_ylw-pushpin1000</styleUrl>
+			<styleUrl>#msn_ylw-pushpin10001</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-66.84892499999999,10.49651,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>Boston Obelisk, USA</name>
-			<LookAt>
-				<longitude>-71.05952038558759</longitude>
-				<latitude>42.37575520299934</latitude>
-				<altitude>0</altitude>
-				<heading>-0.005511159018210294</heading>
-				<tilt>0</tilt>
-				<range>584.8290109800049</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin00000</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>-71.06073599737623,42.37631460839985,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
@@ -424,7 +394,7 @@
 				<range>218.836474680549</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin3001</styleUrl>
+			<styleUrl>#m_ylw-pushpin30010</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>12.45725946854304,41.90223398873914,0</coordinates>
@@ -447,7 +417,7 @@
 				<range>255.4719117320042</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin031</styleUrl>
+			<styleUrl>#m_ylw-pushpin0312</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-77.035218,38.889476,0</coordinates>
@@ -470,7 +440,7 @@
 				<range>1583.177322644024</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#failed4</styleUrl>
+			<styleUrl>#failed43</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>87.93721368745898,52.83798620527939,0</coordinates>
@@ -487,44 +457,10 @@
 				<range>435.9293081509654</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#failed10</styleUrl>
+			<styleUrl>#failed102</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>32.6103385437146,25.72765893331609,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>New York Obelisk, USA</name>
-			<LookAt>
-				<longitude>-73.96537202224388</longitude>
-				<latitude>40.77959718219289</latitude>
-				<altitude>0</altitude>
-				<heading>1.9873687904176e-05</heading>
-				<tilt>0</tilt>
-				<range>41.97965654659772</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin033</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>-73.96540299999999,40.779628,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>Thomas Jefferson Obelisk, USA</name>
-			<LookAt>
-				<longitude>-78.45578716287312</longitude>
-				<latitude>38.00848355418091</latitude>
-				<altitude>0</altitude>
-				<heading>0.104656400425622</heading>
-				<tilt>0</tilt>
-				<range>23.90037357248261</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin031</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>-78.45578999999999,38.008473,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
@@ -538,7 +474,7 @@
 				<range>230.3507187508536</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#failed8</styleUrl>
+			<styleUrl>#failed80</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>75.00563790134716,13.20376868223428,0</coordinates>
@@ -555,10 +491,95 @@
 				<range>275.5146695728419</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#failed7</styleUrl>
+			<styleUrl>#failed72</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-118.3599353223576,34.06446527628311,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Obelisk, Paris, France</name>
+			<LookAt>
+				<longitude>2.322082260435067</longitude>
+				<latitude>48.86536896140895</latitude>
+				<altitude>0</altitude>
+				<heading>2.519161920416709</heading>
+				<tilt>0</tilt>
+				<range>423.354215431351</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>2.321132315051013,48.86547867029642,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hyde Park Obelisk, Sydney, Australia</name>
+			<LookAt>
+				<longitude>151.2099626969779</longitude>
+				<latitude>-33.87469581441017</latitude>
+				<altitude>0</altitude>
+				<heading>-6.294390492864925e-05</heading>
+				<tilt>0</tilt>
+				<range>74.5932035313761</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>151.2098626030887,-33.87466734094804,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Obelisk, Plaça Joan Carles I, Barcelona, Spain</name>
+			<LookAt>
+				<longitude>2.159515000169125</longitude>
+				<latitude>41.3965121674719</latitude>
+				<altitude>0</altitude>
+				<heading>-2.505600948231928e-05</heading>
+				<tilt>0</tilt>
+				<range>73.70793791229603</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>2.159511101283071,41.39653101575764,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Obelisk, London, UK</name>
+			<LookAt>
+				<longitude>-0.1202813056855323</longitude>
+				<latitude>51.50843598111513</latitude>
+				<altitude>0</altitude>
+				<heading>5.925510700526428e-05</heading>
+				<tilt>0</tilt>
+				<range>59.99034214679999</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-0.120340232034033,51.50851973712756,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Obelisk, Toronto, Canada</name>
+			<LookAt>
+				<longitude>-79.38671829305542</longitude>
+				<latitude>43.6513997706647</latitude>
+				<altitude>0</altitude>
+				<heading>6.086620433245511e-05</heading>
+				<tilt>0</tilt>
+				<range>136.9431297494509</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#default</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-79.3868014884566,43.65130917873929,0</coordinates>
 			</Point>
 		</Placemark>
 	</Folder>
