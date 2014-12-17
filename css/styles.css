@@ -79,6 +79,19 @@ form, input, textarea, select, fieldset {
 .w3of5 { width: 60%; }
 .w4of5 { width: 80%; }
 
+/* height helpers */
+
+.h1of1 { height: 100%; }
+.h1of2 { height: 50%; }
+.h1of3 { height: 33.33333%; }
+.h2of3 { height: 66.66666%; }
+.h1of4 { height: 25%; }
+.h3of4 { height: 75%; }
+.h1of5 { height: 20%; }
+.h2of5 { height: 40%; }
+.h3of5 { height: 60%; }
+.h4of5 { height: 80%; }
+
 /* other */
 
 body {
@@ -110,4 +123,5 @@ textarea {
 
 .map {
     position: relative;
+    height: 500px;
 }

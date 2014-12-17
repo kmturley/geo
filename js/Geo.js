@@ -86,6 +86,7 @@ var Geo = function () {
         loadAll: function (index, urls, list, callback) {
             var me = this;
             this.load(urls[index], function (data) {
+                console.log('load', data);
                 list = me.add(data, list);
                 if (index < urls.length - 1) {
                     me.loadAll(index + 1, urls, list, callback);
@@ -114,18 +115,26 @@ var Geo = function () {
                 coords = [];
             data = this.stringToXml(data);
             data = this.xmlToJson(data);
-            if (data.Folder) {
-                data = data.Folder.Placemark;
-            } else if (data.Document && data.Document.Folder) {
-                if (data.Document.Folder.Placemark) {
-                    data = data.Document.Folder.Placemark;
-                } else {
-                    data = data.Document.Folder;
-                }
-            } else if (data.Document) {
-                data = data.Document.Placemark;
+            console.log('add', data);
+            if (data.Document) {
+                data = data.Document;
             }
-            //console.log('length', data.length);
+            if (data.Folder) {
+                data = data.Folder;
+            }
+            if (data.Folder) {
+                data = data.Folder;
+            }
+            if (data.Folder) {
+                data = data.Folder;
+            }
+            if (data.Folder) {
+                data = data.Folder;
+            }
+            if (data.Placemark) {
+                data = data.Placemark;
+            }
+            console.log('length', data.length);
             for (i = 0; i < data.length; i += 1) {
                 coords = (data[i].Point || data[i].Placemark.Point || data[i].Placemark[0].Point).coordinates['#text'].split(',');
                 data[i].coords = [Number(coords[0]), Number(coords[1])];

@@ -7,8 +7,8 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="row full">
-        <div class="col w1of4">
+    <div class="row h1of1 full">
+        <div class="col w1of4 h1of1">
             <h1>Geo</h1>
             <p>Calculates lines between places around the world, showing the distances and bearings of each.</p>
             <p>The more places you select, the longer it will take to load, so please be patient!</p>
@@ -19,8 +19,8 @@
                     <input type="checkbox" value="segments" name="calculate" checked /> Calculate line segments (CPU intensive!)
                 </p>
                 <p><input type="text" value="3" size="1" name="minPoints" /> Minimum points required</p>
-                <p><input type="text" value="0.02" size="1" name="maxDifference" /> Max bearing difference (degrees °) OR</p>
-                <p><input type="text" value="" size="1" name="maxDistance" /> Max distance from line (km)</p>
+                <p><input type="text" value="" size="1" name="maxDifference" /> Max bearing difference (degrees °) OR</p>
+                <p><input type="text" value="0.5" size="1" name="maxDistance" /> Max distance from line (km)</p>
                 <p><input type="text" value="0" size="1" name="minLength" /> Min length of line (km)</p>
                 <p><input type="text" value="24901" size="1" name="maxLength" /> Max length of line (km)</p>
                 <p><input type="text" value="0" size="1" name="minBearing" /> Min bearing (degrees °)</p>
@@ -55,8 +55,12 @@
                     <a href="kml/structures.kml" target="_blank">Tallest Structures (202)</a>
                 </p>
                 <p>
-                    <input type="checkbox" value="kml/us-state-capitals.kml" name="file" checked /> 
+                    <input type="checkbox" value="kml/us-state-capitals.kml" name="file" /> 
                     <a href="kml/us-state-capitals.kml" target="_blank">US &amp; Canadian State Capitals (61)</a>
+                </p>
+                <p>
+                    <input type="checkbox" value="kml/national-capitals.kml" name="file" checked /> 
+                    <a href="kml/national-capitals.kml" target="_blank">National/World Capitals (61)</a>
                 </p>
                 <hr />
                 <p>
@@ -137,10 +141,10 @@
                 <hr />
             </div>
         </div>
-        <div class="col w3of4 map">
+        <div class="col w3of4 h1of1">
             <a href="https://github.com/kmturley/geo" target="_blank"><img style="position: absolute; top: 0; left: 10px; border: 0; z-index:2;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
-            <div id="map3d"></div>
-            <pre id="output" class="output">Choose options on the left to start calculating line segments</pre>
+            <div class="h2of3 map" id="map3d"></div>
+            <pre class="h1of3 output" id="output">Choose options on the left to start calculating line segments</pre>
         </div>
     </div>
     <script src="//www.google.com/jsapi?key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw"></script>
